@@ -1,2 +1,0 @@
-# riddlemethis
- daily riddle site
