@@ -1,34 +1,65 @@
+:root {
+    /* Light Mode Colors */
+    --base-color: #ffffff;
+    --text-color: #313030;
+    --secondary-text: #6a6969;
+    --primary-color: #f0f0f0; /* Lighter container background */
+    --accent-color: #d4e5e7;
+    --button-color: #538d4e;
+    --button-hover: #6aaa64;
+    --input-bg: #ffffff;
+    --input-text: #313030;
+}
+
+.darkmode{
+        /* Dark Mode Colors */
+        --base-color: #1e1e1e;
+        --text-color: #f0f0f0;
+        --secondary-text: #b0b0b0;
+        --primary-color: #2a2a2a;
+        --accent-color: #7aa9ad;
+        --button-color: #65a160;
+        --button-hover: #7bb475;
+        --input-bg: #333333;
+        --input-text: #f0f0f0;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #121213;
-    color: white;
+    background-color: var(--base-color);
+    color: var(--text-color);
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .container {
-    background-color: #222;
+    background-color: var(--primary-color);
     padding: 20px;
     border-radius: 10px;
     width: 90%;
     max-width: 400px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
 }
 
 h1 {
     font-size: 24px;
     margin-bottom: 15px;
+    color: var(--text-color);
 }
 
 .riddle-box {
-    background-color: #333;
+    background-color: var(--accent-color);
+    color: #1e1e1e; /* Dark text for readability on teal */
     padding: 15px;
     border-radius: 8px;
     margin-bottom: 15px;
+    transition: background-color 0.3s ease;
 }
 
 input {
@@ -39,23 +70,58 @@ input {
     border-radius: 5px;
     text-align: center;
     margin-bottom: 10px;
+    background-color: var(--input-bg);
+    color: var(--input-text);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 button {
-    background-color: #538d4e;
+    background-color: var(--button-color);
     color: white;
     border: none;
     padding: 10px 15px;
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #6aaa64;
+    background-color: var(--button-hover);
 }
 
 #feedback {
     margin-top: 10px;
     font-size: 16px;
+    color: var(--secondary-text);
+}
+
+#theme-switch{
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--base-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+#theme-switch svg{
+    fill: var(--text-color)
+}
+
+#theme-switch svg:last-child{
+    display: none;
+}
+
+.darkmode #theme-switch svg:first-child{
+    display: none;
+}
+
+.darkmode #theme-switch svg:last-child{
+    display: block;
 }
