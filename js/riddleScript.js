@@ -26,6 +26,10 @@ function checkAnswer() {
     const userAnswer = document.getElementById("answer-input").value.toLowerCase().trim(); // Get and format the user's input
     const resultElement = document.getElementById("result");
 
+    if (userAnswer === "") {
+        return;
+    }
+
     // Compare user's answer to the correct answer
     if (userAnswer.includes(correctAnswer)) {
         resultElement.textContent = "Correct! Well done!";

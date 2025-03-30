@@ -1,6 +1,6 @@
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #d8e5e79f;
+    font-family: 'Times New Roman', Arial, sans-serif;
+    background-color: #bbc7c94f;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,7 +23,7 @@ h1 {
 }
 
 .instructions {
-    font-size: 35px;
+    font-size: 40px;
     margin-bottom: 30px;
     line-height: 1.4;
 }
