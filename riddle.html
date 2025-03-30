@@ -18,11 +18,15 @@
     <div class="container">
         <h1>Daily Riddle</h1>
         <div class="riddle-box">
-            <p id="riddle-text">I have a neck, but no head. I have two arms, but no hands. What am I?</p>
+            <p id="riddle-text">I have cities, but no houses.
+                I have forests, but no trees.
+                I have rivers, but no water. <br>
+                What am I?</p>
         </div>
         <input type="text" id="answer-input" placeholder="Type your answer..." />
-        <button id="submit-btn">Submit</button>
-        <p id="feedback"></p>
+        <button id="submit-btn" onclick="checkAnswer()">Submit</button>
+        
+        <p id="result"></p>
     </div>
 
     <script src="script.js"></script>
