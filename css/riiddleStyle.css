@@ -96,7 +96,15 @@ button:hover {
     color: var(--secondary-text);
 }
 
-#theme-switch{
+.top-right-buttons {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px; /* spacing between buttons */
+}
+
+.top-right-buttons button {
     height: 50px;
     width: 50px;
     padding: 0;
@@ -105,23 +113,48 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
-    top: 20px;
-    right: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-#theme-switch svg{
-    fill: var(--text-color)
+.top-right-buttons button:hover {
+    background-color: var(--accent-color);
 }
 
-#theme-switch svg:last-child{
+.top-right-buttons svg {
+    fill: var(--text-color);
+}
+
+#hint-btn.active {
+    background-color: var(--accent-color);
+}
+
+#theme-switch svg:last-child {
     display: none;
 }
 
-.darkmode #theme-switch svg:first-child{
+.darkmode #theme-switch svg:first-child {
     display: none;
 }
 
-.darkmode #theme-switch svg:last-child{
+.darkmode #theme-switch svg:last-child {
     display: block;
 }
+
+.hint-box {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    background-color: var(--accent-color);
+    color: #1e1e1e;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    z-index: 9999;
+    max-width: 250px;
+    text-align: left;
+    font-size: 14px;
+    transition: opacity 0.3s ease;
+}
+

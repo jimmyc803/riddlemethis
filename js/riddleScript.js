@@ -46,3 +46,18 @@ document.getElementById("answer-input").addEventListener("keydown", function(eve
         checkAnswer(); // Call checkAnswer when Enter is pressed
     }
 });
+
+// Function to show the hint
+function showHint() {
+    const hint = document.getElementById('hint');
+    const hintBtn = document.getElementById('hint-btn');
+
+    // Toggle the hint visibility
+    const isVisible = hint.style.display === 'block';
+
+    hint.style.display = isVisible ? 'none' : 'block'; // Toggle display
+    hintBtn.classList.toggle('active', !isVisible);    // Add/remove 'active' class based on visibility
+}
+
+// Add event listener to the hint button
+document.getElementById('hint-btn').addEventListener('click', showHint);
