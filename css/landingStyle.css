@@ -8,8 +8,16 @@ body {
     height: 100vh;
     margin: 0;
     color: #333;
+    transition: opacity 0.8s ease-in-out; /* smoother fade */
+    opacity: 1;
 }
 
+.fade-out {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* existing styles below */
 .container {
     text-align: center;
     max-width: 300px;
