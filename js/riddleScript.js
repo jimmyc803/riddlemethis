@@ -19,7 +19,7 @@ themeSwitch.addEventListener("click", () => {
 } )
 
 // Set the correct answer to the riddle
-const correctAnswer = "hole";
+const correctAnswer = "silence";
 
 // Function to check the user's answer
 function checkAnswer() {
