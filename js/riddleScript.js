@@ -18,46 +18,53 @@ themeSwitch.addEventListener("click", () => {
     darkmode != "active" ? enableDarkmode() : disableDarkmode()
 } )
 
-// Set the correct answer to the riddle
-const correctAnswer = "silence";
+// --- NORMALIZATION FUNCTION FOR ANSWERS ---
+function normalizeAnswer(answer) {
+    return answer
+        .toLowerCase()
+        .replace(/[^\w\s]/g, "")                   // remove punctuation
+        .replace(/\b(the|a|an|some)\b/g, "")       // remove common fillers
+        .trim();
+}
 
-// Function to check the user's answer
+
+// --- CHECK ANSWER LOGIC ---
+const correctAnswers = ["silence"]; // Add more if needed
+
 function checkAnswer() {
-    const userAnswer = document.getElementById("answer-input").value.toLowerCase().trim(); // Get and format the user's input
+    const userInput = document.getElementById("answer-input").value;
+    const userAnswer = normalizeAnswer(userInput);
     const resultElement = document.getElementById("result");
 
-    if (userAnswer === "") {
-        return;
-    }
+    if (userAnswer === "") return;
 
-    // Compare user's answer to the correct answer
-    if (userAnswer.includes(correctAnswer)) {
-        resultElement.textContent = "Correct! Well done!";
-        resultElement.style.color = "green";  // Green color for correct answer
+    const isCorrect = correctAnswers.some(ans => userAnswer === ans || userAnswer === ans + "s");
+
+    if (isCorrect) {
+        resultElement.textContent = "✅ Correct! Well done!";
+        resultElement.style.color = "green";
     } else {
-        resultElement.textContent = "Incorrect. Try again!";
-        resultElement.style.color = "red";  // Red color for incorrect answer
+        resultElement.textContent = "❌ Incorrect. Try again!";
+        resultElement.style.color = "red";
     }
 }
 
-// Add an event listener for the Enter key press
-document.getElementById("answer-input").addEventListener("keydown", function(event) {
+// Handle pressing Enter
+document.getElementById("answer-input").addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
-        checkAnswer(); // Call checkAnswer when Enter is pressed
+        checkAnswer();
     }
 });
 
-// Function to show the hint
+
+// --- HINT BUTTON LOGIC ---
 function showHint() {
     const hint = document.getElementById('hint');
     const hintBtn = document.getElementById('hint-btn');
-
-    // Toggle the hint visibility
     const isVisible = hint.style.display === 'block';
 
-    hint.style.display = isVisible ? 'none' : 'block'; // Toggle display
-    hintBtn.classList.toggle('active', !isVisible);    // Add/remove 'active' class based on visibility
+    hint.style.display = isVisible ? 'none' : 'block';
+    hintBtn.classList.toggle('active', !isVisible);
 }
 
-// Add event listener to the hint button
 document.getElementById('hint-btn').addEventListener('click', showHint);
