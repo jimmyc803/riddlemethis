@@ -84,8 +84,9 @@ function showHint() {
     const hintBtn = document.getElementById('hint-btn');
     const isVisible = hint.style.display === 'block';
 
+    // Toggle visibility of the hint and change button state
     hint.style.display = isVisible ? 'none' : 'block';
-    hintBtn.classList.toggle('active', !isVisible);
+    hintBtn.classList.toggle('active', !isVisible); // Toggles the active class based on visibility
 }
 
 document.getElementById('hint-btn').addEventListener('click', showHint);

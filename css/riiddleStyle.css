@@ -3,29 +3,32 @@
     --base-color: #ffffff;
     --text-color: #313030;
     --secondary-text: #6a6969;
-    --primary-color: #f0f0f0; /* Lighter container background */
+    --primary-color: #f0f0f0;
     --accent-color: #d4e5e7;
     --button-color: #538d4e;
     --button-hover: #6aaa64;
     --input-bg: #ffffff;
     --input-text: #313030;
+    --border-radius: 8px;  /* Soft rounded corners */
+    --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);  /* Softer shadow for depth */
 }
 
-.darkmode{
-        /* Dark Mode Colors */
-        --base-color: #1e1e1e;
-        --text-color: #f0f0f0;
-        --secondary-text: #b0b0b0;
-        --primary-color: #2a2a2a;
-        --accent-color: #7aa9ad;
-        --button-color: #65a160;
-        --button-hover: #7bb475;
-        --input-bg: #333333;
-        --input-text: #f0f0f0;
+/* Dark mode overrides */
+.darkmode {
+    --base-color: #1e1e1e;
+    --text-color: #f0f0f0;
+    --secondary-text: #b0b0b0;
+    --primary-color: #2a2a2a;
+    --accent-color: #7aa9ad;
+    --button-color: #65a160;
+    --button-hover: #7bb475;
+    --input-bg: #333333;
+    --input-text: #f0f0f0;
 }
 
+/* Body setup */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif; /* Modern font */
     background-color: var(--base-color);
     color: var(--text-color);
     text-align: center;
@@ -37,99 +40,134 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Container styling */
 .container {
     background-color: var(--primary-color);
-    padding: 20px;
-    border-radius: 10px;
+    padding: 25px;
+    border-radius: var(--border-radius);
     width: 90%;
-    max-width: 400px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 450px;
+    box-shadow: var(--box-shadow);
     transition: background-color 0.3s ease;
+    text-align: center;
 }
 
+/* Header styling */
 h1 {
-    font-size: 24px;
-    margin-bottom: 15px;
+    font-size: 28px;
+    margin-bottom: 20px;
     color: var(--text-color);
+    font-weight: 600; /* Slightly heavier font */
 }
 
+/* Riddle box styling */
 .riddle-box {
     background-color: var(--accent-color);
-    color: #1e1e1e; /* Dark text for readability on teal */
-    padding: 15px;
-    border-radius: 8px;
-    margin-bottom: 15px;
+    color: #1e1e1e;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    margin-bottom: 25px;
+    box-shadow: var(--box-shadow);
     transition: background-color 0.3s ease;
 }
 
+/* Input field styling */
 input {
-    width: 80%;
-    padding: 10px;
+    width: 85%;
+    padding: 12px;
     font-size: 16px;
     border: none;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     background-color: var(--input-bg);
     color: var(--input-text);
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Button styling */
 button {
     background-color: var(--button-color);
     color: white;
     border: none;
-    padding: 10px 15px;
+    padding: 12px 18px;
     font-size: 16px;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
     background-color: var(--button-hover);
+    transform: scale(1.05);  /* Subtle scaling effect */
 }
 
-#feedback {
-    margin-top: 10px;
-    font-size: 16px;
-    color: var(--secondary-text);
+/* Hint box styling */
+.hint-box {
+    position: absolute;
+    top: 120px;
+    right: 20px;
+    background-color: var(--accent-color);
+    color: #1e1e1e;
+    padding: 18px 22px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    z-index: 9999;
+    max-width: 250px;
+    font-size: 15px;
+    transition: opacity 0.3s ease;
+    display: none; /* Hidden by default */
 }
 
+/* Lives display styling */
+#lives {
+    font-size: 18px;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent-color);
+    padding: 10px 18px;
+    border-radius: var(--border-radius);
+    position: fixed;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: var(--box-shadow);
+    z-index: 100;
+}
+
+/* Top-right buttons for theme and hint */
 .top-right-buttons {
     position: fixed;
     top: 20px;
     right: 20px;
     display: flex;
-    gap: 10px; /* spacing between buttons */
+    gap: 12px;
 }
 
 .top-right-buttons button {
-    height: 50px;
-    width: 50px;
-    padding: 0;
-    border-radius: 50%;
+    height: 55px;
+    width: 55px;
     background-color: var(--base-color);
     display: flex;
     justify-content: center;
     align-items: center;
-    border: none;
+    border-radius: 50%;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .top-right-buttons button:hover {
     background-color: var(--accent-color);
+    transform: scale(1.1);
 }
 
 .top-right-buttons svg {
     fill: var(--text-color);
 }
 
-#hint-btn.active {
-    background-color: var(--accent-color);
-}
-
+/* Dark mode theme toggle button */
 #theme-switch svg:last-child {
     display: none;
 }
@@ -142,41 +180,13 @@ button:hover {
     display: block;
 }
 
-.hint-box {
-    position: fixed;
-    top: 100px;
-    right: 20px;
-    background-color: var(--accent-color);
-    color: #1e1e1e;
-    padding: 15px 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-    z-index: 9999;
-    max-width: 250px;
-    text-align: left;
-    font-size: 14px;
-    transition: opacity 0.3s ease;
+/* Hint Button Active State */
+#hint-btn.active {
+    border: 2px solid var(--accent-color);
+    background-color: #e8eaed; /* Optional background change */
 }
 
-#lives {
-    font-size: 16px;
-    color: var(--text-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--accent-color);
-    padding: 8px 15px;
-    border-radius: 5px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    position: fixed;
-    top: 20px;  /* Keep it at the top */
-    left: 50%;  /* Center horizontally */
-    transform: translateX(-50%);  /* Adjust the centering */
-    z-index: 100;
+/* Hint Box Visibility Toggle */
+#hint-btn:focus {
+    outline: none;
 }
-
-.lives-counter span {
-    font-weight: bold;
-}
-
-
