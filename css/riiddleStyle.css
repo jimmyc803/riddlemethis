@@ -183,7 +183,6 @@ button:hover {
 /* Hint Button Active State */
 #hint-btn.active {
     border: 2px solid var(--accent-color);
-    background-color: #e8eaed; /* Optional background change */
 }
 
 /* Hint Box Visibility Toggle */
