@@ -18,6 +18,8 @@ themeSwitch.addEventListener("click", () => {
     darkmode != "active" ? enableDarkmode() : disableDarkmode()
 } )
 
+let lives = 3;
+
 // --- NORMALIZATION FUNCTION FOR ANSWERS ---
 function normalizeAnswer(answer) {
     return answer
@@ -26,7 +28,6 @@ function normalizeAnswer(answer) {
         .replace(/\b(the|a|an|some)\b/g, "")       // remove common fillers
         .trim();
 }
-
 
 // --- CHECK ANSWER LOGIC ---
 const correctAnswers = ["silence"]; // Add more if needed
@@ -46,7 +47,28 @@ function checkAnswer() {
     } else {
         resultElement.textContent = "❌ Incorrect. Try again!";
         resultElement.style.color = "red";
+        wrongAnswer();
     }
+}
+
+// Function to handle losing a life
+function wrongAnswer() {
+    if (lives > 0) {
+        lives--;
+        updateLives();
+    }
+    if (lives === 0) {
+        alert("Game Over! You've lost all your lives.");
+        document.getElementById("submit-btn").disabled = true; // Disable submit button
+    }
+}
+
+// Function to update lives display
+function updateLives() {
+    const heart = "❤️";
+    const empty = "🖤";
+    document.getElementById("lives").innerHTML = 
+        heart.repeat(lives) + empty.repeat(3 - lives);
 }
 
 // Handle pressing Enter
@@ -55,7 +77,6 @@ document.getElementById("answer-input").addEventListener("keydown", function (ev
         checkAnswer();
     }
 });
-
 
 // --- HINT BUTTON LOGIC ---
 function showHint() {
@@ -68,3 +89,6 @@ function showHint() {
 }
 
 document.getElementById('hint-btn').addEventListener('click', showHint);
+
+// Initialize lives display
+updateLives();

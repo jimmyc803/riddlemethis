@@ -158,3 +158,25 @@ button:hover {
     transition: opacity 0.3s ease;
 }
 
+#lives {
+    font-size: 16px;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent-color);
+    padding: 8px 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 20px;  /* Keep it at the top */
+    left: 50%;  /* Center horizontally */
+    transform: translateX(-50%);  /* Adjust the centering */
+    z-index: 100;
+}
+
+.lives-counter span {
+    font-weight: bold;
+}
+
+
