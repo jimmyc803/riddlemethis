@@ -30,7 +30,7 @@ function normalizeAnswer(answer) {
 }
 
 // --- CHECK ANSWER LOGIC ---
-const correctAnswers = ["cloud"]; // Add more if needed
+const correctAnswers = ["fire"]; // Add more if needed
 
 function checkAnswer() {
     const userInput = document.getElementById("answer-input").value;
