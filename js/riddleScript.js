@@ -44,12 +44,15 @@ function checkAnswer() {
     if (isCorrect) {
         resultElement.textContent = "✅ Correct! Well done!";
         resultElement.style.color = "green";
+        showModal("🎉 Correct!", "You solved the riddle!");
+        document.getElementById("submit-btn").disabled = true;
     } else {
         resultElement.textContent = "❌ Incorrect. Try again!";
         resultElement.style.color = "red";
         wrongAnswer();
     }
 }
+
 
 // Function to handle losing a life
 function wrongAnswer() {
@@ -58,7 +61,7 @@ function wrongAnswer() {
         updateLives();
     }
     if (lives === 0) {
-        alert("Game Over! You've lost all your lives.");
+        showModal("😢 Game Over!", "You've lost all your lives.");
         document.getElementById("submit-btn").disabled = true; // Disable submit button
     }
 }
@@ -67,7 +70,7 @@ function wrongAnswer() {
 function updateLives() {
     const heart = "❤️";
     const empty = "🖤";
-    document.getElementById("lives").innerHTML = 
+    document.getElementById("lives").innerHTML =
         heart.repeat(lives) + empty.repeat(3 - lives);
 }
 
@@ -78,16 +81,42 @@ document.getElementById("answer-input").addEventListener("keydown", function (ev
     }
 });
 
+function showModal(title, message) {
+    const modal = document.getElementById("customModal");
+    const modalContent = document.getElementById("customModalContent");
+
+    modal.style.display = "flex";
+
+    // Reset animation
+    modalContent.style.animation = "none";
+    void modalContent.offsetWidth; // Force reflow
+    modalContent.style.animation = "scaleUp 0.3s ease-out forwards";
+
+    document.getElementById("modalTitle").textContent = title;
+    document.getElementById("modalMessage").textContent = message;
+}
+
+function closeModal() {
+    document.getElementById("customModal").style.display = "none";
+}
+
+
+
 // --- HINT BUTTON LOGIC ---
 function showHint() {
     const hint = document.getElementById('hint');
     const hintBtn = document.getElementById('hint-btn');
     const isVisible = hint.style.display === 'block';
 
-    // Toggle visibility of the hint and change button state
-    hint.style.display = isVisible ? 'none' : 'block';
-    hintBtn.classList.toggle('active', !isVisible); // Toggles the active class based on visibility
+    if (isVisible) {
+        hint.style.display = 'none';
+        hintBtn.classList.remove('active');
+    } else {
+        hint.style.display = 'block';
+        hintBtn.classList.add('active');
+    }
 }
+
 
 document.getElementById('hint-btn').addEventListener('click', showHint);
 
