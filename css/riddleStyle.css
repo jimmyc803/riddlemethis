@@ -203,15 +203,16 @@ button:hover {
     z-index: 1000;
   }
   
-  .modal-content {
-    background: white;
+ .modal-content {
+    background: var(--primary-color);  /* match theme background */
+    color: var(--text-color);          /* apply theme text color */
     padding: 2rem;
     border-radius: 12px;
     text-align: center;
     transform: scale(0.8);
     opacity: 0;
     animation: scaleUp 0.3s ease-out forwards;
-  }
+}
   
   @keyframes scaleUp {
     from {
