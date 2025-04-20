@@ -258,22 +258,17 @@ button:hover {
 
     /* Adjust lives display */
     #lives {
-        position: absolute; /* Use absolute positioning to move it out of the way */
+        position: relative; 
         top: 120px; /* Place it further down */
         left: 50%;
         transform: translateX(-50%);
         width: 90%; /* Make it take up less space */
+        padding: 8px 12px;
     }
 
     /* Stack everything vertically on small screens */
     #main-content {
         padding-top: 120px; /* Adjust to ensure no overlap with the top bar */
-    }
-
-    /* Reduce button sizes for better mobile fitting */
-    .top-right-buttons button {
-        height: 45px;
-        width: 45px;
     }
 }
 
