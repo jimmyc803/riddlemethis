@@ -48,7 +48,7 @@
             
             <!-- Streak counter -->
             <div id="streak" class="streak-box">
-                🔥 Streak: <span id="streak-count">0</span> days
+                🔥 Streak: <span id="streak-count">0</span> day(s)
             </div>
 
             <button id="hint-btn" title="Show Hint">
@@ -78,17 +78,15 @@
             </div>
 
             <div class="riddle-box">
-                <p id="riddle-text">The person who makes it, sells it. The person who buys it never uses it. The person who uses it never knows they're using it.
-                    <br>What is it?
-                </p>
+                <p id="riddle-text">Loading your riddle...</p>
 
                 <div id="hint" class="hint-box" style="display: none;">
-                    Hint: It’s something used only once, usually at the very end of life.
+                    Hint: Loading hint...
                 </div>
                 
             </div>
             <input type="text" id="answer-input" placeholder="Type your answer..." />
-            <button id="submit-btn" onclick="checkAnswer()">Submit</button>
+            <button id="submit-btn">Submit</button>
 
             <!-- Modal -->
             <div id="customModal" class="modal">

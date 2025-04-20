@@ -1,3 +1,17 @@
+const dailyRiddles = {
+    "2025-04-19": {
+        riddle: "The person who makes it, sells it. The person who buys it never uses it. The person who uses it never knows they're using it. What is it?",
+        answer: ["coffin"],
+        hint: "It’s something used only once, usually at the very end of life."
+    },
+    "2025-04-20": {
+        riddle: "What begins with an E, ends with an E, but only contains one letter?",
+        answer: ["envelope"],
+        hint: "It’s something you send or receive in the mail."
+    }
+};
+
+
 let lives = 3;
 let isGameOver = false;
 
@@ -34,6 +48,7 @@ function normalizeAnswer(answer) {
 // --- CHECK ANSWER LOGIC ---
 const correctAnswers = ["coffin"]; // Add more if needed
 
+// --- CHECK ANSWER LOGIC ---
 function checkAnswer() {
     if (isGameOver) return; // Prevent checking if game is over
 
@@ -158,9 +173,25 @@ document.getElementById('hint-btn').addEventListener('click', showHint);
 updateLives();
 
 (function initDailyCheck() {
-    const today = new Date().toISOString().split("T")[0];
+    const today = new Date(new Date().setHours(0, 0, 0, 0)).toISOString().split("T")[0];
     const savedDate = localStorage.getItem("riddleDone");
     const streak = parseInt(localStorage.getItem("streak")) || 0;
+
+    // Load today's riddle
+    const riddleData = dailyRiddles[today];
+    if (riddleData) {
+        document.getElementById("riddle-text").textContent = riddleData.riddle;
+        document.getElementById("hint").textContent = `Hint: ${riddleData.hint}`;
+        // Update correctAnswers to today's
+        correctAnswers.length = 0;
+        riddleData.answer.forEach(ans => correctAnswers.push(ans));
+    } else {
+        document.getElementById("riddle-text").textContent = "No riddle found for today. Come back tomorrow!";
+        document.getElementById("hint").style.display = "none";
+        document.getElementById("submit-btn").disabled = true;
+        document.getElementById("answer-input").disabled = true;
+        return;
+    }
 
     if (savedDate === today) {
         document.getElementById("submit-btn").disabled = true;
@@ -169,7 +200,6 @@ updateLives();
         document.getElementById("result").style.color = "green";
         isGameOver = true;
     } else {
-        // New day: allow new attempt
         document.getElementById("submit-btn").disabled = false;
         document.getElementById("answer-input").disabled = false;
         document.getElementById("answer-input").value = "";
@@ -181,3 +211,4 @@ updateLives();
 
     document.getElementById("streak").textContent = `🔥 Streak: ${streak} day(s)`;
 })();
+
