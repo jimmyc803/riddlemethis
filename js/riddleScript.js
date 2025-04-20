@@ -55,27 +55,27 @@ function checkAnswer() {
         document.getElementById("submit-btn").disabled = true;
         document.getElementById("answer-input").disabled = true;
         isGameOver = true;
-
+    
         const lastPlayed = localStorage.getItem("lastPlayed");
         let streak = parseInt(localStorage.getItem("streak")) || 0;
-
+    
         const yesterday = new Date();
         yesterday.setDate(yesterday.getDate() - 1);
         const formattedYesterday = yesterday.toISOString().split("T")[0];
-
+    
         if (lastPlayed === formattedYesterday) {
             streak++;
         } else {
             streak = 1;
         }
-
+    
         localStorage.setItem("streak", streak);
         localStorage.setItem("lastPlayed", today);
         localStorage.setItem("riddleDone", today);
-        localStorage.setItem("lives", 3);
-
+    
         document.getElementById("streak").textContent = `🔥 Streak: ${streak} day(s)`;
-    } else {
+    }
+     else {
         resultElement.textContent = "❌ Incorrect. Try again!";
         resultElement.style.color = "red";
         wrongAnswer();
