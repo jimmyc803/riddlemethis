@@ -191,6 +191,7 @@ function getLocalDateString() {
     // Reset lives only if it's a new day
     if (savedDate !== today) {
         lives = 3;
+        isGameOver = false;
         localStorage.setItem("lives", lives);
         console.log("Lives reset to 3 due to new day.");
     }
