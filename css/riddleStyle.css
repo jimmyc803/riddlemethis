@@ -259,7 +259,7 @@ button:hover {
     /* Adjust lives display */
     #lives {
         position: relative;  /* Allow it to stay in the flow */
-        top: 0;  /* Reset the top positioning */
+        top: -150px;  /* Reset the top positioning */
         margin-top: 10px; /* Add margin to give space below */
         left: 50%;
         transform: translateX(-50%);  /* Center horizontally */
