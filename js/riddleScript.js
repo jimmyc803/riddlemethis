@@ -32,7 +32,7 @@ function normalizeAnswer(answer) {
 }
 
 // --- CHECK ANSWER LOGIC ---
-const correctAnswers = ["coffin"]; // Add more if needed
+let correctAnswers = [];
 
 // --- CHECK ANSWER LOGIC ---
 function checkAnswer() {
@@ -220,16 +220,4 @@ function getLocalDateString() {
 })();
 
 
-
 document.getElementById("submit-btn").addEventListener("click", checkAnswer);
-
-function simulateYesterday() {
-    const yesterday = new Date();
-    yesterday.setDate(yesterday.getDate() - 1);
-    const formattedYesterday = yesterday.toISOString().split("T")[0];
-
-    localStorage.setItem("lastPlayed", formattedYesterday);
-    localStorage.removeItem("riddleDone");
-    alert("Simulated yesterday's play. Refresh to test!");
-}
-
