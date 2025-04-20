@@ -237,37 +237,51 @@ button:hover {
     }
   }
 
-  /* Mobile adjustments */
+/* Mobile adjustments */
 @media (max-width: 600px) {
-    /* Move the lives display */
+    /* Make sure the top-right buttons stay horizontal */
+    .top-right-buttons {
+        flex-direction: row; /* Keep them in a row */
+        justify-content: space-between; /* Space between the buttons */
+        gap: 12px; /* Ensure there's space between buttons */
+        right: 10px; /* Adjust position for small screens */
+        top: 20px; /* Keep it at the top */
+    }
+
+    /* Make the streak counter look good on mobile */
+    .streak-box {
+        font-size: 1rem;  /* Slightly smaller font for mobile */
+        margin-top: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    /* Adjust lives display */
     #lives {
-        position: absolute; /* Use absolute positioning to move it out of the way */
-        top: 120px; /* Place it further down */
+        position: relative; /* Set position to relative */
+        top: 70px;  /* Move it below the buttons */
         left: 50%;
         transform: translateX(-50%);
-        width: 90%; /* Make it take up less space */
+        width: 80%; /* Make the width more compact */
+        font-size: 1.2rem; /* Adjust font size for readability */
+        text-align: center;
+        padding: 8px 10px; /* Adjust padding */
+        background-color: var(--accent-color);
+        border-radius: var(--border-radius);
     }
 
-    /* Stack the top-right buttons (hint, streak, theme switch) vertically */
-    .top-right-buttons {
-        flex-direction: column; /* Stack them vertically */
-        gap: 10px; /* Adjust spacing between elements */
-        right: 10px; /* Adjust for smaller screen */
-        top: 30px; /* Move it slightly down */
+    /* Stack everything vertically on small screens */
+    #main-content {
+        padding-top: 120px; /* Adjust to ensure no overlap with the top bar */
     }
 
-    /* Streak counter adjustments */
-    .streak-box {
-        font-size: 1rem;  /* Smaller font size on mobile */
-        margin-top: 0;
-    }
-    
-    /* Optionally, reduce button sizes on mobile for better fit */
+    /* Reduce button sizes for better mobile fitting */
     .top-right-buttons button {
         height: 45px;
         width: 45px;
     }
 }
+
 
   
   
