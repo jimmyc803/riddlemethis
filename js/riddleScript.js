@@ -42,31 +42,39 @@ function checkAnswer() {
     const userAnswer = normalizeAnswer(userInput);
     const resultElement = document.getElementById("result");
 
+    // Save the user's answer in localStorage
+    localStorage.setItem("lastAnswer", userInput);
+
     if (userAnswer === "") return;
 
     const isCorrect = correctAnswers.some(ans => userAnswer === ans || userAnswer === ans + "s");
 
     // --- STREAK LOGIC (runs once per day, no matter if correct or not) ---
-    const today = getLocalDateString(); // local date string
+    const today = new Date().toISOString().split("T")[0];
     const alreadyAnsweredToday = localStorage.getItem("riddleDone") === today;
 
     if (!alreadyAnsweredToday) {
         const lastPlayed = localStorage.getItem("lastPlayed");
         let streak = parseInt(localStorage.getItem("streak")) || 0;
-    
-        const yesterday = new Date();
-        yesterday.setDate(yesterday.getDate() - 1);
-        const formattedYesterday = yesterday.toISOString().split("T")[0];
-    
-        if (lastPlayed === formattedYesterday) {
-            streak++;
+
+        if (lastPlayed) {
+            const yesterday = new Date();
+            yesterday.setDate(yesterday.getDate() - 1);
+            const formattedYesterday = yesterday.toISOString().split("T")[0];
+
+            if (lastPlayed === formattedYesterday) {
+                streak++;
+            } else {
+                streak = 1;
+            }
         } else {
             streak = 1;
         }
-    
+
         localStorage.setItem("streak", streak);
         localStorage.setItem("lastPlayed", today);
         localStorage.setItem("riddleDone", today);
+
         document.getElementById("streak").textContent = `🔥 Streak: ${streak} day(s)`;
     }
 
@@ -83,6 +91,7 @@ function checkAnswer() {
         wrongAnswer();
     }
 }
+
 
 // Function to handle losing a life
 function wrongAnswer() {
@@ -189,6 +198,10 @@ function getLocalDateString() {
                 document.getElementById("result").textContent = "✅ Already completed today!";
                 document.getElementById("result").style.color = "green";
                 isGameOver = true;
+
+                // Keep the last answer in the input field if it's already completed
+                const lastAnswer = localStorage.getItem("lastAnswer");
+                document.getElementById("answer-input").value = lastAnswer || "";
             } else {
                 document.getElementById("submit-btn").disabled = false;
                 document.getElementById("answer-input").disabled = false;
@@ -205,6 +218,7 @@ function getLocalDateString() {
             console.error("Error fetching riddle data:", error);
         });
 })();
+
 
 
 document.getElementById("submit-btn").addEventListener("click", checkAnswer);
