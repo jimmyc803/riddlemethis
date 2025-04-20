@@ -258,12 +258,20 @@ button:hover {
 
     /* Adjust lives display */
     #lives {
-        position: relative; 
-        top: 120px; /* Place it further down */
+        position: relative;  /* Allow it to move with the scroll */
+        top: 170px; /* Push it further down to avoid overlap with the riddle */
         left: 50%;
-        transform: translateX(-50%);
-        width: 90%; /* Make it take up less space */
-        padding: 8px 12px;
+        transform: translateX(-50%);  /* Center horizontally */
+        width: auto;  /* Use auto to shrink it to fit its content */
+        max-width: 200px;  /* Limit width to a more compact size */
+        font-size: 1.2rem;  /* Adjust font size for readability */
+        text-align: center;
+        padding: 8px 12px;  /* Reduced padding for a more compact look */
+        background-color: var(--accent-color);
+        border-radius: var(--border-radius);
+        box-shadow: var(--box-shadow);
+        z-index: 100;
+        margin-top: 10px;  /* Add margin to give space below */
     }
 
     /* Stack everything vertically on small screens */
