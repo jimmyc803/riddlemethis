@@ -239,48 +239,77 @@ button:hover {
 
 /* Mobile adjustments */
 @media (max-width: 600px) {
-    /* Make sure the top-right buttons stay horizontal */
+    /* Keep the top-right buttons (streak, hint, theme) aligned horizontally */
     .top-right-buttons {
-        flex-direction: row; /* Keep them in a row */
-        justify-content: space-between; /* Space between the buttons */
-        gap: 12px; /* Ensure there's space between buttons */
-        right: 10px; /* Adjust position for small screens */
-        top: 20px; /* Keep it at the top */
+        flex-direction: row;  /* Keep them in a row */
+        justify-content: space-between;  /* Space between buttons */
+        gap: 12px;  /* Ensure there's space between buttons */
+        right: 10px;  /* Adjust position for small screens */
+        top: 20px;  /* Keep it at the top */
     }
 
     /* Make the streak counter look good on mobile */
     .streak-box {
-        font-size: 1rem;  /* Slightly smaller font for mobile */
-        margin-top: 0;
+        font-size: 1.2rem;  /* Slightly larger font for mobile */
         display: flex;
         align-items: center;
+        gap: 8px; /* Add space between streak and icon */
     }
 
-    /* Adjust lives display */
+    /* Adjust hint and theme button icon size */
+    .top-right-buttons button {
+        height: 55px;
+        width: 55px;
+    }
+
+    .top-right-buttons svg {
+        fill: var(--text-color);
+        width: 30px;  /* Larger icon size */
+        height: 30px;  /* Larger icon size */
+    }
+
+    /* Adjust lives display position */
     #lives {
-        position: relative; /* Set position to relative */
-        top: 70px;  /* Move it below the buttons */
+        position: relative;  /* Set position to relative */
+        top: 80px;  /* Move below the buttons */
         left: 50%;
         transform: translateX(-50%);
-        width: 80%; /* Make the width more compact */
-        font-size: 1.2rem; /* Adjust font size for readability */
+        width: 80%;  /* Make the width more compact */
+        font-size: 1.2rem;  /* Adjust font size for readability */
         text-align: center;
-        padding: 8px 10px; /* Adjust padding */
+        padding: 10px 18px;  /* Adjust padding for better look */
         background-color: var(--accent-color);
         border-radius: var(--border-radius);
+        box-shadow: var(--box-shadow);
+        z-index: 100;
     }
 
-    /* Stack everything vertically on small screens */
-    #main-content {
-        padding-top: 120px; /* Adjust to ensure no overlap with the top bar */
+    /* Ensure the riddle content is not hidden behind the lives display */
+    .container {
+        padding-top: 120px;  /* Adjust to ensure no overlap with the top bar */
     }
 
-    /* Reduce button sizes for better mobile fitting */
+    /* Adjust button sizes for better mobile fitting */
     .top-right-buttons button {
         height: 45px;
         width: 45px;
     }
+
+    /* Ensure the input area is not blocked */
+    input {
+        width: 85%;
+        padding: 12px;
+        font-size: 16px;
+        border: none;
+        border-radius: var(--border-radius);
+        text-align: center;
+        margin-bottom: 15px;
+        background-color: var(--input-bg);
+        color: var(--input-text);
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
 }
+
 
 
   
