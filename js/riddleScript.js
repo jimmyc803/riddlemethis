@@ -97,6 +97,7 @@ function checkAnswer() {
 function wrongAnswer() {
     if (lives > 0) {
         lives--;
+        localStorage.setItem("lives", lives); // <-- save lives
         updateLives();
     }
     if (lives === 0) {
@@ -106,6 +107,7 @@ function wrongAnswer() {
         document.getElementById("answer-input").disabled = true;
     }
 }
+
 
 // Function to update lives display
 function updateLives() {
