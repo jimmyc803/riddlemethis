@@ -237,5 +237,37 @@ button:hover {
     }
   }
 
+  /* Mobile adjustments */
+@media (max-width: 600px) {
+    /* Move the lives display */
+    #lives {
+        position: absolute; /* Use absolute positioning to move it out of the way */
+        top: 120px; /* Place it further down */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%; /* Make it take up less space */
+    }
+
+    /* Stack the top-right buttons (hint, streak, theme switch) vertically */
+    .top-right-buttons {
+        flex-direction: column; /* Stack them vertically */
+        gap: 10px; /* Adjust spacing between elements */
+        right: 10px; /* Adjust for smaller screen */
+        top: 30px; /* Move it slightly down */
+    }
+
+    /* Streak counter adjustments */
+    .streak-box {
+        font-size: 1rem;  /* Smaller font size on mobile */
+        margin-top: 0;
+    }
+    
+    /* Optionally, reduce button sizes on mobile for better fit */
+    .top-right-buttons button {
+        height: 45px;
+        width: 45px;
+    }
+}
+
   
   
