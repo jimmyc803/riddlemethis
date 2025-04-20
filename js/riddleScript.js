@@ -45,16 +45,11 @@ function checkAnswer() {
 
     const isCorrect = correctAnswers.some(ans => userAnswer === ans || userAnswer === ans + "s");
 
-    if (isCorrect) {
-        resultElement.textContent = "✅ Correct! Well done!";
-        resultElement.style.color = "green";
-        showModal("🎉 Correct!", "You solved the riddle!");
-        document.getElementById("submit-btn").disabled = true;
-        document.getElementById("answer-input").disabled = true;
-        isGameOver = true;
+    // --- STREAK LOGIC (runs once per day, no matter if correct or not) ---
+    const today = new Date().toISOString().split("T")[0];
+    const alreadyAnsweredToday = localStorage.getItem("riddleDone") === today;
 
-        // --- STREAK LOGIC ---
-        const today = new Date().toISOString().split("T")[0];
+    if (!alreadyAnsweredToday) {
         const lastPlayed = localStorage.getItem("lastPlayed");
         let streak = parseInt(localStorage.getItem("streak")) || 0;
 
@@ -65,8 +60,8 @@ function checkAnswer() {
 
             if (lastPlayed === formattedYesterday) {
                 streak++;
-            } else if (lastPlayed !== today) {
-                streak = 1; // Reset if missed a day
+            } else {
+                streak = 1;
             }
         } else {
             streak = 1;
@@ -77,6 +72,15 @@ function checkAnswer() {
         localStorage.setItem("riddleDone", today);
 
         document.getElementById("streak").textContent = `🔥 Streak: ${streak} day(s)`;
+    }
+
+    if (isCorrect) {
+        resultElement.textContent = "✅ Correct! Well done!";
+        resultElement.style.color = "green";
+        showModal("🎉 Correct!", "You solved the riddle!");
+        document.getElementById("submit-btn").disabled = true;
+        document.getElementById("answer-input").disabled = true;
+        isGameOver = true;
     } else {
         resultElement.textContent = "❌ Incorrect. Try again!";
         resultElement.style.color = "red";
