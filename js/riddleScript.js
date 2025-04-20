@@ -1,5 +1,6 @@
 let lives = 3;
 let isGameOver = false;
+let savedLives = parseInt(localStorage.getItem("lives"));
 
 // --- DARK MODE TOGGLE ---
 let darkmode = localStorage.getItem('darkmode');
@@ -26,47 +27,44 @@ themeSwitch.addEventListener("click", () => {
 function normalizeAnswer(answer) {
     return answer
         .toLowerCase()
-        .replace(/[^\w\s]/g, "")                   // remove punctuation
-        .replace(/\b(the|a|an|some)\b/g, "")       // remove common fillers
+        .replace(/[^\w\s]/g, "")
+        .replace(/\b(the|a|an|some)\b/g, "")
         .trim();
 }
 
-// --- CHECK ANSWER LOGIC ---
 let correctAnswers = [];
 
 // --- CHECK ANSWER LOGIC ---
 function checkAnswer() {
-    if (isGameOver) return; // Prevent checking if game is over
+    if (isGameOver) return;
 
     const userInput = document.getElementById("answer-input").value;
     const userAnswer = normalizeAnswer(userInput);
     const resultElement = document.getElementById("result");
+    const today = new Date().toISOString().split("T")[0];
 
-    // Save the user's answer in localStorage
     localStorage.setItem("lastAnswer", userInput);
-
     if (userAnswer === "") return;
 
     const isCorrect = correctAnswers.some(ans => userAnswer === ans || userAnswer === ans + "s");
 
-    // --- STREAK LOGIC (runs once per day, no matter if correct or not) ---
-    const today = new Date().toISOString().split("T")[0];
-    const alreadyAnsweredToday = localStorage.getItem("riddleDone") === today;
+    if (isCorrect) {
+        resultElement.textContent = "✅ Correct! Well done!";
+        resultElement.style.color = "green";
+        showModal("🎉 Correct!", "You solved the riddle!");
+        document.getElementById("submit-btn").disabled = true;
+        document.getElementById("answer-input").disabled = true;
+        isGameOver = true;
 
-    if (!alreadyAnsweredToday) {
         const lastPlayed = localStorage.getItem("lastPlayed");
         let streak = parseInt(localStorage.getItem("streak")) || 0;
 
-        if (lastPlayed) {
-            const yesterday = new Date();
-            yesterday.setDate(yesterday.getDate() - 1);
-            const formattedYesterday = yesterday.toISOString().split("T")[0];
+        const yesterday = new Date();
+        yesterday.setDate(yesterday.getDate() - 1);
+        const formattedYesterday = yesterday.toISOString().split("T")[0];
 
-            if (lastPlayed === formattedYesterday) {
-                streak++;
-            } else {
-                streak = 1;
-            }
+        if (lastPlayed === formattedYesterday) {
+            streak++;
         } else {
             streak = 1;
         }
@@ -77,15 +75,6 @@ function checkAnswer() {
         localStorage.setItem("lives", 3);
 
         document.getElementById("streak").textContent = `🔥 Streak: ${streak} day(s)`;
-    }
-
-    if (isCorrect) {
-        resultElement.textContent = "✅ Correct! Well done!";
-        resultElement.style.color = "green";
-        showModal("🎉 Correct!", "You solved the riddle!");
-        document.getElementById("submit-btn").disabled = true;
-        document.getElementById("answer-input").disabled = true;
-        isGameOver = true;
     } else {
         resultElement.textContent = "❌ Incorrect. Try again!";
         resultElement.style.color = "red";
@@ -93,24 +82,26 @@ function checkAnswer() {
     }
 }
 
-
-// Function to handle losing a life
+// --- WRONG ANSWER ---
 function wrongAnswer() {
     if (lives > 0) {
         lives--;
-        localStorage.setItem("lives", lives); // <-- save lives
+        localStorage.setItem("lives", lives);
         updateLives();
     }
+
     if (lives === 0) {
         isGameOver = true;
         showModal("😢 Game Over!", "You've lost all your lives.");
         document.getElementById("submit-btn").disabled = true;
         document.getElementById("answer-input").disabled = true;
+
+        const today = new Date().toISOString().split("T")[0];
+        localStorage.setItem("riddleDone", today);
     }
 }
 
-
-// Function to update lives display
+// --- UPDATE LIVES DISPLAY ---
 function updateLives() {
     const heart = "❤️";
     const empty = "🖤";
@@ -118,23 +109,21 @@ function updateLives() {
         heart.repeat(lives) + empty.repeat(3 - lives);
 }
 
-// Handle pressing Enter
+// --- ENTER TO SUBMIT ---
 document.getElementById("answer-input").addEventListener("keydown", function (event) {
     if (event.key === "Enter" && !isGameOver) {
         checkAnswer();
     }
 });
 
-// --- MODAL FUNCTIONS ---
+// --- MODAL ---
 function showModal(title, message) {
     const modal = document.getElementById("customModal");
     const modalContent = document.getElementById("customModalContent");
 
     modal.style.display = "flex";
-
-    // Reset animation
     modalContent.style.animation = "none";
-    void modalContent.offsetWidth; // Force reflow
+    void modalContent.offsetWidth;
     modalContent.style.animation = "scaleUp 0.3s ease-out forwards";
 
     document.getElementById("modalTitle").textContent = title;
@@ -145,7 +134,7 @@ function closeModal() {
     document.getElementById("customModal").style.display = "none";
 }
 
-// --- HINT BUTTON LOGIC ---
+// --- HINT BUTTON ---
 function showHint() {
     const hint = document.getElementById('hint');
     const hintBtn = document.getElementById('hint-btn');
@@ -162,7 +151,7 @@ function showHint() {
 
 document.getElementById('hint-btn').addEventListener('click', showHint);
 
-// --- INITIALIZATION ON LOAD ---
+// --- INIT ---
 updateLives();
 
 function getLocalDateString() {
@@ -202,7 +191,6 @@ function getLocalDateString() {
                 document.getElementById("result").style.color = "green";
                 isGameOver = true;
 
-                // Keep the last answer in the input field if it's already completed
                 const lastAnswer = localStorage.getItem("lastAnswer");
                 document.getElementById("answer-input").value = lastAnswer || "";
             } else {
@@ -211,11 +199,10 @@ function getLocalDateString() {
                 document.getElementById("answer-input").value = "";
                 document.getElementById("result").textContent = "";
                 isGameOver = false;
-                // Use saved lives if available (and valid), otherwise reset to 3
-                lives = !isNaN(savedLives) && savedLives >= 0 ? savedLives : 3;
-                updateLives();
 
-                localStorage.setItem("lives", lives); // Save it in case it's newly set to 3
+                lives = !isNaN(savedLives) && savedLives >= 0 ? savedLives : 3;
+                localStorage.setItem("lives", lives);
+                updateLives();
             }
 
             document.getElementById("streak").textContent = `🔥 Streak: ${streak} day(s)`;
@@ -224,6 +211,5 @@ function getLocalDateString() {
             console.error("Error fetching riddle data:", error);
         });
 })();
-
 
 document.getElementById("submit-btn").addEventListener("click", checkAnswer);
