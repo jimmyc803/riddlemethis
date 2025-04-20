@@ -74,6 +74,7 @@ function checkAnswer() {
         localStorage.setItem("streak", streak);
         localStorage.setItem("lastPlayed", today);
         localStorage.setItem("riddleDone", today);
+        localStorage.setItem("lives", 3);
 
         document.getElementById("streak").textContent = `🔥 Streak: ${streak} day(s)`;
     }
@@ -210,8 +211,11 @@ function getLocalDateString() {
                 document.getElementById("answer-input").value = "";
                 document.getElementById("result").textContent = "";
                 isGameOver = false;
-                lives = 3;
+                // Use saved lives if available (and valid), otherwise reset to 3
+                lives = !isNaN(savedLives) && savedLives >= 0 ? savedLives : 3;
                 updateLives();
+
+                localStorage.setItem("lives", lives); // Save it in case it's newly set to 3
             }
 
             document.getElementById("streak").textContent = `🔥 Streak: ${streak} day(s)`;
