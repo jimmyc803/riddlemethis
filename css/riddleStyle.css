@@ -143,6 +143,7 @@ button:hover {
     top: 20px;
     right: 20px;
     display: flex;
+    align-items: center;  /* Align the items vertically centered */
     gap: 12px;
 }
 
@@ -165,6 +166,17 @@ button:hover {
 
 .top-right-buttons svg {
     fill: var(--text-color);
+}
+
+.streak-box {
+    font-size: 1.1rem;
+    color: #ff6600;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 5px;
+    color: var(--text-color); /* Ensure it follows the theme */
 }
 
 /* Dark mode theme toggle button */

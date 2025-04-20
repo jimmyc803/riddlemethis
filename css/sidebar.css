@@ -115,3 +115,6 @@
 .sidebar.open + .content {
     transform: translateX(250px);  /* Content stays in place, sidebar overlays */
 }
+
+
+

@@ -1,24 +1,26 @@
-let darkmode = localStorage.getItem('darkmode')
-const themeSwitch = document.getElementById('theme-switch')
+let lives = 3;
+let isGameOver = false;
+
+// --- DARK MODE TOGGLE ---
+let darkmode = localStorage.getItem('darkmode');
+const themeSwitch = document.getElementById('theme-switch');
 
 const enableDarkmode = () => {
-    document.body.classList.add('darkmode')
-    localStorage.setItem('darkmode', 'active')
-}
+    document.body.classList.add('darkmode');
+    localStorage.setItem('darkmode', 'active');
+};
 
 const disableDarkmode = () => {
-    document.body.classList.remove('darkmode')
-    localStorage.setItem('darkmode', 'null')
-}
+    document.body.classList.remove('darkmode');
+    localStorage.setItem('darkmode', 'null');
+};
 
-if(darkmode == 'active') enableDarkmode()
+if (darkmode === 'active') enableDarkmode();
 
 themeSwitch.addEventListener("click", () => {
-    darkmode = localStorage.getItem('darkmode')
-    darkmode != "active" ? enableDarkmode() : disableDarkmode()
-} )
-
-let lives = 3;
+    darkmode = localStorage.getItem('darkmode');
+    darkmode !== "active" ? enableDarkmode() : disableDarkmode();
+});
 
 // --- NORMALIZATION FUNCTION FOR ANSWERS ---
 function normalizeAnswer(answer) {
@@ -33,6 +35,8 @@ function normalizeAnswer(answer) {
 const correctAnswers = ["coffin"]; // Add more if needed
 
 function checkAnswer() {
+    if (isGameOver) return; // Prevent checking if game is over
+
     const userInput = document.getElementById("answer-input").value;
     const userAnswer = normalizeAnswer(userInput);
     const resultElement = document.getElementById("result");
@@ -46,13 +50,39 @@ function checkAnswer() {
         resultElement.style.color = "green";
         showModal("🎉 Correct!", "You solved the riddle!");
         document.getElementById("submit-btn").disabled = true;
+        document.getElementById("answer-input").disabled = true;
+        isGameOver = true;
+
+        // --- STREAK LOGIC ---
+        const today = new Date().toISOString().split("T")[0];
+        const lastPlayed = localStorage.getItem("lastPlayed");
+        let streak = parseInt(localStorage.getItem("streak")) || 0;
+
+        if (lastPlayed) {
+            const yesterday = new Date();
+            yesterday.setDate(yesterday.getDate() - 1);
+            const formattedYesterday = yesterday.toISOString().split("T")[0];
+
+            if (lastPlayed === formattedYesterday) {
+                streak++;
+            } else if (lastPlayed !== today) {
+                streak = 1; // Reset if missed a day
+            }
+        } else {
+            streak = 1;
+        }
+
+        localStorage.setItem("streak", streak);
+        localStorage.setItem("lastPlayed", today);
+        localStorage.setItem("riddleDone", today);
+
+        document.getElementById("streak").textContent = `🔥 Streak: ${streak} day(s)`;
     } else {
         resultElement.textContent = "❌ Incorrect. Try again!";
         resultElement.style.color = "red";
         wrongAnswer();
     }
 }
-
 
 // Function to handle losing a life
 function wrongAnswer() {
@@ -61,8 +91,10 @@ function wrongAnswer() {
         updateLives();
     }
     if (lives === 0) {
+        isGameOver = true;
         showModal("😢 Game Over!", "You've lost all your lives.");
-        document.getElementById("submit-btn").disabled = true; // Disable submit button
+        document.getElementById("submit-btn").disabled = true;
+        document.getElementById("answer-input").disabled = true;
     }
 }
 
@@ -76,11 +108,12 @@ function updateLives() {
 
 // Handle pressing Enter
 document.getElementById("answer-input").addEventListener("keydown", function (event) {
-    if (event.key === "Enter") {
+    if (event.key === "Enter" && !isGameOver) {
         checkAnswer();
     }
 });
 
+// --- MODAL FUNCTIONS ---
 function showModal(title, message) {
     const modal = document.getElementById("customModal");
     const modalContent = document.getElementById("customModalContent");
@@ -100,8 +133,6 @@ function closeModal() {
     document.getElementById("customModal").style.display = "none";
 }
 
-
-
 // --- HINT BUTTON LOGIC ---
 function showHint() {
     const hint = document.getElementById('hint');
@@ -117,8 +148,24 @@ function showHint() {
     }
 }
 
-
 document.getElementById('hint-btn').addEventListener('click', showHint);
 
-// Initialize lives display
+// --- INITIALIZATION ON LOAD ---
 updateLives();
+
+// Streak + Daily Progress Check
+(function initDailyCheck() {
+    const today = new Date().toISOString().split("T")[0];
+    const savedDate = localStorage.getItem("riddleDone");
+    const streak = parseInt(localStorage.getItem("streak")) || 0;
+
+    if (savedDate === today) {
+        document.getElementById("submit-btn").disabled = true;
+        document.getElementById("answer-input").disabled = true;
+        document.getElementById("result").textContent = "✅ Already completed today!";
+        document.getElementById("result").style.color = "green";
+        isGameOver = true;
+    }
+
+    document.getElementById("streak").textContent = `🔥 Streak: ${streak} day(s)`;
+})();
