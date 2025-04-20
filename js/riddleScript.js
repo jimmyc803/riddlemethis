@@ -1,4 +1,3 @@
-
 let lives = 3;
 let isGameOver = false;
 
@@ -207,4 +206,5 @@ updateLives();
         });
 })();
 
+document.getElementById("submit-btn").addEventListener("click", checkAnswer);
 
