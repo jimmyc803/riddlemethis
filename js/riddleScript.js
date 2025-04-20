@@ -47,31 +47,26 @@ function checkAnswer() {
     const isCorrect = correctAnswers.some(ans => userAnswer === ans || userAnswer === ans + "s");
 
     // --- STREAK LOGIC (runs once per day, no matter if correct or not) ---
-    const today = new Date().toISOString().split("T")[0];
+    const today = getLocalDateString(); // local date string
     const alreadyAnsweredToday = localStorage.getItem("riddleDone") === today;
 
     if (!alreadyAnsweredToday) {
         const lastPlayed = localStorage.getItem("lastPlayed");
         let streak = parseInt(localStorage.getItem("streak")) || 0;
-
-        if (lastPlayed) {
-            const yesterday = new Date();
-            yesterday.setDate(yesterday.getDate() - 1);
-            const formattedYesterday = yesterday.toISOString().split("T")[0];
-
-            if (lastPlayed === formattedYesterday) {
-                streak++;
-            } else {
-                streak = 1;
-            }
+    
+        const yesterday = new Date();
+        yesterday.setDate(yesterday.getDate() - 1);
+        const formattedYesterday = yesterday.toISOString().split("T")[0];
+    
+        if (lastPlayed === formattedYesterday) {
+            streak++;
         } else {
             streak = 1;
         }
-
+    
         localStorage.setItem("streak", streak);
         localStorage.setItem("lastPlayed", today);
         localStorage.setItem("riddleDone", today);
-
         document.getElementById("streak").textContent = `🔥 Streak: ${streak} day(s)`;
     }
 
@@ -213,4 +208,14 @@ function getLocalDateString() {
 
 
 document.getElementById("submit-btn").addEventListener("click", checkAnswer);
+
+function simulateYesterday() {
+    const yesterday = new Date();
+    yesterday.setDate(yesterday.getDate() - 1);
+    const formattedYesterday = yesterday.toISOString().split("T")[0];
+
+    localStorage.setItem("lastPlayed", formattedYesterday);
+    localStorage.removeItem("riddleDone");
+    alert("Simulated yesterday's play. Refresh to test!");
+}
 
