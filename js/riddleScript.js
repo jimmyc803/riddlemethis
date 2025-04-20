@@ -153,7 +153,6 @@ document.getElementById('hint-btn').addEventListener('click', showHint);
 // --- INITIALIZATION ON LOAD ---
 updateLives();
 
-// Streak + Daily Progress Check
 (function initDailyCheck() {
     const today = new Date().toISOString().split("T")[0];
     const savedDate = localStorage.getItem("riddleDone");
@@ -165,6 +164,15 @@ updateLives();
         document.getElementById("result").textContent = "✅ Already completed today!";
         document.getElementById("result").style.color = "green";
         isGameOver = true;
+    } else {
+        // New day: allow new attempt
+        document.getElementById("submit-btn").disabled = false;
+        document.getElementById("answer-input").disabled = false;
+        document.getElementById("answer-input").value = "";
+        document.getElementById("result").textContent = "";
+        isGameOver = false;
+        lives = 3;
+        updateLives();
     }
 
     document.getElementById("streak").textContent = `🔥 Streak: ${streak} day(s)`;
