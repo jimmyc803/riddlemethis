@@ -96,16 +96,21 @@ function updateStreak() {
         .toISOString()
         .split("T")[0];
 
+    // If user played yesterday, increase the streak; otherwise, reset streak to 1
     if (lastPlayed === formattedYesterday) {
         streak++;
     } else {
-        streak = 1;
+        streak = 1;  // Reset streak if not consecutive
     }
 
+    // Save streak and update last played date
     localStorage.setItem("streak", streak);
     localStorage.setItem("lastPlayed", today);
+
+    // Update the display
     document.getElementById("streak").textContent = `🔥 Streak: ${streak} day(s)`;
 }
+
 
 // --- Update Streak Display ---
 // Function to display the streak
