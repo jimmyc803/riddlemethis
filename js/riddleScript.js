@@ -159,7 +159,8 @@ document.getElementById('hint-btn').addEventListener('click', showHint);
 updateLives();
 
 (function initDailyCheck() {
-    const today = new Date(new Date().setHours(0, 0, 0, 0)).toISOString().split("T")[0];
+    const now = new Date();
+    const today = now.toISOString().split("T")[0];
     const savedDate = localStorage.getItem("riddleDone");
     const streak = parseInt(localStorage.getItem("streak")) || 0;
 
@@ -167,12 +168,11 @@ updateLives();
     fetch('riddles.json')  // Make sure the path to your JSON file is correct
         .then(response => response.json())
         .then(data => {
-            // Load today's riddle from the fetched data
             const riddleData = data[today];
+
             if (riddleData) {
                 document.getElementById("riddle-text").textContent = riddleData.riddle;
                 document.getElementById("hint").textContent = `Hint: ${riddleData.hint}`;
-                // Update correctAnswers to today's riddle answers
                 correctAnswers.length = 0;
                 riddleData.answer.forEach(ans => correctAnswers.push(ans));
             } else {
@@ -184,12 +184,14 @@ updateLives();
             }
 
             if (savedDate === today) {
+                // Already answered today
                 document.getElementById("submit-btn").disabled = true;
                 document.getElementById("answer-input").disabled = true;
                 document.getElementById("result").textContent = "✅ Already completed today!";
                 document.getElementById("result").style.color = "green";
                 isGameOver = true;
             } else {
+                // New day: reset everything
                 document.getElementById("submit-btn").disabled = false;
                 document.getElementById("answer-input").disabled = false;
                 document.getElementById("answer-input").value = "";
