@@ -158,14 +158,19 @@ document.getElementById('hint-btn').addEventListener('click', showHint);
 // --- INITIALIZATION ON LOAD ---
 updateLives();
 
-(function initDailyCheck() {
+function getLocalDateString() {
     const now = new Date();
-    const today = now.toISOString().split("T")[0];
+    const offset = now.getTimezoneOffset() * 60000;
+    const localDate = new Date(now.getTime() - offset);
+    return localDate.toISOString().split("T")[0];
+}
+
+(function initDailyCheck() {
+    const today = getLocalDateString();
     const savedDate = localStorage.getItem("riddleDone");
     const streak = parseInt(localStorage.getItem("streak")) || 0;
 
-    // Fetch the riddles data from the JSON file
-    fetch('riddles.json')  // Make sure the path to your JSON file is correct
+    fetch('riddles.json')
         .then(response => response.json())
         .then(data => {
             const riddleData = data[today];
@@ -184,14 +189,12 @@ updateLives();
             }
 
             if (savedDate === today) {
-                // Already answered today
                 document.getElementById("submit-btn").disabled = true;
                 document.getElementById("answer-input").disabled = true;
                 document.getElementById("result").textContent = "✅ Already completed today!";
                 document.getElementById("result").style.color = "green";
                 isGameOver = true;
             } else {
-                // New day: reset everything
                 document.getElementById("submit-btn").disabled = false;
                 document.getElementById("answer-input").disabled = false;
                 document.getElementById("answer-input").value = "";
@@ -207,6 +210,7 @@ updateLives();
             console.error("Error fetching riddle data:", error);
         });
 })();
+
 
 document.getElementById("submit-btn").addEventListener("click", checkAnswer);
 
