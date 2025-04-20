@@ -1,6 +1,5 @@
 let lives = 3;
 let isGameOver = false;
-let savedLives = parseInt(localStorage.getItem("lives"));
 
 // --- DARK MODE TOGGLE ---
 let darkmode = localStorage.getItem('darkmode');
@@ -65,13 +64,12 @@ function checkAnswer() {
     }
 }
 
-
 // --- WRONG ANSWER ---
 function wrongAnswer() {
     if (lives > 0) {
         lives--;
-        localStorage.setItem("lives", lives);
-        updateLives();
+        localStorage.setItem("lives", lives);  // Save lives after wrong answer
+        updateLives(); // Make sure to update the lives display
     }
 
     if (lives === 0) {
@@ -108,6 +106,20 @@ function updateStreak() {
     localStorage.setItem("lastPlayed", today);
     document.getElementById("streak").textContent = `🔥 Streak: ${streak} day(s)`;
 }
+
+// --- Update Streak Display ---
+// Function to display the streak
+function displayStreak() {
+    const streak = parseInt(localStorage.getItem("streak")) || 0;
+    document.getElementById("streak").textContent = `🔥 Streak: ${streak} day(s)`;
+}
+
+// Display streak on page load
+window.addEventListener('load', displayStreak);
+
+// Inside checkAnswer after updating streak
+const streak = parseInt(localStorage.getItem("streak")) || 0;
+document.getElementById("streak").textContent = `🔥 Streak: ${streak} day(s)`;
 
 
 // --- UPDATE LIVES DISPLAY ---
@@ -173,7 +185,16 @@ function getLocalDateString() {
 (function initDailyCheck() {
     const today = getLocalDateString();
     const savedDate = localStorage.getItem("riddleDone");
-    const streak = parseInt(localStorage.getItem("streak")) || 0;
+    let savedLives = parseInt(localStorage.getItem("lives"));
+    lives = !isNaN(savedLives) && savedLives >= 0 ? savedLives : 3;
+
+    // Reset lives only if it's a new day
+    if (savedDate !== today) {
+        lives = 3;
+        localStorage.setItem("lives", lives);
+        console.log("Lives reset to 3 due to new day.");
+    }
+    console.log("Lives after initDailyCheck:", lives);
 
     fetch('riddles.json')
         .then(response => response.json())
@@ -208,17 +229,14 @@ function getLocalDateString() {
                 document.getElementById("answer-input").value = "";
                 document.getElementById("result").textContent = "";
                 isGameOver = false;
-
-                lives = !isNaN(savedLives) && savedLives >= 0 ? savedLives : 3;
-                localStorage.setItem("lives", lives);
-                updateLives();
             }
 
-            document.getElementById("streak").textContent = `🔥 Streak: ${streak} day(s)`;
+            updateLives();
         })
         .catch(error => {
             console.error("Error fetching riddle data:", error);
         });
 })();
+
 
 document.getElementById("submit-btn").addEventListener("click", checkAnswer);
