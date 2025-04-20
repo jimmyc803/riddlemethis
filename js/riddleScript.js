@@ -1,16 +1,3 @@
-const dailyRiddles = {
-    "2025-04-19": {
-        riddle: "The person who makes it, sells it. The person who buys it never uses it. The person who uses it never knows they're using it. What is it?",
-        answer: ["coffin"],
-        hint: "It’s something used only once, usually at the very end of life."
-    },
-    "2025-04-20": {
-        riddle: "What begins with an E, ends with an E, but only contains one letter?",
-        answer: ["envelope"],
-        hint: "It’s something you send or receive in the mail."
-    }
-};
-
 
 let lives = 3;
 let isGameOver = false;
@@ -177,38 +164,47 @@ updateLives();
     const savedDate = localStorage.getItem("riddleDone");
     const streak = parseInt(localStorage.getItem("streak")) || 0;
 
-    // Load today's riddle
-    const riddleData = dailyRiddles[today];
-    if (riddleData) {
-        document.getElementById("riddle-text").textContent = riddleData.riddle;
-        document.getElementById("hint").textContent = `Hint: ${riddleData.hint}`;
-        // Update correctAnswers to today's
-        correctAnswers.length = 0;
-        riddleData.answer.forEach(ans => correctAnswers.push(ans));
-    } else {
-        document.getElementById("riddle-text").textContent = "No riddle found for today. Come back tomorrow!";
-        document.getElementById("hint").style.display = "none";
-        document.getElementById("submit-btn").disabled = true;
-        document.getElementById("answer-input").disabled = true;
-        return;
-    }
+    // Fetch the riddles data from the JSON file
+    fetch('riddles.json')  // Make sure the path to your JSON file is correct
+        .then(response => response.json())
+        .then(data => {
+            // Load today's riddle from the fetched data
+            const riddleData = data[today];
+            if (riddleData) {
+                document.getElementById("riddle-text").textContent = riddleData.riddle;
+                document.getElementById("hint").textContent = `Hint: ${riddleData.hint}`;
+                // Update correctAnswers to today's riddle answers
+                correctAnswers.length = 0;
+                riddleData.answer.forEach(ans => correctAnswers.push(ans));
+            } else {
+                document.getElementById("riddle-text").textContent = "No riddle found for today. Come back tomorrow!";
+                document.getElementById("hint").style.display = "none";
+                document.getElementById("submit-btn").disabled = true;
+                document.getElementById("answer-input").disabled = true;
+                return;
+            }
 
-    if (savedDate === today) {
-        document.getElementById("submit-btn").disabled = true;
-        document.getElementById("answer-input").disabled = true;
-        document.getElementById("result").textContent = "✅ Already completed today!";
-        document.getElementById("result").style.color = "green";
-        isGameOver = true;
-    } else {
-        document.getElementById("submit-btn").disabled = false;
-        document.getElementById("answer-input").disabled = false;
-        document.getElementById("answer-input").value = "";
-        document.getElementById("result").textContent = "";
-        isGameOver = false;
-        lives = 3;
-        updateLives();
-    }
+            if (savedDate === today) {
+                document.getElementById("submit-btn").disabled = true;
+                document.getElementById("answer-input").disabled = true;
+                document.getElementById("result").textContent = "✅ Already completed today!";
+                document.getElementById("result").style.color = "green";
+                isGameOver = true;
+            } else {
+                document.getElementById("submit-btn").disabled = false;
+                document.getElementById("answer-input").disabled = false;
+                document.getElementById("answer-input").value = "";
+                document.getElementById("result").textContent = "";
+                isGameOver = false;
+                lives = 3;
+                updateLives();
+            }
 
-    document.getElementById("streak").textContent = `🔥 Streak: ${streak} day(s)`;
+            document.getElementById("streak").textContent = `🔥 Streak: ${streak} day(s)`;
+        })
+        .catch(error => {
+            console.error("Error fetching riddle data:", error);
+        });
 })();
+
 
