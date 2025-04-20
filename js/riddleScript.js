@@ -41,7 +41,7 @@ function checkAnswer() {
     const userInput = document.getElementById("answer-input").value;
     const userAnswer = normalizeAnswer(userInput);
     const resultElement = document.getElementById("result");
-    const today = new Date().toISOString().split("T")[0];
+    const today = getLocalDateString(); // ← use local date
 
     localStorage.setItem("lastAnswer", userInput);
     if (userAnswer === "") return;
@@ -55,32 +55,16 @@ function checkAnswer() {
         document.getElementById("submit-btn").disabled = true;
         document.getElementById("answer-input").disabled = true;
         isGameOver = true;
-    
-        const lastPlayed = localStorage.getItem("lastPlayed");
-        let streak = parseInt(localStorage.getItem("streak")) || 0;
-    
-        const yesterday = new Date();
-        yesterday.setDate(yesterday.getDate() - 1);
-        const formattedYesterday = yesterday.toISOString().split("T")[0];
-    
-        if (lastPlayed === formattedYesterday) {
-            streak++;
-        } else {
-            streak = 1;
-        }
-    
-        localStorage.setItem("streak", streak);
-        localStorage.setItem("lastPlayed", today);
+
+        updateStreak();
         localStorage.setItem("riddleDone", today);
-    
-        document.getElementById("streak").textContent = `🔥 Streak: ${streak} day(s)`;
-    }
-     else {
+    } else {
         resultElement.textContent = "❌ Incorrect. Try again!";
         resultElement.style.color = "red";
         wrongAnswer();
     }
 }
+
 
 // --- WRONG ANSWER ---
 function wrongAnswer() {
@@ -96,10 +80,35 @@ function wrongAnswer() {
         document.getElementById("submit-btn").disabled = true;
         document.getElementById("answer-input").disabled = true;
 
-        const today = new Date().toISOString().split("T")[0];
+        const today = getLocalDateString(); // ← use local date
         localStorage.setItem("riddleDone", today);
+        updateStreak();
     }
 }
+
+
+function updateStreak() {
+    const today = getLocalDateString();
+    const lastPlayed = localStorage.getItem("lastPlayed");
+    let streak = parseInt(localStorage.getItem("streak")) || 0;
+
+    const yesterday = new Date();
+    yesterday.setDate(yesterday.getDate() - 1);
+    const formattedYesterday = new Date(yesterday.getTime() - yesterday.getTimezoneOffset() * 60000)
+        .toISOString()
+        .split("T")[0];
+
+    if (lastPlayed === formattedYesterday) {
+        streak++;
+    } else {
+        streak = 1;
+    }
+
+    localStorage.setItem("streak", streak);
+    localStorage.setItem("lastPlayed", today);
+    document.getElementById("streak").textContent = `🔥 Streak: ${streak} day(s)`;
+}
+
 
 // --- UPDATE LIVES DISPLAY ---
 function updateLives() {
