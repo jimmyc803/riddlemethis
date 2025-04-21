@@ -8,5 +8,10 @@
         "riddle": "What begins with an E, ends with an E, but only contains one letter?",
         "answer": ["envelope"],
         "hint": "It’s something you send or receive in the mail."
+    },
+    "2025-04-21": {
+        "riddle": "No voice have I, yet I can teach, No limbs, yet I can reach. I may be old, I may be new, But open me—I’ll speak to you. What am I?",
+        "answer": ["book"],
+        "hint": "You’ll often find me on a shelf. I don’t talk, but I’m full of words."
     }
 }
