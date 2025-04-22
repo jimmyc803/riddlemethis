@@ -13,5 +13,10 @@
         "riddle": "No voice have I, yet I can teach, No limbs, yet I can reach. I may be old, I may be new, But open me—I’ll speak to you. What am I?",
         "answer": ["book"],
         "hint": "You’ll often find me on a shelf. I don’t talk, but I’m full of words."
+    },
+    "2025-04-22": {
+        "riddle": "They come out at night without being called, and are lost in the day without being stolen. What are they?",
+        "answer": ["star"],
+        "hint": "They light up the night sky, but hide when the day begins."
     }
 }
