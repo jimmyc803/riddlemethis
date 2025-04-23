@@ -18,5 +18,10 @@
         "riddle": "They come out at night without being called, and are lost in the day without being stolen. What are they?",
         "answer": ["star"],
         "hint": "They light up the night sky, but hide when the day begins."
+    },
+    "2025-04-23": {
+        "riddle": "I have hands but no fingers, a face but no eyes. I keep moving but never walk. What am I?",
+        "answer": ["clock"],
+        "hint": "I’m always ticking, never still, helping you manage every hour."
     }
 }
