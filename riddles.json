@@ -23,5 +23,10 @@
         "riddle": "I have hands but no fingers, a face but no eyes. I keep moving but never walk. What am I?",
         "answer": ["clock"],
         "hint": "I’m always ticking, never still, helping you manage every hour."
+    },
+    "2025-04-24": {
+        "riddle": "I’m tall when I’m young, And I’m short when I’m old. I glow when I’m alive, But when I’m dead, I’m cold. What am I?",
+        "answer": ["candle"],
+        "hint": "You can use me to light up a room."
     }
 }
