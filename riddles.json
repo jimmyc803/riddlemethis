@@ -28,5 +28,10 @@
         "riddle": "I’m tall when I’m young, And I’m short when I’m old. I glow when I’m alive, But when I’m dead, I’m cold. What am I?",
         "answer": ["candle"],
         "hint": "You can use me to light up a room."
+    },
+    "2025-04-24": {
+        "riddle": "You enter a dark room that contains a match, kerosene lamp, candle, and fireplace. What should you light first?",
+        "answer": ["match"],
+        "hint": "You need to start a flame before using anything else."
     }
 }
