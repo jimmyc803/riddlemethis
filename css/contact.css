@@ -158,3 +158,21 @@ button:hover {
 .tiktok:hover {
     background-color: #25A9B7; /* Darker TikTok color on hover */
 }
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+    /* Adjust the contact form container width */
+    .contact-container {
+        max-width: 400px;
+    }
+
+    /* Adjust the button size */
+    button {
+        padding: 12px 16px;
+    }
+
+    /* Stack the social media buttons vertically on small screens */
+    .social-buttons {
+        flex-direction: column;
+    }
+}
