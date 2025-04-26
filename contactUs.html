@@ -8,8 +8,27 @@
   <link rel="icon" href="Assets/riddlio web icon.png" type="image/png">
   
   <link rel="stylesheet" href="./css/contact.css">
+  <link rel="stylesheet" href="./css/sidebar.css">
+
 </head>
 <body>
+
+      <!-- Sidebar -->
+  <div id="sidebar" class="sidebar">
+    <button id="closeSidebar" class="close-btn">X</button>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="dailyRiddle.html">Daily Riddle</a></li>
+      <li><a href="">Riddle Quiz (Coming Soon)</a></li>
+      <li><a href="contactUs.html">Contact Us</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div id="main-content">
+    <!-- Sidebar toggle button -->
+    <button id="openSidebar" class="open-btn">☰</button>
+
 
   <div class="contact-container">
     <h1>Contact Us</h1>
@@ -36,5 +55,7 @@
         </div>
   </div>
 
+      <!-- JS for Sidebar -->
+      <script src="./js/sidebar.js"></script>
 </body>
 </html>
