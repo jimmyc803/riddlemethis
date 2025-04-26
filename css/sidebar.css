@@ -98,23 +98,21 @@
     transition: opacity 0.1s ease;
 }
 
-.sidebar.close .open-btn {
+/* Sidebar state when closed */
+.sidebar.close + .open-btn {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
     transition: opacity 0s, visibility 0s;
 }
 
-/* Make the content unshuffled */
+/* Content Styling */
 .content {
     transition: transform 0.3s ease; /* Smooth transition for content movement */
-    transform: translateX(0);  /* Default: content is in place */
+    transform: none;  /* Default: no transformation applied */
 }
 
-/* When sidebar is open, content doesn't shift but sidebar is overlayed */
+/* When sidebar is open, content doesn’t shift, sidebar overlays */
 .sidebar.open + .content {
-    transform: translateX(250px);  /* Content stays in place, sidebar overlays */
+    transform: translateX(250px);  /* Sidebar moves, but the content stays in place */
 }
-
-
-
