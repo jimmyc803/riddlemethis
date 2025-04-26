@@ -85,3 +85,56 @@ body {
     to { opacity: 1; transform: translateY(0); }
   }
   
+/* Contact form container */
+.contact-container {
+    background-color: white; /* Keeps the form in a white box */
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Social buttons container (outside the form box) */
+  .social-buttons-container {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  /* Social media buttons layout */
+  .social-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  /* Styling for individual buttons */
+  .social-button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Instagram button style */
+  .instagram {
+    background-color: #E4405F; /* Instagram color */
+  }
+  
+  .instagram:hover {
+    background-color: #C13584; /* Darker Instagram color on hover */
+  }
+  
+  /* TikTok button style */
+  .tiktok {
+    background-color: #69C9D0; /* TikTok color */
+  }
+  
+  .tiktok:hover {
+    background-color: #25A9B7; /* Darker TikTok color on hover */
+  }
+  
+  
