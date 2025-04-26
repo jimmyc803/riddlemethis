@@ -33,5 +33,10 @@
         "riddle": "You enter a dark room that contains a match, kerosene lamp, candle, and fireplace. What should you light first?",
         "answer": ["match"],
         "hint": "You need to start a flame before using anything else."
+    },
+    "2025-04-25": {
+        "riddle": "I can be full of holes but still hold things together. What am I?",
+        "answer": ["sponge"],
+        "hint": "You might use me in the kitchen or bathroom to clean up a mess."
     }
 }
