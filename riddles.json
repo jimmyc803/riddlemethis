@@ -1,34 +1,4 @@
 {
-    "2025-04-19": {
-        "riddle": "The person who makes it, sells it. The person who buys it never uses it. The person who uses it never knows they're using it. What is it?",
-        "answer": ["coffin"],
-        "hint": "It’s something used only once, usually at the very end of life."
-    },
-    "2025-04-20": {
-        "riddle": "What begins with an E, ends with an E, but only contains one letter?",
-        "answer": ["envelope"],
-        "hint": "It’s something you send or receive in the mail."
-    },
-    "2025-04-21": {
-        "riddle": "No voice have I, yet I can teach, No limbs, yet I can reach. I may be old, I may be new, But open me—I’ll speak to you. What am I?",
-        "answer": ["book"],
-        "hint": "You’ll often find me on a shelf. I don’t talk, but I’m full of words."
-    },
-    "2025-04-22": {
-        "riddle": "They come out at night without being called, and are lost in the day without being stolen. What are they?",
-        "answer": ["star"],
-        "hint": "They light up the night sky, but hide when the day begins."
-    },
-    "2025-04-23": {
-        "riddle": "I have hands but no fingers, a face but no eyes. I keep moving but never walk. What am I?",
-        "answer": ["clock"],
-        "hint": "I’m always ticking, never still, helping you manage every hour."
-    },
-    "2025-04-24": {
-        "riddle": "I’m tall when I’m young, And I’m short when I’m old. I glow when I’m alive, But when I’m dead, I’m cold. What am I?",
-        "answer": ["candle"],
-        "hint": "You can use me to light up a room."
-    },
     "2025-04-25": {
         "riddle": "You enter a dark room that contains a match, kerosene lamp, candle, and fireplace. What should you light first?",
         "answer": ["match"],
@@ -38,5 +8,10 @@
         "riddle": "I can be full of holes but still hold things together. What am I?",
         "answer": ["sponge"],
         "hint": "You might use me in the kitchen or bathroom to clean up a mess."
+    },
+    "2025-04-27": {
+        "riddle": "I never move, yet I travel thousands of miles. I never speak, yet my message changes lives. What am I?",
+        "answer": ["letter"],
+        "hint": "I’m sealed and sent."
     }
 }
