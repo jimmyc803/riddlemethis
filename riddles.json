@@ -13,5 +13,10 @@
         "riddle": "I never move, yet I travel thousands of miles. I never speak, yet my message changes lives. What am I?",
         "answer": ["letter"],
         "hint": "I’m sealed and sent."
+    },
+    "2025-04-28": {
+        "riddle": "The more you look at me, the less you can see. I blind without light and hide the clearest paths. I can cover a forest or a single street. What am I?",
+        "answer": ["fog"],
+        "hint": "I blur your sight without darkness, wrapping roads and forests in a white, heavy veil."
     }
 }
