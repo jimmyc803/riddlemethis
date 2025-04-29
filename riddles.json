@@ -18,5 +18,10 @@
         "riddle": "The more you look at me, the less you can see. I blind without light and hide the clearest paths. I can cover a forest or a single street. What am I?",
         "answer": ["fog"],
         "hint": "I blur your sight without darkness, wrapping roads and forests in a white, heavy veil."
+    },
+    "2025-04-29": {
+        "riddle": "I stretch across the sky but never fall. You may chase me, but you’ll never reach me. Sometimes I end in gold, but you must believe to see it. What am I?",
+        "answer": ["rainbow"],
+        "hint": "I appear after the rain when sunlight and water meet in the sky"
     }
 }
