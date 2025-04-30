@@ -23,5 +23,10 @@
         "riddle": "I stretch across the sky but never fall. You may chase me, but you’ll never reach me. Sometimes I end in gold, but you must believe to see it. What am I?",
         "answer": ["rainbow"],
         "hint": "I appear after the rain when sunlight and water meet in the sky"
+    },
+    "2025-04-30": {
+        "riddle": "I am ancient yet always new. I rewrite myself each moment, but you can only read me looking backward. What am I?",
+        "answer": ["history"],
+        "hint": "I record the past but never predict the future."
     }
 }
