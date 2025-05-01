@@ -28,5 +28,10 @@
         "riddle": "I am ancient yet always new. I rewrite myself each moment, but you can only read me looking backward. What am I?",
         "answer": ["history"],
         "hint": "I record the past but never predict the future."
+    },
+    "2025-04-30": {
+        "riddle": "I spin without getting dizzy, point without a finger, and always know the way, no matter where I am. What am I?",
+        "answer": ["Compass"],
+        "hint": "I can be used for navigation."
     }
 }
