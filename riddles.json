@@ -31,7 +31,12 @@
     },
     "2025-05-01": {
         "riddle": "I spin without getting dizzy, point without a finger, and always know the way, no matter where I am. What am I?",
-        "answer": ["Compass"],
+        "answer": ["compass"],
         "hint": "I can be used for navigation."
+    },
+    "2025-05-02": {
+        "riddle": "I hold things together, but I’m not a hand. You’ll find me on papers, or in a desk stand. What am I?",
+        "answer": ["stapler"],
+        "hint": "I fasten papers with a metallic bite."
     }
 }
