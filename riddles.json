@@ -1,34 +1,4 @@
 {
-    "2025-04-25": {
-        "riddle": "You enter a dark room that contains a match, kerosene lamp, candle, and fireplace. What should you light first?",
-        "answer": ["match"],
-        "hint": "You need to start a flame before using anything else."
-    },
-    "2025-04-26": {
-        "riddle": "I can be full of holes but still hold things together. What am I?",
-        "answer": ["sponge"],
-        "hint": "You might use me in the kitchen or bathroom to clean up a mess."
-    },
-    "2025-04-27": {
-        "riddle": "I never move, yet I travel thousands of miles. I never speak, yet my message changes lives. What am I?",
-        "answer": ["letter"],
-        "hint": "I’m sealed and sent."
-    },
-    "2025-04-28": {
-        "riddle": "The more you look at me, the less you can see. I blind without light and hide the clearest paths. I can cover a forest or a single street. What am I?",
-        "answer": ["fog"],
-        "hint": "I blur your sight without darkness, wrapping roads and forests in a white, heavy veil."
-    },
-    "2025-04-29": {
-        "riddle": "I stretch across the sky but never fall. You may chase me, but you’ll never reach me. Sometimes I end in gold, but you must believe to see it. What am I?",
-        "answer": ["rainbow"],
-        "hint": "I appear after the rain when sunlight and water meet in the sky"
-    },
-    "2025-04-30": {
-        "riddle": "I am ancient yet always new. I rewrite myself each moment, but you can only read me looking backward. What am I?",
-        "answer": ["history"],
-        "hint": "I record the past but never predict the future."
-    },
     "2025-05-01": {
         "riddle": "I spin without getting dizzy, point without a finger, and always know the way, no matter where I am. What am I?",
         "answer": ["compass"],
@@ -38,5 +8,10 @@
         "riddle": "I hold things together, but I’m not a hand. You’ll find me on papers, or in a desk stand. What am I?",
         "answer": ["stapler"],
         "hint": "I fasten papers with a metallic bite."
+    },
+    "2025-05-02": {
+        "riddle": "I come in pieces, but I form a whole. Fit me together, and reach your goal. What am I?",
+        "answer": ["puzzle"],
+        "hint": "Many pieces, one picture — fit them just right."
     }
 }
