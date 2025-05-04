@@ -13,5 +13,10 @@
         "riddle": "I come in pieces, but I form a whole. Fit me together, and reach your goal. What am I?",
         "answer": ["puzzle"],
         "hint": "Many pieces, one picture — fit them just right."
+    },
+    "2025-05-04": {
+        "riddle": "I go up and down, but never move. You step on me, but I don’t bruise. What am I?",
+        "answer": ["stairs"],
+        "hint": "You use me to climb, but I stay in place."
     }
 }
