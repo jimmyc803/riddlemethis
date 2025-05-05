@@ -18,5 +18,10 @@
         "riddle": "I go up and down, but never move. You step on me, but I don’t bruise. What am I?",
         "answer": ["stairs"],
         "hint": "You use me to climb, but I stay in place."
+    },
+    "2025-05-05": {
+        "riddle": "I wave but have no hand, I crash but never land. I’m salty, deep, and never still— What am I?",
+        "answer": ["ocean"],
+        "hint": "I cover most of Earth, move in tides, and touch every shore."
     }
 }
