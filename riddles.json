@@ -23,5 +23,10 @@
         "riddle": "I wave but have no hand, I crash but never land. I’m salty, deep, and never still— What am I?",
         "answer": ["ocean"],
         "hint": "I cover most of Earth, move in tides, and touch every shore."
+    },
+    "2025-05-06": {
+        "riddle": "I’m black and white and read all over, Sometimes folded, sometimes spread like a cover. I bring you stories of world and town— What am I?",
+        "answer": ["newspaper"],
+        "hint": "I deliver daily headlines, but you can’t watch me—I’m meant to be read."
     }
 }
