@@ -1,32 +1,12 @@
 {
-    "2025-05-01": {
-        "riddle": "I spin without getting dizzy, point without a finger, and always know the way, no matter where I am. What am I?",
-        "answer": ["compass"],
-        "hint": "I can be used for navigation."
-    },
-    "2025-05-02": {
-        "riddle": "I hold things together, but I’m not a hand. You’ll find me on papers, or in a desk stand. What am I?",
-        "answer": ["stapler"],
-        "hint": "I fasten papers with a metallic bite."
-    },
-    "2025-05-03": {
-        "riddle": "I come in pieces, but I form a whole. Fit me together, and reach your goal. What am I?",
-        "answer": ["puzzle"],
-        "hint": "Many pieces, one picture — fit them just right."
-    },
-    "2025-05-04": {
-        "riddle": "I go up and down, but never move. You step on me, but I don’t bruise. What am I?",
-        "answer": ["stairs"],
-        "hint": "You use me to climb, but I stay in place."
-    },
-    "2025-05-05": {
-        "riddle": "I wave but have no hand, I crash but never land. I’m salty, deep, and never still— What am I?",
-        "answer": ["ocean"],
-        "hint": "I cover most of Earth, move in tides, and touch every shore."
-    },
     "2025-05-06": {
         "riddle": "I’m black and white and read all over, Sometimes folded, sometimes spread like a cover. I bring you stories of world and town— What am I?",
         "answer": ["newspaper"],
         "hint": "I deliver daily headlines, but you can’t watch me—I’m meant to be read."
+    },
+    "2025-05-07": {
+        "riddle": "I don't have eyes, but once I did see. Once I had throughts, but now I'm white and empty. What am I?",
+        "answer": ["skull"],
+        "hint": "I used to be part of something living,  but now I sit quietly in museums or science labs."
     }
 }
