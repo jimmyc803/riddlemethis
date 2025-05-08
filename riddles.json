@@ -8,5 +8,10 @@
         "riddle": "I don't have eyes, but once I did see. Once I had throughts, but now I'm white and empty. What am I?",
         "answer": ["skull"],
         "hint": "I used to be part of something living,  but now I sit quietly in museums or science labs."
+    },
+    "2025-05-08": {
+        "riddle": "I’m used to cut but I’m not a blade, With two sharp arms, I make the grade. I snip through paper, card, and string— What am I?",
+        "answer": ["scissors"],
+        "hint": "You use me to cut paper by opening and closing my two sharp parts."
     }
 }
