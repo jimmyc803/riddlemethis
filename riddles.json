@@ -18,5 +18,10 @@
         "riddle": "I turn and spin, I twist and glide, I open things that lock inside. One metal tooth, a simple plan— What am I?",
         "answer": ["key"],
         "hint": "I’m small, made of metal, and I unlock doors when turned."
+    },
+        "2025-05-10": {
+        "riddle": "I keep you dry when skies are gray, I open wide and save the day. I have a handle and a dome— What am I?",
+        "answer": ["umbrella"],
+        "hint": "I open when it rains to keep you dry, and I fold up when the sky is clear."
     }
 }
