@@ -23,5 +23,10 @@
         "riddle": "I keep you dry when skies are gray, I open wide and save the day. I have a handle and a dome— What am I?",
         "answer": ["umbrella"],
         "hint": "I open when it rains to keep you dry, and I fold up when the sky is clear."
+    },
+        "2025-05-11": {
+        "riddle": "I live in rings but I’m not a tree, You watch me float so peacefully. I orbit slow and shine with grace— What am I?",
+        "answer": ["saturn"],
+        "hint": "I’m a planet known for my rings, and I’m far from Earth in the solar system."
     }
 }
