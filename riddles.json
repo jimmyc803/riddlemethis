@@ -30,8 +30,8 @@
         "hint": "I’m a planet known for my rings, and I’m far from Earth in the solar system."
     },
         "2025-05-12": {
-        "riddle": "I’m brewed and poured, both hot and cold, In mugs or cups with hands that hold. I wake you up, I start your day— What am I?",
-        "answer": ["coffee"],
-        "hint": "It's a warm drink that many people rely on to wake up in the morning."
+        "riddle": "I break but never bleed or cry, I spill my guts when dropped nearby. I’m fragile, round, and found in kitchens— What am I?",
+        "answer": ["egg", "eggs"],
+        "hint": "I am often eaten for breakfast."
     }
 }
