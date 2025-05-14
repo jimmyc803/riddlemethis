@@ -1,5 +1,35 @@
 {
-        "2025-05-13": {
+    "2025-05-06": {
+        "riddle": "I’m black and white and read all over, Sometimes folded, sometimes spread like a cover. I bring you stories of world and town— What am I?",
+        "answer": ["newspaper"],
+        "hint": "I deliver daily headlines, but you can’t watch me—I’m meant to be read."
+    },
+    "2025-05-07": {
+        "riddle": "I don't have eyes, but once I did see. Once I had throughts, but now I'm white and empty. What am I?",
+        "answer": ["skull"],
+        "hint": "I used to be part of something living,  but now I sit quietly in museums or science labs."
+    },
+    "2025-05-08": {
+        "riddle": "I’m used to cut but I’m not a blade, With two sharp arms, I make the grade. I snip through paper, card, and string— What am I?",
+        "answer": ["scissors"],
+        "hint": "You use me to cut paper by opening and closing my two sharp parts."
+    },
+    "2025-05-09": {
+        "riddle": "I turn and spin, I twist and glide, I open things that lock inside. One metal tooth, a simple plan— What am I?",
+        "answer": ["key"],
+        "hint": "I’m small, made of metal, and I unlock doors when turned."
+    },
+        "2025-05-10": {
+        "riddle": "I keep you dry when skies are gray, I open wide and save the day. I have a handle and a dome— What am I?",
+        "answer": ["umbrella"],
+        "hint": "I open when it rains to keep you dry, and I fold up when the sky is clear."
+    },
+        "2025-05-11": {
+        "riddle": "I live in rings but I’m not a tree, You watch me float so peacefully. I orbit slow and shine with grace— What am I?",
+        "answer": ["saturn"],
+        "hint": "I’m a planet known for my rings, and I’m far from Earth in the solar system."
+    },
+        "2025-05-12": {
         "riddle": "I break but never bleed or cry, I spill my guts when dropped nearby. I’m fragile, round, and found in kitchens— What am I?",
         "answer": ["egg", "eggs"],
         "hint": "I am often eaten for breakfast."
