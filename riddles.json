@@ -8,5 +8,10 @@
         "riddle": "I stretch from wall to glowing wall, You flip a switch—I light it all. I brighten rooms and chase out night— What am I?",
         "answer": ["bulb", "bulbs", "lightbulb", "lightbulbs"],
         "hint": "This small object lights up when powered and is often found in lamps or ceilings."
+    },
+        "2025-05-15": {
+        "riddle": "What word is spelled incorrectly in every dictionary?",
+        "answer": ["incorrectly"],
+        "hint": "Sometimes, the answer is hiding right in front of you… literally."
     }
 }
