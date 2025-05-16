@@ -13,5 +13,10 @@
         "riddle": "What word is spelled incorrectly in every dictionary?",
         "answer": ["incorrectly"],
         "hint": "Sometimes, the answer is hiding right in front of you… literally."
+    },
+        "2025-05-16": {
+        "riddle": "I hang on walls to show the day, With boxes neat in full display. You flip my page when months go by— What am I?",
+        "answer": ["calender", "calenders"],
+        "hint": "You check me to see the date, plan events, or count down the days. I'm usually on a wall or a desk."
     }
 }
