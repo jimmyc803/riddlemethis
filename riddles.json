@@ -18,5 +18,10 @@
         "riddle": "I hang on walls to show the day, With boxes neat in full display. You flip my page when months go by— What am I?",
         "answer": ["calender", "calenders"],
         "hint": "You check me to see the date, plan events, or count down the days. I'm usually on a wall or a desk."
+    },
+        "2025-05-17": {
+        "riddle": "I snap a shot but have no hands, I see the world in distant lands. I save your smiles, freeze your face— What am I?",
+        "answer": ["camera"],
+        "hint": "It captures moments in still images or video, often used on vacations or at celebrations."
     }
 }
