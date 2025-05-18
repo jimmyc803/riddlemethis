@@ -23,5 +23,10 @@
         "riddle": "I snap a shot but have no hands, I see the world in distant lands. I save your smiles, freeze your face— What am I?",
         "answer": ["camera"],
         "hint": "It captures moments in still images or video, often used on vacations or at celebrations."
+    },
+        "2025-05-18": {
+        "riddle": "I go up high with strings attached, In sky-blue games, I’m often matched. The wind’s my friend, I love to glide— What am I?",
+        "answer": ["kite"],
+        "hint": "It dances in the wind, often flown by kids in open fields or on beaches, attached to a string held from below."
     }
 }
