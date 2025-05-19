@@ -28,5 +28,10 @@
         "riddle": "I go up high with strings attached, In sky-blue games, I’m often matched. The wind’s my friend, I love to glide— What am I?",
         "answer": ["kite"],
         "hint": "It dances in the wind, often flown by kids in open fields or on beaches, attached to a string held from below."
+    },
+        "2025-05-19": {
+        "riddle": "I wake you up with beeps or bells, I keep you on time, as stories tell. You set me nightly near your bed— What am I?",
+        "answer": ["alarm"],
+        "hint": "It sits by your bedside and makes noise when it’s time to get up—especially early in the morning."
     }
 }
