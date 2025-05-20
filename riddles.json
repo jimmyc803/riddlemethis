@@ -33,5 +33,10 @@
         "riddle": "I wake you up with beeps or bells, I keep you on time, as stories tell. You set me nightly near your bed— What am I?",
         "answer": ["alarm"],
         "hint": "It sits by your bedside and makes noise when it’s time to get up—especially early in the morning."
+    },
+        "2025-05-20": {
+        "riddle": "I go in your mouth but I’m not food, I help your teeth, I’m dentist-approved. With bristles bright, I scrub away— What am I?",
+        "answer": ["toothbrush"],
+        "hint": "It’s something you use every morning and night to keep your smile clean—just add toothpaste and scrub."
     }
 }
