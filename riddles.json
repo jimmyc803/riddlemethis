@@ -38,5 +38,10 @@
         "riddle": "I go in your mouth but I’m not food, I help your teeth, I’m dentist-approved. With bristles bright, I scrub away— What am I?",
         "answer": ["toothbrush"],
         "hint": "It’s something you use every morning and night to keep your smile clean—just add toothpaste and scrub."
+    },
+         "2025-05-21": {
+        "riddle": "I see galaxies without eyes. I peer through darkness, chart the skies. With glass and tube, I bring you near To distant worlds both far and clear.",
+        "answer": ["telescope"],
+        "hint": "I’m used by stargazers and scientists alike to explore what’s far beyond our reach."
     }
 }
