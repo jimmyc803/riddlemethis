@@ -43,5 +43,10 @@
         "riddle": "I see galaxies without eyes. I peer through darkness, chart the skies. With glass and tube, I bring you near To distant worlds both far and clear.",
         "answer": ["telescope"],
         "hint": "I’m used by stargazers and scientists alike to explore what’s far beyond our reach."
+    },
+        "2025-05-22": {
+        "riddle": "I hold your money, cards, and more, I fold up neatly, small in store. You carry me in purse or jean— What am I?",
+        "answer": ["wallet"],
+        "hint": "It’s small, folds in half, and keeps your cash and cards safe in your pocket or bag."
     }
 }
