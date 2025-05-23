@@ -48,5 +48,10 @@
         "riddle": "I hold your money, cards, and more, I fold up neatly, small in store. You carry me in purse or jean— What am I?",
         "answer": ["wallet"],
         "hint": "It’s small, folds in half, and keeps your cash and cards safe in your pocket or bag."
+    },
+        "2025-05-23": {
+        "riddle": "I live in schools but I don’t learn, I swim in tanks and twist and turn. With fins and scales, I dart with glee— What am I?",
+        "answer": ["fish", "fishes"],
+        "hint": "It swims in water, lives in tanks or oceans, and is often a pet with fins and gills."
     }
 }
