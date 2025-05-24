@@ -53,5 +53,10 @@
         "riddle": "I live in schools but I don’t learn, I swim in tanks and twist and turn. With fins and scales, I dart with glee— What am I?",
         "answer": ["fish", "fishes"],
         "hint": "It swims in water, lives in tanks or oceans, and is often a pet with fins and gills."
+    },
+        "2025-05-24": {
+        "riddle": "I carry books, I zip up tight, I’m on your shoulders day and night. To school and back, I always ride— What am I?",
+        "answer": ["backpack"],
+        "hint": "You wear it on your back, it holds your school supplies, and it usually has zippers and straps."
     }
 }
