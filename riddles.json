@@ -58,5 +58,10 @@
         "riddle": "I carry books, I zip up tight, I’m on your shoulders day and night. To school and back, I always ride— What am I?",
         "answer": ["backpack"],
         "hint": "You wear it on your back, it holds your school supplies, and it usually has zippers and straps."
+    },
+        "2025-05-25": {
+        "riddle": "I mark the page so you don’t lose track, I slip right in, then I come back. I’m flat and thin and love to read— What am I?",
+        "answer": ["bookmark"],
+        "hint": "I help you find your place in a book without folding any pages."
     }
 }
