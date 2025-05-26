@@ -63,5 +63,10 @@
         "riddle": "I mark the page so you don’t lose track, I slip right in, then I come back. I’m flat and thin and love to read— What am I?",
         "answer": ["bookmark"],
         "hint": "I help you find your place in a book without folding any pages."
+    },
+        "2025-05-26": {
+        "riddle": "I help you see both near and far, I’m worn by many, no matter who you are. Perched on noses, clear as day— What am I?",
+        "answer": ["glasses"],
+        "hint": "I rest on your nose and help your eyes focus, whether you’re reading a book or watching the horizon."
     }
 }
