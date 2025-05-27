@@ -68,5 +68,10 @@
         "riddle": "I help you see both near and far, I’m worn by many, no matter who you are. Perched on noses, clear as day— What am I?",
         "answer": ["glasses"],
         "hint": "I rest on your nose and help your eyes focus, whether you’re reading a book or watching the horizon."
+    },
+        "2025-05-27": {
+        "riddle": "I hold your food when you sit down, I’m round or square, in white or brown. You’ll find me set before you eat— What am I?",
+        "answer": ["plate", "plates"],
+        "hint": "I'm found on tables before meals, holding everything from soup to steak—flat, sturdy, and always ready to serve."
     }
 }
