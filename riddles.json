@@ -73,5 +73,10 @@
         "riddle": "I hold your food when you sit down, I’m round or square, in white or brown. You’ll find me set before you eat— What am I?",
         "answer": ["plate", "plates"],
         "hint": "I'm found on tables before meals, holding everything from soup to steak—flat, sturdy, and always ready to serve."
+    },
+        "2025-05-28": {
+        "riddle": "I hang around but never speak, I show your form when you peek. Move your hand—I do the same— What am I?",
+        "answer": ["mirror"],
+        "hint": "You’ll find me on the wall or door, I reflect but offer nothing more."
     }
 }
