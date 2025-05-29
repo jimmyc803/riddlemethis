@@ -78,5 +78,10 @@
         "riddle": "I hang around but never speak, I show your form when you peek. Move your hand—I do the same— What am I?",
         "answer": ["mirror"],
         "hint": "You’ll find me on the wall or door, I reflect but offer nothing more."
+    },
+        "2025-05-29": {
+        "riddle": "I stretch and stick, I bind with ease, Hold paper, gifts, or what you please. Though small and thin, I do a lot— What am I?",
+        "answer": ["tape"],
+        "hint": "I’m clear or shiny, and I love to hold things."
     }
 }
