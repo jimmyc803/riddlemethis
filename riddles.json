@@ -83,5 +83,10 @@
         "riddle": "I stretch and stick, I bind with ease, Hold paper, gifts, or what you please. Though small and thin, I do a lot— What am I?",
         "answer": ["tape"],
         "hint": "I’m clear or shiny, and I love to hold things."
+    },
+        "2025-05-30": {
+        "riddle": "I hide the sun, I bring the rain, I drift through skies again and again. I’m soft and white or dark and loud— What am I?",
+        "answer": ["cloud"],
+        "hint": "I float above, sometimes causing storms."
     }
 }
