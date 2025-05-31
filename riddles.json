@@ -93,5 +93,10 @@
         "riddle": "I fill a room without a sound, I take up space but weigh no pound. You breathe me in and out each day— What am I?",
         "answer": ["air"],
         "hint": "You can't see me, but I’m always near."
+    },
+        "2025-06-01": {
+        "riddle": "I fly but have no feathers or wings, I cross the sky with metal things. I carry people far and wide— What am I?",
+        "answer": ["plane","airplane"],
+        "hint": "I soar high and land on wheels."
     }
 }
