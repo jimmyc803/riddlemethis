@@ -88,5 +88,10 @@
         "riddle": "I hide the sun, I bring the rain, I drift through skies again and again. I’m soft and white or dark and loud— What am I?",
         "answer": ["cloud"],
         "hint": "I float above, sometimes causing storms."
+    },
+        "2025-05-31": {
+        "riddle": "I fill a room without a sound, I take up space but weigh no pound. You breathe me in and out each day— What am I?",
+        "answer": ["air"],
+        "hint": "You can't see me, but I’m always near."
     }
 }
