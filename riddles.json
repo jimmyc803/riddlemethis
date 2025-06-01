@@ -98,5 +98,10 @@
         "riddle": "I fly but have no feathers or wings, I cross the sky with metal things. I carry people far and wide— What am I?",
         "answer": ["plane","airplane"],
         "hint": "I soar high and land on wheels."
+    },
+        "2025-06-01": {
+        "riddle": "I keep you dry, I keep you warm, I wrap you up in comfort form. I lie on beds or couch with you— What am I?",
+        "answer": ["blanket","sheets","bedsheets"],
+        "hint": "I’m soft, cozy, and make naps better."
     }
 }
