@@ -103,5 +103,10 @@
         "riddle": "I keep you dry, I keep you warm, I wrap you up in comfort form. I lie on beds or couch with you— What am I?",
         "answer": ["blanket","sheets","bedsheets"],
         "hint": "I’m soft, cozy, and make naps better."
+    },
+        "2025-06-03": {
+        "riddle": "I glow at night but I’m not the moon, I chase away the dark too soon. I rest on desks or by your bed— What am I?",
+        "answer": ["lamp", "desklamp", "desk lamp"],
+        "hint": "I shine only when you want me to."
     }
 }
