@@ -108,5 +108,10 @@
         "riddle": "I glow at night but I’m not the moon, I chase away the dark too soon. I rest on desks or by your bed— What am I?",
         "answer": ["lamp", "desklamp", "desk lamp"],
         "hint": "I shine only when you want me to."
+    },
+        "2025-06-04": {
+        "riddle": "I hold the floor but I’m not glued, You wipe your shoes, that’s what I do. I’m found inside, just by the door— What am I?",
+        "answer": ["mat", "floormat"],
+        "hint": "Step on me, I don’t mind."
     }
 }
