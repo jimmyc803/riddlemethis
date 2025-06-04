@@ -1,104 +1,4 @@
 {
-        "2025-05-13": {
-        "riddle": "I break but never bleed or cry, I spill my guts when dropped nearby. I’m fragile, round, and found in kitchens— What am I?",
-        "answer": ["egg", "eggs"],
-        "hint": "I am often eaten for breakfast."
-    },
-        "2025-05-14": {
-        "riddle": "I stretch from wall to glowing wall, You flip a switch—I light it all. I brighten rooms and chase out night— What am I?",
-        "answer": ["bulb", "bulbs", "lightbulb", "lightbulbs"],
-        "hint": "This small object lights up when powered and is often found in lamps or ceilings."
-    },
-        "2025-05-15": {
-        "riddle": "What word is spelled incorrectly in every dictionary?",
-        "answer": ["incorrectly"],
-        "hint": "Sometimes, the answer is hiding right in front of you… literally."
-    },
-        "2025-05-16": {
-        "riddle": "I hang on walls to show the day, With boxes neat in full display. You flip my page when months go by— What am I?",
-        "answer": ["calender", "calenders"],
-        "hint": "You check me to see the date, plan events, or count down the days. I'm usually on a wall or a desk."
-    },
-        "2025-05-17": {
-        "riddle": "I snap a shot but have no hands, I see the world in distant lands. I save your smiles, freeze your face— What am I?",
-        "answer": ["camera"],
-        "hint": "It captures moments in still images or video, often used on vacations or at celebrations."
-    },
-        "2025-05-18": {
-        "riddle": "I go up high with strings attached, In sky-blue games, I’m often matched. The wind’s my friend, I love to glide— What am I?",
-        "answer": ["kite"],
-        "hint": "It dances in the wind, often flown by kids in open fields or on beaches, attached to a string held from below."
-    },
-        "2025-05-19": {
-        "riddle": "I wake you up with beeps or bells, I keep you on time, as stories tell. You set me nightly near your bed— What am I?",
-        "answer": ["alarm"],
-        "hint": "It sits by your bedside and makes noise when it’s time to get up—especially early in the morning."
-    },
-        "2025-05-20": {
-        "riddle": "I go in your mouth but I’m not food, I help your teeth, I’m dentist-approved. With bristles bright, I scrub away— What am I?",
-        "answer": ["toothbrush"],
-        "hint": "It’s something you use every morning and night to keep your smile clean—just add toothpaste and scrub."
-    },
-         "2025-05-21": {
-        "riddle": "I see galaxies without eyes. I peer through darkness, chart the skies. With glass and tube, I bring you near To distant worlds both far and clear.",
-        "answer": ["telescope"],
-        "hint": "I’m used by stargazers and scientists alike to explore what’s far beyond our reach."
-    },
-        "2025-05-22": {
-        "riddle": "I hold your money, cards, and more, I fold up neatly, small in store. You carry me in purse or jean— What am I?",
-        "answer": ["wallet"],
-        "hint": "It’s small, folds in half, and keeps your cash and cards safe in your pocket or bag."
-    },
-        "2025-05-23": {
-        "riddle": "I live in schools but I don’t learn, I swim in tanks and twist and turn. With fins and scales, I dart with glee— What am I?",
-        "answer": ["fish", "fishes"],
-        "hint": "It swims in water, lives in tanks or oceans, and is often a pet with fins and gills."
-    },
-        "2025-05-24": {
-        "riddle": "I carry books, I zip up tight, I’m on your shoulders day and night. To school and back, I always ride— What am I?",
-        "answer": ["backpack"],
-        "hint": "You wear it on your back, it holds your school supplies, and it usually has zippers and straps."
-    },
-        "2025-05-25": {
-        "riddle": "I mark the page so you don’t lose track, I slip right in, then I come back. I’m flat and thin and love to read— What am I?",
-        "answer": ["bookmark"],
-        "hint": "I help you find your place in a book without folding any pages."
-    },
-        "2025-05-26": {
-        "riddle": "I help you see both near and far, I’m worn by many, no matter who you are. Perched on noses, clear as day— What am I?",
-        "answer": ["glasses"],
-        "hint": "I rest on your nose and help your eyes focus, whether you’re reading a book or watching the horizon."
-    },
-        "2025-05-27": {
-        "riddle": "I hold your food when you sit down, I’m round or square, in white or brown. You’ll find me set before you eat— What am I?",
-        "answer": ["plate", "plates"],
-        "hint": "I'm found on tables before meals, holding everything from soup to steak—flat, sturdy, and always ready to serve."
-    },
-        "2025-05-28": {
-        "riddle": "I hang around but never speak, I show your form when you peek. Move your hand—I do the same— What am I?",
-        "answer": ["mirror"],
-        "hint": "You’ll find me on the wall or door, I reflect but offer nothing more."
-    },
-        "2025-05-29": {
-        "riddle": "I stretch and stick, I bind with ease, Hold paper, gifts, or what you please. Though small and thin, I do a lot— What am I?",
-        "answer": ["tape"],
-        "hint": "I’m clear or shiny, and I love to hold things."
-    },
-        "2025-05-30": {
-        "riddle": "I hide the sun, I bring the rain, I drift through skies again and again. I’m soft and white or dark and loud— What am I?",
-        "answer": ["cloud"],
-        "hint": "I float above, sometimes causing storms."
-    },
-        "2025-05-31": {
-        "riddle": "I fill a room without a sound, I take up space but weigh no pound. You breathe me in and out each day— What am I?",
-        "answer": ["air"],
-        "hint": "You can't see me, but I’m always near."
-    },
-        "2025-06-01": {
-        "riddle": "I fly but have no feathers or wings, I cross the sky with metal things. I carry people far and wide— What am I?",
-        "answer": ["plane","airplane"],
-        "hint": "I soar high and land on wheels."
-    },
         "2025-06-02": {
         "riddle": "I keep you dry, I keep you warm, I wrap you up in comfort form. I lie on beds or couch with you— What am I?",
         "answer": ["blanket","sheets","bedsheets"],
@@ -113,5 +13,10 @@
         "riddle": "I hold the floor but I’m not glued, You wipe your shoes, that’s what I do. I’m found inside, just by the door— What am I?",
         "answer": ["mat", "floormat"],
         "hint": "Step on me, I don’t mind."
+    },
+        "2025-06-05": {
+        "riddle": "I take you up, I bring you down, I move with ease without a sound. You’ll see me inside every floor— What am I?",
+        "answer": ["elevator"],
+        "hint": "I lift without legs and open with doors."
     }
 }
