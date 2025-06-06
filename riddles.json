@@ -18,5 +18,10 @@
         "riddle": "I take you up, I bring you down, I move with ease without a sound. You’ll see me inside every floor— What am I?",
         "answer": ["elevator"],
         "hint": "I lift without legs and open with doors."
+    },
+        "2025-06-06": {
+        "riddle": "I come in sticks, I come in wax, I draw on walls or paper packs. With colors bright, I’m used in school— What am I?",
+        "answer": ["crayon"],
+        "hint": "I color your world, one stroke at a time."
     }
 }
