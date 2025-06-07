@@ -23,5 +23,10 @@
         "riddle": "I come in sticks, I come in wax, I draw on walls or paper packs. With colors bright, I’m used in school— What am I?",
         "answer": ["crayon"],
         "hint": "I color your world, one stroke at a time."
+    },
+        "2025-06-07": {
+        "riddle": "I flash in storms, I crack the sky, I strike the ground but never cry. I come with thunder, loud and bright— What am I?",
+        "answer": ["lightning"],
+        "hint": "I’m a spark from the sky."
     }
 }
