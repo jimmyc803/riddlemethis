@@ -1,6 +1,0 @@
-[functions]
-  directory = "netlify/functions"
-
-[[functions]]
-  name = "generateRiddle"
-  schedule = "0 6 * * *"
