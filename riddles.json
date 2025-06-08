@@ -33,5 +33,10 @@
         "riddle": "I flash in red, I guard the street, I help the cars and people meet. With green and yellow, too, I show— What am I?",
         "answer": ["stoplight"],
         "hint": "I decide when you can move."
+    },
+        "2025-06-09": {
+        "riddle": "I fill with air but cannot breathe, You play with me, then I may leave. I float around and pop with glee— What am I?",
+        "answer": ["balloon"],
+        "hint": "I rise at parties but don’t last long."
     }
 }
