@@ -3,4 +3,4 @@
 
 [[functions]]
   name = "generateRiddle"
-  schedule = "0 6 * * *"  # runs every day at 6AM UTC
+  schedule = "0 6 * * *"
