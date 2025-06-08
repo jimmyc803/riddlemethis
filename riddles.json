@@ -28,5 +28,10 @@
         "riddle": "I flash in storms, I crack the sky, I strike the ground but never cry. I come with thunder, loud and bright— What am I?",
         "answer": ["lightning"],
         "hint": "I’m a spark from the sky."
+    },
+        "2025-06-08": {
+        "riddle": "I flash in red, I guard the street, I help the cars and people meet. With green and yellow, too, I show— What am I?",
+        "answer": ["stoplight"],
+        "hint": "I decide when you can move."
     }
 }
