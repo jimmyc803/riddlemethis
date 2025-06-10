@@ -1,42 +1,42 @@
 {
-        "2025-06-02": {
-        "riddle": "I keep you dry, I keep you warm, I wrap you up in comfort form. I lie on beds or couch with you— What am I?",
-        "answer": ["blanket","sheets","bedsheets"],
-        "hint": "I’m soft, cozy, and make naps better."
+    "2025-06-09": {
+    "riddle": "I fill with air but cannot breathe, You play with me, then I may leave. I float around and pop with glee— What am I?",
+    "answer": ["balloon"],
+    "hint": "I rise at parties but don’t last long."
+    }, 
+    "2025-06-10": {
+        "riddle": "I hide in walls, yet carry sound, Through cords and wires I’m often found. Pick me up to hear a friend— What am I?",
+        "answer": ["telephone"],
+        "hint": "I ring before you speak."
     },
-        "2025-06-03": {
-        "riddle": "I glow at night but I’m not the moon, I chase away the dark too soon. I rest on desks or by your bed— What am I?",
-        "answer": ["lamp", "desklamp", "desk lamp"],
-        "hint": "I shine only when you want me to."
+    "2025-06-11": {
+        "riddle": "I’m hot and round and baked with care, You’ll slice me up and often share. With cheese on top, I’m quite a treat— What am I?",
+        "answer": ["pizza"],
+        "hint": "I’m often delivered in a box."
     },
-        "2025-06-04": {
-        "riddle": "I hold the floor but I’m not glued, You wipe your shoes, that’s what I do. I’m found inside, just by the door— What am I?",
-        "answer": ["mat", "floormat"],
-        "hint": "Step on me, I don’t mind."
+    "2025-06-12": {
+        "riddle": "I’m always hungry, must always be fed, The finger I touch will soon turn red. Give me fuel, I’ll grow higher and higher— What am I?",
+        "answer": ["fire"],
+        "hint": "I warm but can destroy."
     },
-        "2025-06-05": {
-        "riddle": "I take you up, I bring you down, I move with ease without a sound. You’ll see me inside every floor— What am I?",
-        "answer": ["elevator"],
-        "hint": "I lift without legs and open with doors."
+    "2025-06-13": {
+        "riddle": "I twist and turn but never break, You pull me close for comfort’s sake. Around your neck or tucked away— What am I?",
+        "answer": ["scarf"],
+        "hint": "I keep you warm in winter."
     },
-        "2025-06-06": {
-        "riddle": "I come in sticks, I come in wax, I draw on walls or paper packs. With colors bright, I’m used in school— What am I?",
-        "answer": ["crayon"],
-        "hint": "I color your world, one stroke at a time."
+    "2025-06-14": {
+        "riddle": "I glide across ice, sharp and sleek, I help you dance with every tweak. I have no wheels, but I can race— What am I?",
+        "answer": ["skate"],
+        "hint": "I’m used in winter sports."
     },
-        "2025-06-07": {
-        "riddle": "I flash in storms, I crack the sky, I strike the ground but never cry. I come with thunder, loud and bright— What am I?",
-        "answer": ["lightning"],
-        "hint": "I’m a spark from the sky."
+    "2025-06-15": {
+        "riddle": "I’m filled with ink, I help you write, I sign your name both day and night. I’m clicked or capped to keep me neat— What am I?",
+        "answer": ["pen"],
+        "hint": "I live on desks and in pockets."
     },
-        "2025-06-08": {
-        "riddle": "I flash in red, I guard the street, I help the cars and people meet. With green and yellow, too, I show— What am I?",
-        "answer": ["stoplight"],
-        "hint": "I decide when you can move."
-    },
-        "2025-06-09": {
-        "riddle": "I fill with air but cannot breathe, You play with me, then I may leave. I float around and pop with glee— What am I?",
-        "answer": ["balloon"],
-        "hint": "I rise at parties but don’t last long."
+    "2025-06-16": {
+        "riddle": "I open wide but have no lips, I carry sharp or rounded tips. You’ll find me in kitchens or toolkits too— What am I?",
+        "answer": ["pliers"],
+        "hint": "I’m a tool that grips."
     }
 }
