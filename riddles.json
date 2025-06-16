@@ -1,34 +1,4 @@
 {
-    "2025-06-09": {
-    "riddle": "I fill with air but cannot breathe, You play with me, then I may leave. I float around and pop with glee— What am I?",
-    "answer": ["balloon"],
-    "hint": "I rise at parties but don’t last long."
-    }, 
-    "2025-06-10": {
-        "riddle": "I hide in walls, yet carry sound, Through cords and wires I’m often found. Pick me up to hear a friend— What am I?",
-        "answer": ["telephone"],
-        "hint": "I ring before you speak."
-    },
-    "2025-06-11": {
-        "riddle": "I’m hot and round and baked with care, You’ll slice me up and often share. With cheese on top, I’m quite a treat— What am I?",
-        "answer": ["pizza"],
-        "hint": "I’m often delivered in a box."
-    },
-    "2025-06-12": {
-        "riddle": "I’m always hungry, must always be fed, The finger I touch will soon turn red. Give me fuel, I’ll grow higher and higher— What am I?",
-        "answer": ["fire"],
-        "hint": "I warm but can destroy."
-    },
-    "2025-06-13": {
-        "riddle": "I twist and turn but never break, You pull me close for comfort’s sake. Around your neck or tucked away— What am I?",
-        "answer": ["scarf"],
-        "hint": "I keep you warm in winter."
-    },
-    "2025-06-14": {
-        "riddle": "I glide across ice, sharp and sleek, I help you dance with every tweak. I have no wheels, but I can race— What am I?",
-        "answer": ["skate"],
-        "hint": "I’m used in winter sports."
-    },
     "2025-06-15": {
         "riddle": "I’m filled with ink, I help you write, I sign your name both day and night. I’m clicked or capped to keep me neat— What am I?",
         "answer": ["pen"],
@@ -38,5 +8,40 @@
         "riddle": "I open wide but have no lips, I carry sharp or rounded tips. You’ll find me in kitchens or toolkits too— What am I?",
         "answer": ["pliers"],
         "hint": "I’m a tool that grips."
+    },
+    "2025-06-17": {
+        "riddle": "I climb but have no feet, I hang on walls, both plain and neat. Numbers mark my steady race— What am I?",
+        "answer": ["clock"],
+        "hint": "I help you keep track of time."
+    },
+    "2025-06-18": {
+        "riddle": "I’m full of holes but hold things tight, I catch your dreams throughout the night. Hung on walls with beads and thread— What am I?",
+        "answer": ["dreamcatcher"],
+        "hint": "I’m said to trap bad dreams."
+    },
+    "2025-06-19": {
+        "riddle": "I work with ink, but I’m not a pen, You roll me on and off again. I stamp out letters crisp and clean— What am I?",
+        "answer": ["typewriter"],
+        "hint": "I used to write before computers."
+    },
+    "2025-06-20": {
+        "riddle": "I’m made of glass, I bend the light, I help you see both far and right. I sit on noses, light as air— What am I?",
+        "answer": ["glasses"],
+        "hint": "I’m worn to help you read."
+    },
+    "2025-06-21": {
+        "riddle": "I move around on rails or tracks, I carry people forth and back. I’m long and loud with whistles clear— What am I?",
+        "answer": ["train"],
+        "hint": "I pass through stations every day."
+    },
+    "2025-06-22": {
+        "riddle": "I’m sharp and tiny, used in thread, I have an eye but no real head. I help to make your clothes complete— What am I?",
+        "answer": ["needle"],
+        "hint": "I’m used in sewing fabric."
+    },
+    "2025-06-23": {
+        "riddle": "I’m round and bright, I shine at night, Reflecting beams from far-off light. You’ll find me changing shape with time— What am I?",
+        "answer": ["moon"],
+        "hint": "I glow softly in the dark sky."
     }
 }
