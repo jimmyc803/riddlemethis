@@ -1,47 +1,42 @@
 {
-    "2025-06-22": {
-        "riddle": "I’m sharp and tiny, used in thread, I have an eye but no real head. I help to make your clothes complete— What am I?",
-        "answer": ["needle"],
-        "hint": "I’m used in sewing fabric."
-    },
-    "2025-06-23": {
-        "riddle": "I’m round and bright, I shine at night, Reflecting beams from far-off light. You’ll find me changing shape with time— What am I?",
-        "answer": ["moon"],
-        "hint": "I glow softly in the dark sky."
-    },
-    "2025-06-24": {
-        "riddle": "I’m carried on shoulders or in a hand, I shade your face across the land. I open wide when the sun is bright— What am I?",
-        "answer": ["umbrella"],
-        "hint": "I also help when rain arrives."
-    },
-    "2025-06-25": {
-        "riddle": "I’m square or round, I help you eat, I sit beneath your favorite treat. Without me, meals would be a mess— What am I?",
-        "answer": ["plate"],
-        "hint": "I hold your dinner but I’m not a tray."
-    },
-    "2025-06-26": {
-        "riddle": "I’m not alive, but I can grow, I don’t have lungs, but I need air though. I don’t have a mouth, but water kills me— What am I?",
-        "answer": ["fire"],
-        "hint": "I’m bright, dangerous, and warm."
-    },
-    "2025-06-27": {
-        "riddle": "I help you build with colors bright, I click and stack both left and right. From castles high to cars that roll— What am I?",
-        "answer": ["lego"],
-        "hint": "I’m a plastic builder’s toy."
-    },
-    "2025-06-28": {
-        "riddle": "I’m cold and sweet, I come in scoops, You eat me quickly before I droop. In cones or cups, I’m a summer win— What am I?",
-        "answer": ["icecream"],
-        "hint": "I melt if you wait too long."
-    },
-    "2025-06-29": {
-        "riddle": "I mark your place where you last read, Between the pages, where I’m spread. I’m thin and flat and love a book— What am I?",
-        "answer": ["bookmark"],
-        "hint": "I help you remember your spot."
-    },
     "2025-06-30": {
         "riddle": "I light your path when roads are dark, I beam ahead like a glowing spark. I’m mounted to cars to help you see— What am I?",
         "answer": ["headlight"],
         "hint": "Without me, night driving’s tough."
-    }
+    },
+      "2025-07-01": {
+    "riddle": "I click and scroll and help you surf, I glide across a desktop turf. With buttons small, I lead the way— What am I?",
+    "answer": ["mouse"],
+    "hint": "I’m not a rodent, but I live near your keyboard."
+  },
+  "2025-07-02": {
+    "riddle": "I flash when there’s a snap to take, I capture moments you won’t fake. With focus tight, I frame your smile— What am I?",
+    "answer": ["camera"],
+    "hint": "I freeze time with a click."
+  },
+  "2025-07-03": {
+    "riddle": "I go up high, yet I don’t fly, You ride me when you reach the sky. I carry weight with pulleys tight— What am I?",
+    "answer": ["elevator"],
+    "hint": "I lift you in a box of light."
+  },
+  "2025-07-04": {
+    "riddle": "I sparkle bright, I roar and crack, I paint the sky, then fade right back. I’m loud on nights of celebration— What am I?",
+    "answer": ["firework"],
+    "hint": "You hear me boom on the Fourth of July."
+  },
+  "2025-07-05": {
+    "riddle": "I’m smooth and flat, I glide with ease, Across the waves and salty breeze. You stand on me to catch a ride— What am I?",
+    "answer": ["surfboard"],
+    "hint": "I ride the ocean under your feet."
+  },
+  "2025-07-06": {
+    "riddle": "I’m full of wind but have no lungs, I flap and wave when I’m among. With stars or stripes or symbols bold— What am I?",
+    "answer": ["flag"],
+    "hint": "I stand for something on a pole."
+  },
+  "2025-07-07": {
+    "riddle": "I zip and store, I carry tight, From pencils dull to pens that write. You take me to your desk or class— What am I?",
+    "answer": ["pouch"],
+    "hint": "I’m a little bag for all your stuff."
+  }
 }
