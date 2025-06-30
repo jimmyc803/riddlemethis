@@ -54,6 +54,7 @@ function checkAnswer() {
         document.getElementById("submit-btn").disabled = true;
         document.getElementById("answer-input").disabled = true;
         isGameOver = true;
+        document.getElementById("correctSound").play();
 
         updateStreak();
         localStorage.setItem("riddleDone", today);
@@ -66,6 +67,8 @@ function checkAnswer() {
 
 // --- WRONG ANSWER ---
 function wrongAnswer() {
+    document.getElementById("wrongSound").play();
+    
     if (lives > 0) {
         lives--;
         localStorage.setItem("lives", lives);  // Save lives after wrong answer
