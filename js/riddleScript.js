@@ -67,7 +67,9 @@ function checkAnswer() {
 
 // --- WRONG ANSWER ---
 function wrongAnswer() {
-    document.getElementById("wrongSound").play();
+    const wrongSound = document.getElementById("wrongSound");
+    wrongSound.currentTime = 0; // Rewind to start
+    wrongSound.play();
     
     if (lives > 0) {
         lives--;
@@ -77,7 +79,13 @@ function wrongAnswer() {
 
     if (lives === 0) {
         isGameOver = true;
-        showModal("😢 Game Over!", "You've lost all your lives.");
+
+        const answerText = correctAnswers.length === 1
+            ? correctAnswers[0]
+            : correctAnswers.join(", ");
+
+        showModal("😢 Game Over!", `You've lost all your lives. The correct answer was: ${answerText}`);
+
         document.getElementById("submit-btn").disabled = true;
         document.getElementById("answer-input").disabled = true;
 
@@ -86,6 +94,7 @@ function wrongAnswer() {
         updateStreak();
     }
 }
+
 
 
 function updateStreak() {
