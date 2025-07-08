@@ -1,42 +1,42 @@
 {
-    "2025-06-30": {
-        "riddle": "I light your path when roads are dark, I beam ahead like a glowing spark. I’m mounted to cars to help you see— What am I?",
-        "answer": ["headlight"],
-        "hint": "Without me, night driving’s tough."
-    },
-      "2025-07-01": {
-    "riddle": "I click and scroll and help you surf, I glide across a desktop turf. With buttons small, I lead the way— What am I?",
-    "answer": ["mouse"],
-    "hint": "I’m not a rodent, but I live near your keyboard."
-  },
-  "2025-07-02": {
-    "riddle": "I flash when there’s a snap to take, I capture moments you won’t fake. With focus tight, I frame your smile— What am I?",
-    "answer": ["camera"],
-    "hint": "I freeze time with a click."
-  },
-  "2025-07-03": {
-    "riddle": "I go up high, yet I don’t fly, You ride me when you reach the sky. I carry weight with pulleys tight— What am I?",
-    "answer": ["elevator"],
-    "hint": "I lift you in a box of light."
-  },
-  "2025-07-04": {
-    "riddle": "I sparkle bright, I roar and crack, I paint the sky, then fade right back. I’m loud on nights of celebration— What am I?",
-    "answer": ["firework"],
-    "hint": "You hear me boom on the Fourth of July."
-  },
-  "2025-07-05": {
-    "riddle": "I’m smooth and flat, I glide with ease, Across the waves and salty breeze. You stand on me to catch a ride— What am I?",
-    "answer": ["surfboard"],
-    "hint": "I ride the ocean under your feet."
-  },
-  "2025-07-06": {
-    "riddle": "I’m full of wind but have no lungs, I flap and wave when I’m among. With stars or stripes or symbols bold— What am I?",
-    "answer": ["flag"],
-    "hint": "I stand for something on a pole."
-  },
   "2025-07-07": {
     "riddle": "I zip and store, I carry tight, From pencils dull to pens that write. You take me to your desk or class— What am I?",
     "answer": ["pouch"],
     "hint": "I’m a little bag for all your stuff."
+  },
+  "2025-07-08": {
+    "riddle": "I open books and turn each page, I’m used by readers of every age. With corners square or curved just right— What am I?",
+    "answer": ["hand"],
+    "hint": "You use me to flip through stories."
+  },
+  "2025-07-09": {
+    "riddle": "I shine in the dark, I’m worn with care, On camping trips or anywhere. I fit your head, but I’m not a hat— What am I?",
+    "answer": ["headlamp"],
+    "hint": "I light your way, hands-free."
+  },
+  "2025-07-10": {
+    "riddle": "I hold your drink when you’re on the go, I keep it hot or cold, you know. With twist-on lids and plastic walls— What am I?",
+    "answer": ["bottle"],
+    "hint": "You sip from me all day long."
+  },
+  "2025-07-11": {
+    "riddle": "I’m full of knowledge, thick or thin, I start with covers, end within. I live on shelves and love to teach— What am I?",
+    "answer": ["book"],
+    "hint": "I’m read but don’t speak."
+  },
+  "2025-07-12": {
+    "riddle": "I race but never move alone, My wheels all spin, my frame is shown. With handlebars and pedals too— What am I?",
+    "answer": ["bicycle"],
+    "hint": "I roll through parks and streets with you."
+  },
+  "2025-07-13": {
+    "riddle": "I float on water, made to row, I move where gentle rivers flow. I carry one or maybe two— What am I?",
+    "answer": ["canoe"],
+    "hint": "I glide on lakes with just a paddle."
+  },
+  "2025-07-14": {
+    "riddle": "I open locks but not with teeth, I twist in holes and turn beneath. I’m often kept on heavy rings— What am I?",
+    "answer": ["key"],
+    "hint": "I unlock what’s locked away."
   }
 }
