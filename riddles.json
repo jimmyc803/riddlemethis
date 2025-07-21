@@ -1,34 +1,4 @@
 {
-  "2025-07-14": {
-    "riddle": "I open locks but not with teeth, I twist in holes and turn beneath. I’m often kept on heavy rings— What am I?",
-    "answer": ["key"],
-    "hint": "I unlock what’s locked away."
-  },
-  "2025-07-15": {
-    "riddle": "I flip and fly, I make a breeze, I’m found in rooms with quiet ease. Hung from ceilings, spinning round— What am I?",
-    "answer": ["fan"],
-    "hint": "I cool you down without a chill."
-  },
-  "2025-07-16": {
-    "riddle": "I shine at night from poles so tall, I light the street for one and all. I glow through fog and evening rain— What am I?",
-    "answer": ["streetlight"],
-    "hint": "I guide your path when it’s too dark to see."
-  },
-  "2025-07-17": {
-    "riddle": "I wear no shoes, yet never rest, I beat and thump inside your chest. I race with joy and slow with sleep— What am I?",
-    "answer": ["heart"],
-    "hint": "I never stop while you're alive."
-  },
-  "2025-07-18": {
-    "riddle": "I have four legs but do not walk, I stand in rooms and never talk. I hold your meals or maybe books— What am I?",
-    "answer": ["table"],
-    "hint": "I support everything from dinner to homework."
-  },
-  "2025-07-19": {
-    "riddle": "I open wide to let you in, I close you out with just a spin. With knobs and locks, I stand in place— What am I?",
-    "answer": ["door"],
-    "hint": "I stand between in and out."
-  },
   "2025-07-20": {
     "riddle": "I send your voice across the air, I keep you talking from anywhere. I ring and buzz inside your hand— What am I?",
     "answer": ["phone"],
@@ -38,5 +8,40 @@
     "riddle": "I climb with rungs, I never bend, I help you reach where arms won’t extend. Just lean me right and up you go— What am I?",
     "answer": ["ladder"],
     "hint": "I take you higher without stairs."
+  },
+  "2025-07-22": {
+    "riddle": "You see me move but I stay in place, I chase the wind in every race. My blades go round to cool the air—indoors or out, I’m always there. What am I?",
+    "answer": ["fan"],
+    "hint": "I spin and cool, but never travel."
+  },
+  "2025-07-23": {
+    "riddle": "I march in lines but never walk, I'm full of thoughts yet never talk. I live inside your spiral spine and help your notes all stay in line.",
+    "answer": ["notebook"],
+    "hint": "You bring me to class and fill me with writing."
+  },
+  "2025-07-24": {
+    "riddle": "I spin and swirl in painted jars, I color nails or tiny stars. With brush so small, I glide with grace—on fingertips, I find my place. What am I?",
+    "answer": ["nail polish"],
+    "hint": "I'm used to decorate nails, often with color and shine."
+  },
+  "2025-07-25": {
+    "riddle": "I hold your ideas in digital form, typed with keys so quick and warm. With clicks and clacks, I take your thought and save it. What am I?",
+    "answer": ["computer"],
+    "hint": "You use me to type essays, search the web, or play games."
+  },
+  "2025-07-26": {
+    "riddle": "I’m soft and round, you toss me high, across the net, I sail and fly. I'm used in games where players leap and hit by hand. What am I?",
+    "answer": ["volleyball"],
+    "hint": "You spike me over a net in the sand or gym."
+  },
+  "2025-07-27": {
+    "riddle": "I tick without a sound, I spin but stay in place. I help you cook things just on time, with patience, poise, and grace. What am I?",
+    "answer": ["timer"],
+    "hint": "You twist me to count down when you’re baking or boiling."
+  },
+  "2025-07-28": {
+    "riddle": "I’m folded tight and sealed with care, I fly the world through open air. I hold a card or maybe cash—delivered quick or in a flash. What am I?",
+    "answer": ["envelope"],
+    "hint": "I carry messages and am opened with a tear."
   }
 }
