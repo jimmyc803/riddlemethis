@@ -1,39 +1,4 @@
 {
-  "2025-07-20": {
-    "riddle": "I send your voice across the air, I keep you talking from anywhere. I ring and buzz inside your hand— What am I?",
-    "answer": ["phone"],
-    "hint": "You probably check me too often."
-  },
-  "2025-07-21": {
-    "riddle": "I climb with rungs, I never bend, I help you reach where arms won’t extend. Just lean me right and up you go— What am I?",
-    "answer": ["ladder"],
-    "hint": "I take you higher without stairs."
-  },
-  "2025-07-22": {
-    "riddle": "You see me move but I stay in place, I chase the wind in every race. My blades go round to cool the air—indoors or out, I’m always there. What am I?",
-    "answer": ["fan"],
-    "hint": "I spin and cool, but never travel."
-  },
-  "2025-07-23": {
-    "riddle": "I march in lines but never walk, I'm full of thoughts yet never talk. I live inside your spiral spine and help your notes all stay in line.",
-    "answer": ["notebook"],
-    "hint": "You bring me to class and fill me with writing."
-  },
-  "2025-07-24": {
-    "riddle": "I spin and swirl in painted jars, I color nails or tiny stars. With brush so small, I glide with grace—on fingertips, I find my place. What am I?",
-    "answer": ["nail polish"],
-    "hint": "I'm used to decorate nails, often with color and shine."
-  },
-  "2025-07-25": {
-    "riddle": "I hold your ideas in digital form, typed with keys so quick and warm. With clicks and clacks, I take your thought and save it. What am I?",
-    "answer": ["computer"],
-    "hint": "You use me to type essays, search the web, or play games."
-  },
-  "2025-07-26": {
-    "riddle": "I’m soft and round, you toss me high, across the net, I sail and fly. I'm used in games where players leap and hit by hand. What am I?",
-    "answer": ["volleyball"],
-    "hint": "You spike me over a net in the sand or gym."
-  },
   "2025-07-27": {
     "riddle": "I tick without a sound, I spin but stay in place. I help you cook things just on time, with patience, poise, and grace. What am I?",
     "answer": ["timer"],
@@ -43,5 +8,40 @@
     "riddle": "I’m folded tight and sealed with care, I fly the world through open air. I hold a card or maybe cash—delivered quick or in a flash. What am I?",
     "answer": ["envelope"],
     "hint": "I carry messages and am opened with a tear."
+  },
+  "2025-07-29": {
+    "riddle": "I twist and turn without a spine, I guide your path in every line. Whether folded up or stretched out wide, with roads and routes, I’m your guide. What am I?",
+    "answer": ["map"],
+    "hint": "I show you the way without a GPS."
+  },
+  "2025-07-30": {
+    "riddle": "I’m struck without a hand, yet I mark every band. My echo rolls through sky and land, a flash before me may leave you stunned. What am I?",
+    "answer": ["thunder"],
+    "hint": "I roar after the light."
+  },
+  "2025-07-31": {
+    "riddle": "I vanish when you turn me on, yet show your face when I am gone. I live in glass and mimic true, but never speak or move like you. What am I?",
+    "answer": ["reflection"],
+    "hint": "I only exist when the light is just right."
+  },
+  "2025-08-01": {
+    "riddle": "I build up slowly, drop by drop, from heated air I never stop. I blur the view but clear the heat—on windows, mirrors, I may meet. What am I?",
+    "answer": ["condensation"],
+    "hint": "I form when warm meets cold."
+  },
+  "2025-08-02": {
+    "riddle": "I can carry weight yet never strain, I move with wind but have no brain. I flutter high, I signal pride, I wave but never leave your side. What am I?",
+    "answer": ["flag"],
+    "hint": "I wave in the wind and stand for something."
+  },
+  "2025-08-03": {
+    "riddle": "With threads I weave a silky trap, quiet as a feather’s nap. I wait for prey with patient art, my web a masterpiece from the start. What am I?",
+    "answer": ["spider"],
+    "hint": "I weave but I’m not human."
+  },
+  "2025-08-04": {
+    "riddle": "I live in pages, not in flesh, yet tell you tales that feel so fresh. With ink and thought, I come alive—just open me and stories thrive. What am I?",
+    "answer": ["book"],
+    "hint": "I speak in silence and live on shelves."
   }
 }
