@@ -1,39 +1,4 @@
 {
-  "2025-07-27": {
-    "riddle": "I tick without a sound, I spin but stay in place. I help you cook things just on time, with patience, poise, and grace. What am I?",
-    "answer": ["timer"],
-    "hint": "You twist me to count down when you’re baking or boiling."
-  },
-  "2025-07-28": {
-    "riddle": "I’m folded tight and sealed with care, I fly the world through open air. I hold a card or maybe cash—delivered quick or in a flash. What am I?",
-    "answer": ["envelope"],
-    "hint": "I carry messages and am opened with a tear."
-  },
-  "2025-07-29": {
-    "riddle": "I twist and turn without a spine, I guide your path in every line. Whether folded up or stretched out wide, with roads and routes, I’m your guide. What am I?",
-    "answer": ["map"],
-    "hint": "I show you the way without a GPS."
-  },
-  "2025-07-30": {
-    "riddle": "I’m struck without a hand, yet I mark every band. My echo rolls through sky and land, a flash before me may leave you stunned. What am I?",
-    "answer": ["thunder"],
-    "hint": "I roar after the light."
-  },
-  "2025-07-31": {
-    "riddle": "I vanish when you turn me on, yet show your face when I am gone. I live in glass and mimic true, but never speak or move like you. What am I?",
-    "answer": ["reflection"],
-    "hint": "I only exist when the light is just right."
-  },
-  "2025-08-01": {
-    "riddle": "I build up slowly, drop by drop, from heated air I never stop. I blur the view but clear the heat—on windows, mirrors, I may meet. What am I?",
-    "answer": ["condensation"],
-    "hint": "I form when warm meets cold."
-  },
-  "2025-08-02": {
-    "riddle": "I can carry weight yet never strain, I move with wind but have no brain. I flutter high, I signal pride, I wave but never leave your side. What am I?",
-    "answer": ["flag"],
-    "hint": "I wave in the wind and stand for something."
-  },
   "2025-08-03": {
     "riddle": "With threads I weave a silky trap, quiet as a feather’s nap. I wait for prey with patient art, my web a masterpiece from the start. What am I?",
     "answer": ["spider"],
@@ -43,5 +8,40 @@
     "riddle": "I live in pages, not in flesh, yet tell you tales that feel so fresh. With ink and thought, I come alive—just open me and stories thrive. What am I?",
     "answer": ["book"],
     "hint": "I speak in silence and live on shelves."
+  },
+  "2025-08-05": {
+    "riddle": "I rise and fall yet make no sound, I pull the sea and shift the ground. Though you may not see me near, I rule the waves from far and clear. What am I?",
+    "answer": ["moon"],
+    "hint": "I move the tides without ever touching them."
+  },
+  "2025-08-06": {
+    "riddle": "I eat but never chew, I run but never move. I’m full of power, light, and heat—don’t touch me or you’ll face defeat. What am I?",
+    "answer": ["fire"],
+    "hint": "I consume everything and leave only ash."
+  },
+  "2025-08-07": {
+    "riddle": "I have keys but no locks, I have strings but no shoes or socks. I play music but never speak, and in concerts, I’m what they seek. What am I?",
+    "answer": ["piano"],
+    "hint": "My black and white keys make melodies."
+  },
+  "2025-08-08": {
+    "riddle": "I bloom without roots, shine without light, I’m visible at night but vanish by daylight. What am I?",
+    "answer": ["star"],
+    "hint": "I twinkle far away but guide many."
+  },
+  "2025-08-09": {
+    "riddle": "I count the moments without a mind, I tick and tock and fall behind. I live on walls, on wrists, in phones—without me, chaos quickly grows. What am I?",
+    "answer": ["clock"],
+    "hint": "I tell time but don’t speak."
+  },
+  "2025-08-10": {
+    "riddle": "I come in sheets but never snow, I soak you fast from head to toe. I fall from sky, both loud and light, and help the trees with all my might. What am I?",
+    "answer": ["rain"],
+    "hint": "I fall, but I never get hurt."
+  },
+  "2025-08-11": {
+    "riddle": "I spin and spin, yet stay in place, I cool you down without a face. I hum a song in summer’s heat, my moving blades a breezy treat. What am I?",
+    "answer": ["fan"],
+    "hint": "I blow air without lungs."
   }
 }
