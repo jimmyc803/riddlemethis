@@ -8,8 +8,19 @@
 
 
 <url>
+  <loc>https://riddlio.com/dailyriddle</loc>
+  <lastmod>2025-08-04T13:20:03+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
   <loc>https://riddlio.com/</loc>
-  <lastmod>2025-08-02T02:01:02+00:00</lastmod>
+  <lastmod>2025-08-04T13:20:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://riddlio.com/contactus</loc>
+  <lastmod>2025-08-04T13:20:03+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 
 
