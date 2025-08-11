@@ -1,47 +1,42 @@
 {
-  "2025-08-03": {
-    "riddle": "With threads I weave a silky trap, quiet as a feather’s nap. I wait for prey with patient art, my web a masterpiece from the start. What am I?",
-    "answer": ["spider"],
-    "hint": "I weave but I’m not human."
-  },
-  "2025-08-04": {
-    "riddle": "I live in pages, not in flesh, yet tell you tales that feel so fresh. With ink and thought, I come alive—just open me and stories thrive. What am I?",
-    "answer": ["book"],
-    "hint": "I speak in silence and live on shelves."
-  },
-  "2025-08-05": {
-    "riddle": "I rise and fall yet make no sound, I pull the sea and shift the ground. Though you may not see me near, I rule the waves from far and clear. What am I?",
-    "answer": ["moon"],
-    "hint": "I move the tides without ever touching them."
-  },
-  "2025-08-06": {
-    "riddle": "I eat but never chew, I run but never move. I’m full of power, light, and heat—don’t touch me or you’ll face defeat. What am I?",
-    "answer": ["fire"],
-    "hint": "I consume everything and leave only ash."
-  },
-  "2025-08-07": {
-    "riddle": "I have keys but no locks, I have strings but no shoes or socks. I play music but never speak, and in concerts, I’m what they seek. What am I?",
-    "answer": ["piano"],
-    "hint": "My black and white keys make melodies."
-  },
-  "2025-08-08": {
-    "riddle": "I bloom without roots, shine without light, I’m visible at night but vanish by daylight. What am I?",
-    "answer": ["star"],
-    "hint": "I twinkle far away but guide many."
-  },
-  "2025-08-09": {
-    "riddle": "I count the moments without a mind, I tick and tock and fall behind. I live on walls, on wrists, in phones—without me, chaos quickly grows. What am I?",
-    "answer": ["clock"],
-    "hint": "I tell time but don’t speak."
-  },
-  "2025-08-10": {
-    "riddle": "I come in sheets but never snow, I soak you fast from head to toe. I fall from sky, both loud and light, and help the trees with all my might. What am I?",
-    "answer": ["rain"],
-    "hint": "I fall, but I never get hurt."
-  },
   "2025-08-11": {
     "riddle": "I spin and spin, yet stay in place, I cool you down without a face. I hum a song in summer’s heat, my moving blades a breezy treat. What am I?",
     "answer": ["fan"],
     "hint": "I blow air without lungs."
+  },
+  "2025-08-12": {
+    "riddle": "You pick me up and press me to your ear; I keep a secret hum of waves you’ll hear. I treasure tiny memories in spirals and grooves— found on sandy shores where the ocean moves. What am I?",
+    "answer": ["seashell"],
+    "hint": "Hold me to your ear and hear the sea."
+  },
+  "2025-08-13": {
+    "riddle": "I pour the present into the past, each grain falling counts a little less. Turn me once and watch the slow parade; I measure patience in golden threads. What am I?",
+    "answer": ["hourglass"],
+    "hint": "I show time with sand; flip me to restart."
+  },
+  "2025-08-14": {
+    "riddle": "I bite the tide and hold a ship, heavy and cold where sailors grip. I keep the ocean traveler tied and true—without my weight the vessel drifts askew. What am I?",
+    "answer": ["anchor"],
+    "hint": "I keep ships from drifting away."
+  },
+  "2025-08-15": {
+    "riddle": "I fold and fly with just a toss, a paper bird that shows no loss. I sail the room with loops and dives—made from notes and passing drives. What am I?",
+    "answer": ["paper airplane"],
+    "hint": "I’m a folded plane that soars from your hands."
+  },
+  "2025-08-16": {
+    "riddle": "I stand in fields with button eyes and straw, I wear old clothes to keep the birds in awe. I watch the rows from dawn till night—my empty grin keeps cornfields right. What am I?",
+    "answer": ["scarecrow"],
+    "hint": "I scare birds away from crops."
+  },
+  "2025-08-17": {
+    "riddle": "I make the tiny huge and the faint so clear; I bend the world close when what you seek is near. With round glass eye I hunt for clues—I show small things that you might lose. What am I?",
+    "answer": ["magnifying glass"],
+    "hint": "I enlarge tiny details so you can see them."
+  },
+  "2025-08-18": {
+    "riddle": "I carry all your daily things and hang on straps so wide; with zips and pockets I keep all tucked inside. You wear me on your shoulders as you go— what am I?",
+    "answer": ["backpack"],
+    "hint": "I hold books and gear while you travel."
   }
 }
