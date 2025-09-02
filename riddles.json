@@ -1,42 +1,42 @@
 {
-  "2025-08-25": {
-    "riddle": "I fly without wings, I cry without eyes. Wherever I go, darkness follows me. What am I?",
-    "answer": ["cloud"],
-    "hint": "I bring both shade and storms."
-  },
-  "2025-08-26": {
-    "riddle": "I spin without legs, I race without feet, and I help you move along streets. What am I?",
-    "answer": ["wheel"],
-    "hint": "I’m round and keep vehicles rolling."
-  },
-  "2025-08-27": {
-    "riddle": "I’m bright by day but disappear at night. I chase away darkness with my light. What am I?",
-    "answer": ["sun"],
-    "hint": "I rise in the morning and set at night."
-  },
-  "2025-08-28": {
-    "riddle": "I speak without a mouth, I echo without ears. I can be loud or soft, and follow your commands. What am I?",
-    "answer": ["echo"],
-    "hint": "You hear me in mountains or empty rooms."
-  },
-  "2025-08-29": {
-    "riddle": "I have keys but no locks, I have space but no room. You can enter, but never go outside. What am I?",
-    "answer": ["keyboard"],
-    "hint": "I help you type letters and numbers."
-  },
-  "2025-08-30": {
-    "riddle": "I’m invisible yet felt, I push and pull, and help boats sail. What am I?",
-    "answer": ["wind"],
-    "hint": "You can’t see me, but you can feel me move."
-  },
-  "2025-08-31": {
-    "riddle": "I have a spine but no bones, I have pages but no words until you look. What am I?",
-    "answer": ["book"],
-    "hint": "I hold stories and knowledge."
-  },
   "2025-09-01": {
     "riddle": "I can break without being touched, I vanish if you speak my name. What am I?",
     "answer": ["silence"],
     "hint": "Saying my name ends me."
+  },
+  "2025-09-02": {
+    "riddle": "I have roots but never grow, rings but no fingers. My history is written in circles. What am I?",
+    "answer": ["tree trunk", "tree"],
+    "hint": "Count my rings to see my age."
+  },
+  "2025-09-03": {
+    "riddle": "The more of me you share, the less of me you keep. What am I?",
+    "answer": ["secret"],
+    "hint": "Once spoken, I’m no longer yours."
+  },
+  "2025-09-04": {
+    "riddle": "I have a neck but no head, I hold water but never drink. What am I?",
+    "answer": ["bottle"],
+    "hint": "You can fill me, but I never sip."
+  },
+  "2025-09-05": {
+    "riddle": "I travel the world but stay in one corner. What am I?",
+    "answer": ["stamp"],
+    "hint": "You stick me on letters."
+  },
+  "2025-09-06": {
+    "riddle": "I build bridges from thought to thought, yet I weigh nothing. What am I?",
+    "answer": ["idea", "thought"],
+    "hint": "I connect minds without being seen."
+  },
+  "2025-09-07": {
+    "riddle": "I’m not alive, yet I grow. I need air but no lungs, and food but no mouth. What am I?",
+    "answer": ["fire"],
+    "hint": "Feed me fuel or I fade away."
+  },
+  "2025-09-08": {
+    "riddle": "I can capture moments without a brush or pen. I freeze time with a single click. What am I?",
+    "answer": ["camera"],
+    "hint": "I keep memories in pictures."
   }
 }
