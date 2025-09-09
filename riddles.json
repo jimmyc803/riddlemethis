@@ -1,42 +1,42 @@
 {
-  "2025-09-01": {
-    "riddle": "I can break without being touched, I vanish if you speak my name. What am I?",
-    "answer": ["silence"],
-    "hint": "Saying my name ends me."
-  },
-  "2025-09-02": {
-    "riddle": "I have roots but never grow, rings but no fingers. My history is written in circles. What am I?",
-    "answer": ["tree trunk", "tree"],
-    "hint": "Count my rings to see my age."
-  },
-  "2025-09-03": {
-    "riddle": "The more of me you share, the less of me you keep. What am I?",
-    "answer": ["secret"],
-    "hint": "Once spoken, I’m no longer yours."
-  },
-  "2025-09-04": {
-    "riddle": "I have a neck but no head, I hold water but never drink. What am I?",
-    "answer": ["bottle"],
-    "hint": "You can fill me, but I never sip."
-  },
-  "2025-09-05": {
-    "riddle": "I travel the world but stay in one corner. What am I?",
-    "answer": ["stamp"],
-    "hint": "You stick me on letters."
-  },
-  "2025-09-06": {
-    "riddle": "I build bridges from thought to thought, yet I weigh nothing. What am I?",
-    "answer": ["idea", "thought"],
-    "hint": "I connect minds without being seen."
-  },
-  "2025-09-07": {
-    "riddle": "I’m not alive, yet I grow. I need air but no lungs, and food but no mouth. What am I?",
-    "answer": ["fire"],
-    "hint": "Feed me fuel or I fade away."
-  },
   "2025-09-08": {
     "riddle": "I can capture moments without a brush or pen. I freeze time with a single click. What am I?",
     "answer": ["camera"],
     "hint": "I keep memories in pictures."
+  },
+  "2025-09-09": {
+    "riddle": "I march without feet, I roar without a throat, and I topple mountains grain by grain. What am I?",
+    "answer": ["river"],
+    "hint": "I carve valleys with patience, not strength."
+  },
+  "2025-09-10": {
+    "riddle": "I vanish when you look straight at me, yet I dance at the edge of your sight. I appear on hot roads and desert sands. What am I?",
+    "answer": ["mirage"],
+    "hint": "I’m an illusion born of heat."
+  },
+  "2025-09-11": {
+    "riddle": "I lock away treasure without key or code. Crack me, and you’ll find yellow or white inside. What am I?",
+    "answer": ["egg"],
+    "hint": "I break easily, but I protect life."
+  },
+  "2025-09-12": {
+    "riddle": "I fall from the sky, yet I never bruise. I blanket the earth in silence and white. What am I?",
+    "answer": ["snow"],
+    "hint": "I melt away when warmth arrives."
+  },
+  "2025-09-13": {
+    "riddle": "I climb but never tire, my light guides sailors and travelers alike. I vanish each dawn. What am I?",
+    "answer": ["star"],
+    "hint": "I fill the night sky with company."
+  },
+  "2025-09-14": {
+    "riddle": "I can hold castles, mountains, and seas, yet I fit in your palm. Shake me and storms begin. What am I?",
+    "answer": ["snow globe"],
+    "hint": "A winter world trapped in glass."
+  },
+  "2025-09-15": {
+    "riddle": "I rise only when the sun departs, glowing softly but never burning. I borrow light and change my face each night. What am I?",
+    "answer": ["moon"],
+    "hint": "My phases wax and wane."
   }
 }
