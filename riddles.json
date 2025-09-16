@@ -1,42 +1,82 @@
 {
-  "2025-09-08": {
-    "riddle": "I can capture moments without a brush or pen. I freeze time with a single click. What am I?",
-    "answer": ["camera"],
-    "hint": "I keep memories in pictures."
-  },
-  "2025-09-09": {
-    "riddle": "I march without feet, I roar without a throat, and I topple mountains grain by grain. What am I?",
-    "answer": ["river"],
-    "hint": "I carve valleys with patience, not strength."
-  },
-  "2025-09-10": {
-    "riddle": "I vanish when you look straight at me, yet I dance at the edge of your sight. I appear on hot roads and desert sands. What am I?",
-    "answer": ["mirage"],
-    "hint": "I’m an illusion born of heat."
-  },
-  "2025-09-11": {
-    "riddle": "I lock away treasure without key or code. Crack me, and you’ll find yellow or white inside. What am I?",
-    "answer": ["egg"],
-    "hint": "I break easily, but I protect life."
-  },
-  "2025-09-12": {
-    "riddle": "I fall from the sky, yet I never bruise. I blanket the earth in silence and white. What am I?",
-    "answer": ["snow"],
-    "hint": "I melt away when warmth arrives."
-  },
-  "2025-09-13": {
-    "riddle": "I climb but never tire, my light guides sailors and travelers alike. I vanish each dawn. What am I?",
-    "answer": ["star"],
-    "hint": "I fill the night sky with company."
-  },
-  "2025-09-14": {
-    "riddle": "I can hold castles, mountains, and seas, yet I fit in your palm. Shake me and storms begin. What am I?",
-    "answer": ["snow globe"],
-    "hint": "A winter world trapped in glass."
-  },
   "2025-09-15": {
     "riddle": "I rise only when the sun departs, glowing softly but never burning. I borrow light and change my face each night. What am I?",
     "answer": ["moon"],
     "hint": "My phases wax and wane."
+  },
+  "2025-09-16": {
+    "riddle": "I have a heart that never beats, I can be cracked but never bleed. I keep secrets for millions of years inside my layered skin. What am I?",
+    "answer": ["stone"],
+    "hint": "I’m solid, ancient, and often hold fossils."
+  },
+  "2025-09-17": {
+    "riddle": "I eat everything but never get full; with each bite I grow bigger, yet you can’t see my teeth. What am I?",
+    "answer": ["fire"],
+    "hint": "Feed me and I live; starve me and I die."
+  },
+  "2025-09-18": {
+    "riddle": "I have no mouth, yet I ask you questions. You press my buttons to make me speak. What am I?",
+    "answer": ["remote control"],
+    "hint": "I change channels without a word."
+  },
+  "2025-09-19": {
+    "riddle": "I sleep in a case but see the world when awake. I blink once and capture forever. What am I?",
+    "answer": ["camera lens"],
+    "hint": "I’m the eye of your device."
+  },
+  "2025-09-20": {
+    "riddle": "I build cities without hands, walls without bricks, and paths without stones. What am I?",
+    "answer": ["ant"],
+    "hint": "Tiny but powerful architects underfoot."
+  },
+  "2025-09-21": {
+    "riddle": "I grow when fed but shrink when sipped. I can be strong or weak, bitter or sweet. What am I?",
+    "answer": ["tea"],
+    "hint": "You pour me from a pot into a cup."
+  },
+  "2025-09-22": {
+    "riddle": "I’m the keeper of keys but never unlock doors. My music rises from black and white teeth. What am I?",
+    "answer": ["piano"],
+    "hint": "I sing when your fingers dance on me."
+  },
+  "2025-09-23": {
+    "riddle": "I’m born in the morning, vanish at noon, and return with the evening sun. I copy your every move but never speak. What am I?",
+    "answer": ["shadow"],
+    "hint": "I follow you but disappear in the dark."
+  },
+  "2025-09-24": {
+    "riddle": "I have no engine yet I run, no track yet I race. The harder I blow, the faster I go. What am I?",
+    "answer": ["kite"],
+    "hint": "I soar in the sky on a string."
+  },
+  "2025-09-25": {
+    "riddle": "I speak without a tongue, travel without feet, and tell you stories from far away. What am I?",
+    "answer": ["radio"],
+    "hint": "I broadcast voices and music from afar."
+  },
+  "2025-09-26": {
+    "riddle": "I guard your secrets with rows and teeth, but I’m not alive. Slide me across and I’ll hide what’s inside. What am I?",
+    "answer": ["zipper"],
+    "hint": "I seal clothes and bags with a pull."
+  },
+  "2025-09-27": {
+    "riddle": "I cross oceans without moving, connect voices without speaking, and carry light without a flame. What am I?",
+    "answer": ["cable"],
+    "hint": "I stretch under seas or through walls to bring power and data."
+  },
+  "2025-09-28": {
+    "riddle": "I’m a circle with no start, no end. I bind promises and symbolize forever. What am I?",
+    "answer": ["ring"],
+    "hint": "You wear me to mark love or vows."
+  },
+  "2025-09-29": {
+    "riddle": "I rise when you’re asleep, fall when you’re awake. I can cover your whole world without being touched. What am I?",
+    "answer": ["dream"],
+    "hint": "I visit you at night and fade in daylight."
+  },
+  "2025-09-30": {
+    "riddle": "I’m invisible yet can be felt. I can knock down trees but also cool your face. What am I?",
+    "answer": ["wind"],
+    "hint": "You can hear me whistle but never see me."
   }
 }
