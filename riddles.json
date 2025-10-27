@@ -1,82 +1,177 @@
 {
-  "2025-09-30": {
-    "riddle": "I’m invisible yet can be felt. I can knock down trees but also cool your face. What am I?",
-    "answer": ["wind"],
-    "hint": "You can hear me whistle but never see me."
+  "2025-10-27": {
+    "riddle": "I stretch across the sky but break with rain; I paint in colors but hold no brush. What am I?",
+    "answer": ["rainbow"],
+    "hint": "I appear when sunlight meets rain."
   },
-  "2025-10-01": {
-    "riddle": "I climb without legs, I fall without fear. I crash with a roar but leave nothing to hold. What am I?",
-    "answer": ["wave"],
-    "hint": "I rise and fall at the shore."
-  },
-  "2025-10-02": {
-    "riddle": "I hide behind clouds but never leave the sky. I change my face but never my place. What am I?",
-    "answer": ["moon"],
-    "hint": "I wax and wane each month."
-  },
-  "2025-10-03": {
-    "riddle": "I can cut without steel, whisper without a voice, and travel faster than feet. What am I?",
-    "answer": ["wind"],
-    "hint": "You feel me on your skin, not in your hand."
-  },
-  "2025-10-04": {
-    "riddle": "I carry letters without ink, fly without wings, and wait in a box until opened. What am I?",
-    "answer": ["envelope"],
-    "hint": "You find me in the mailbox."
-  },
-  "2025-10-05": {
-    "riddle": "I’m covered in numbers, yet I’m not a book. I can count your days but not your steps. What am I?",
-    "answer": ["calendar"],
-    "hint": "I hang on walls and track the year."
-  },
-  "2025-10-06": {
-    "riddle": "I vanish when spoken, fragile as breath. I can be broken by a single word. What am I?",
-    "answer": ["silence"],
-    "hint": "You can hear me only when I’m gone."
-  },
-  "2025-10-07": {
-    "riddle": "I move without legs, shimmer without light, and curl into shapes both tiny and vast. What am I?",
-    "answer": ["smoke"],
-    "hint": "I rise from fire in twisting trails."
-  },
-  "2025-10-08": {
-    "riddle": "I grow without roots, shine without flame, and guide travelers through the night. What am I?",
-    "answer": ["star"],
-    "hint": "I sparkle above in the sky."
-  },
-  "2025-10-09": {
-    "riddle": "I’m held in your hand but I’m not alive. With a flick I burst into flame. What am I?",
+  "2025-10-28": {
+    "riddle": "I wait in darkness till struck by light, then burst to life in sparks of white. What am I?",
     "answer": ["match"],
-    "hint": "Strike me once and I disappear in fire."
+    "hint": "I’m small, wooden, and fiery."
   },
-  "2025-10-10": {
-    "riddle": "I have a face that never smiles, two hands that never hold. Yet I’m trusted every day. What am I?",
-    "answer": ["clock"],
-    "hint": "I mark every second of your life."
+  "2025-10-29": {
+    "riddle": "I open wide to let you in but close to keep you safe within. What am I?",
+    "answer": ["door"],
+    "hint": "I separate one space from another."
   },
-  "2025-10-11": {
-    "riddle": "I fall without a sound, blanket the ground, and vanish under the sun. What am I?",
+  "2025-10-30": {
+    "riddle": "I wander the night in a glowing disguise; carved with a smile, I light up the skies. What am I?",
+    "answer": ["jack-o'-lantern", "pumpkin"],
+    "hint": "I’m a pumpkin with a candle inside."
+  },
+  "2025-10-31": {
+    "riddle": "I come out at night but vanish at dawn; children chase me door to door. What am I?",
+    "answer": ["trick-or-treater"],
+    "hint": "I collect sweets once a year."
+  },
+  "2025-11-01": {
+    "riddle": "I fall but never get hurt; I change the trees with every turn. What am I?",
+    "answer": ["leaf"],
+    "hint": "I drift down in autumn’s breeze."
+  },
+  "2025-11-02": {
+    "riddle": "I fly without wings, I fall without fear, I drift and disappear. What am I?",
     "answer": ["snowflake"],
-    "hint": "I arrive in winter, one of many."
+    "hint": "Each one of me is unique."
   },
-  "2025-10-12": {
-    "riddle": "I am broken every morning but whole every night. What am I?",
-    "answer": ["sleep"],
-    "hint": "You rest inside me, then leave me with the dawn."
+  "2025-11-03": {
+    "riddle": "I sleep underground through frost and cold, but come springtime, I wake in gold. What am I?",
+    "answer": ["seed"],
+    "hint": "I grow when the earth warms."
   },
-  "2025-10-13": {
-    "riddle": "I cross rivers without bridges, climb mountains without legs, and fill valleys without hands. What am I?",
-    "answer": ["fog"],
-    "hint": "I roll in and out, hiding the view."
+  "2025-11-04": {
+    "riddle": "I run through cities yet have no legs; I bring people but never walk. What am I?",
+    "answer": ["train"],
+    "hint": "I travel on tracks."
   },
-  "2025-10-14": {
-    "riddle": "I mark the path but make no sound, pressing my shape into the ground. What am I?",
-    "answer": ["footprint"],
-    "hint": "You leave me behind when you walk."
+  "2025-11-05": {
+    "riddle": "I can fill a room without taking space, brighten a face, and fade without a trace. What am I?",
+    "answer": ["smile"],
+    "hint": "I appear when you’re happy."
   },
-  "2025-10-15": {
-    "riddle": "I come from the sky but never fly, I strike with light yet vanish quick. What am I?",
+  "2025-11-06": {
+    "riddle": "I’m taken in at night, lost in sleep, and found again at dawn. What am I?",
+    "answer": ["dream"],
+    "hint": "I vanish when you wake."
+  },
+  "2025-11-07": {
+    "riddle": "I hold memories but never think; I can replay your laughter or your tears. What am I?",
+    "answer": ["photograph"],
+    "hint": "I freeze moments forever."
+  },
+  "2025-11-08": {
+    "riddle": "I grow when I’m fed but die when I drink. What am I?",
+    "answer": ["fire"],
+    "hint": "Water ends my life."
+  },
+  "2025-11-09": {
+    "riddle": "I’m not alive, yet I can move mountains; I can shatter steel but flow like silk. What am I?",
+    "answer": ["water"],
+    "hint": "I shape the earth with patience."
+  },
+  "2025-11-10": {
+    "riddle": "I’m drawn but never written, erased but never forgotten. What am I?",
+    "answer": ["breath"],
+    "hint": "You see me only on cold mornings."
+  },
+  "2025-11-11": {
+    "riddle": "I’m carried everywhere but never move; I hold lives and secrets in my circuits. What am I?",
+    "answer": ["phone"],
+    "hint": "I connect you across the world."
+  },
+  "2025-11-12": {
+    "riddle": "I hide your thoughts behind my lines, I guard your work with spine and bind. What am I?",
+    "answer": ["notebook"],
+    "hint": "I store your handwriting and ideas."
+  },
+  "2025-11-13": {
+    "riddle": "I light up the sky yet I’m not the sun; I roar with power when storms have begun. What am I?",
     "answer": ["lightning"],
-    "hint": "You see me flash before thunder follows."
+    "hint": "I flash before thunder calls."
+  },
+  "2025-11-14": {
+    "riddle": "I build but never rest, one grain at a time. I move with the wind, shaping deserts divine. What am I?",
+    "answer": ["sand dune"],
+    "hint": "I shift with the breeze."
+  },
+  "2025-11-15": {
+    "riddle": "I rise when it’s cold and melt when it’s warm. I sparkle but fear the sun. What am I?",
+    "answer": ["ice"],
+    "hint": "I turn to water in heat."
+  },
+  "2025-11-16": {
+    "riddle": "I have feathers but don’t fly, I wake you each dawn with my cry. What am I?",
+    "answer": ["rooster"],
+    "hint": "I crow to greet the morning."
+  },
+  "2025-11-17": {
+    "riddle": "I hide treasures in my shell, I crawl but never rush. I carry my home wherever I go. What am I?",
+    "answer": ["snail"],
+    "hint": "My house is always on my back."
+  },
+  "2025-11-18": {
+    "riddle": "I ring to signal danger or time, I hang above yet never climb. What am I?",
+    "answer": ["bell"],
+    "hint": "You hear me at schools and towers."
+  },
+  "2025-11-19": {
+    "riddle": "I stretch from shore to shore but never rest; I’m endless and blue, yet full of guests. What am I?",
+    "answer": ["ocean"],
+    "hint": "I cover most of Earth’s surface."
+  },
+  "2025-11-20": {
+    "riddle": "I’m small and round, full of warmth and sound; I guide travelers with my light. What am I?",
+    "answer": ["lantern"],
+    "hint": "I glow in your hand at night."
+  },
+  "2025-11-21": {
+    "riddle": "I have pages but no words, worlds but no people, and players who explore my depths. What am I?",
+    "answer": ["video game"],
+    "hint": "I hold stories that you control."
+  },
+  "2025-11-22": {
+    "riddle": "I rise with heat, fall with cold, and vanish when touched. What am I?",
+    "answer": ["steam"],
+    "hint": "I’m water’s ghost."
+  },
+  "2025-11-23": {
+    "riddle": "I’m cracked on purpose, filled with joy, and eaten warm or cold. What am I?",
+    "answer": ["eggshell"],
+    "hint": "I hide breakfast inside."
+  },
+  "2025-11-24": {
+    "riddle": "I gather families once a year, fill tables with warmth, and end in thanks. What am I?",
+    "answer": ["thanksgiving dinner"],
+    "hint": "I’m the feast of gratitude."
+  },
+  "2025-11-25": {
+    "riddle": "I’m soft yet strong, I cover you at night, and fold neatly by morning light. What am I?",
+    "answer": ["blanket"],
+    "hint": "I keep you warm when you sleep."
+  },
+  "2025-11-26": {
+    "riddle": "I’m rolled and twisted, baked and browned, covered in butter or cream. What am I?",
+    "answer": ["croissant"],
+    "hint": "I’m a breakfast treat."
+  },
+  "2025-11-27": {
+    "riddle": "I appear after dinner, sweet and round; I come in pies or by the pound. What am I?",
+    "answer": ["dessert"],
+    "hint": "I’m the final course of the meal."
+  },
+  "2025-11-28": {
+    "riddle": "I flash and shine but never burn; I decorate nights where people turn. What am I?",
+    "answer": ["candlelight"],
+    "hint": "I glow softly in celebration."
+  },
+  "2025-11-29": {
+    "riddle": "I come once a year bringing cheer; I dress trees and windows clear. What am I?",
+    "answer": ["holiday lights"],
+    "hint": "I twinkle through December nights."
+  },
+  "2025-11-30": {
+    "riddle": "I end one chapter and start the next; I close with reflection and open with hope. What am I?",
+    "answer": ["year"],
+    "hint": "I pass before time begins anew."
   }
 }
