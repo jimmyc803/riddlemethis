@@ -1,177 +1,157 @@
 {
-  "2025-10-27": {
-    "riddle": "I stretch across the sky but break with rain; I paint in colors but hold no brush. What am I?",
-    "answer": ["rainbow"],
-    "hint": "I appear when sunlight meets rain."
+  "2025-12-01": {
+    "riddle": "I circle the sky in a glowing sweep, sometimes hidden when clouds are deep. I tug the tides and light the night, yet borrow my shine from another’s light. What am I?",
+    "answer": ["moon"],
+    "hint": "I glow in the night, but it’s not my own light."
   },
-  "2025-10-28": {
-    "riddle": "I wait in darkness till struck by light, then burst to life in sparks of white. What am I?",
-    "answer": ["match"],
-    "hint": "I’m small, wooden, and fiery."
-  },
-  "2025-10-29": {
-    "riddle": "I open wide to let you in but close to keep you safe within. What am I?",
-    "answer": ["door"],
-    "hint": "I separate one space from another."
-  },
-  "2025-10-30": {
-    "riddle": "I wander the night in a glowing disguise; carved with a smile, I light up the skies. What am I?",
-    "answer": ["jack-o'-lantern", "pumpkin"],
-    "hint": "I’m a pumpkin with a candle inside."
-  },
-  "2025-10-31": {
-    "riddle": "I come out at night but vanish at dawn; children chase me door to door. What am I?",
-    "answer": ["trick-or-treater"],
-    "hint": "I collect sweets once a year."
-  },
-  "2025-11-01": {
-    "riddle": "I fall but never get hurt; I change the trees with every turn. What am I?",
-    "answer": ["leaf"],
-    "hint": "I drift down in autumn’s breeze."
-  },
-  "2025-11-02": {
-    "riddle": "I fly without wings, I fall without fear, I drift and disappear. What am I?",
-    "answer": ["snowflake"],
-    "hint": "Each one of me is unique."
-  },
-  "2025-11-03": {
-    "riddle": "I sleep underground through frost and cold, but come springtime, I wake in gold. What am I?",
-    "answer": ["seed"],
-    "hint": "I grow when the earth warms."
-  },
-  "2025-11-04": {
-    "riddle": "I run through cities yet have no legs; I bring people but never walk. What am I?",
-    "answer": ["train"],
-    "hint": "I travel on tracks."
-  },
-  "2025-11-05": {
-    "riddle": "I can fill a room without taking space, brighten a face, and fade without a trace. What am I?",
-    "answer": ["smile"],
-    "hint": "I appear when you’re happy."
-  },
-  "2025-11-06": {
-    "riddle": "I’m taken in at night, lost in sleep, and found again at dawn. What am I?",
-    "answer": ["dream"],
-    "hint": "I vanish when you wake."
-  },
-  "2025-11-07": {
-    "riddle": "I hold memories but never think; I can replay your laughter or your tears. What am I?",
-    "answer": ["photograph"],
-    "hint": "I freeze moments forever."
-  },
-  "2025-11-08": {
-    "riddle": "I grow when I’m fed but die when I drink. What am I?",
-    "answer": ["fire"],
-    "hint": "Water ends my life."
-  },
-  "2025-11-09": {
-    "riddle": "I’m not alive, yet I can move mountains; I can shatter steel but flow like silk. What am I?",
-    "answer": ["water"],
-    "hint": "I shape the earth with patience."
-  },
-  "2025-11-10": {
-    "riddle": "I’m drawn but never written, erased but never forgotten. What am I?",
-    "answer": ["breath"],
-    "hint": "You see me only on cold mornings."
-  },
-  "2025-11-11": {
-    "riddle": "I’m carried everywhere but never move; I hold lives and secrets in my circuits. What am I?",
-    "answer": ["phone"],
-    "hint": "I connect you across the world."
-  },
-  "2025-11-12": {
-    "riddle": "I hide your thoughts behind my lines, I guard your work with spine and bind. What am I?",
-    "answer": ["notebook"],
-    "hint": "I store your handwriting and ideas."
-  },
-  "2025-11-13": {
-    "riddle": "I light up the sky yet I’m not the sun; I roar with power when storms have begun. What am I?",
-    "answer": ["lightning"],
-    "hint": "I flash before thunder calls."
-  },
-  "2025-11-14": {
-    "riddle": "I build but never rest, one grain at a time. I move with the wind, shaping deserts divine. What am I?",
-    "answer": ["sand dune"],
-    "hint": "I shift with the breeze."
-  },
-  "2025-11-15": {
-    "riddle": "I rise when it’s cold and melt when it’s warm. I sparkle but fear the sun. What am I?",
+  "2025-12-02": {
+    "riddle": "I stretch through winter’s hush, glistening silver in the midday sun. I crack beneath your steps, but melt away when warmth has won. What am I?",
     "answer": ["ice"],
-    "hint": "I turn to water in heat."
+    "hint": "I sparkle cold but vanish when heat arrives."
   },
-  "2025-11-16": {
-    "riddle": "I have feathers but don’t fly, I wake you each dawn with my cry. What am I?",
-    "answer": ["rooster"],
-    "hint": "I crow to greet the morning."
+  "2025-12-03": {
+    "riddle": "I flutter without feathers and dance without feet. I paint the air with shimmer and disappear in the heat. What am I?",
+    "answer": ["snowflake"],
+    "hint": "I fall from clouds in winter and melt quickly."
   },
-  "2025-11-17": {
-    "riddle": "I hide treasures in my shell, I crawl but never rush. I carry my home wherever I go. What am I?",
-    "answer": ["snail"],
-    "hint": "My house is always on my back."
+  "2025-12-04": {
+    "riddle": "I wait in boxes until the moment is right, wrapped in bright colors and held out of sight. I bring surprise, smiles, and cheer — opened once then gone from here. What am I?",
+    "answer": ["gift", "present"],
+    "hint": "You unwrap me on special days."
   },
-  "2025-11-18": {
-    "riddle": "I ring to signal danger or time, I hang above yet never climb. What am I?",
+  "2025-12-05": {
+    "riddle": "I am a home of glittering leaves without trees, a place where tiny sparks cling and freeze. I hang in halls and brighten rooms, winding through December gloom. What am I?",
+    "answer": ["tinsel"],
+    "hint": "I shimmer on holiday decorations."
+  },
+  "2025-12-06": {
+    "riddle": "I whistle in corners, sneak under doors, rattle branches, and nip noses red. You cannot see me, but you feel me instead. What am I?",
+    "answer": ["wind"],
+    "hint": "You feel me but cannot see me."
+  },
+  "2025-12-07": {
+    "riddle": "I start as breath and vanish fast — a ghostly trail you cannot grasp. I show you winter in a single sigh. What am I?",
+    "answer": ["condensation", "visible breath"],
+    "hint": "You see me when you exhale in cold air."
+  },
+  "2025-12-08": {
+    "riddle": "I pop and sparkle with ember light, guarding stories through the night. I crackle warmth while shadows leap — what am I?",
+    "answer": ["fireplace", "campfire"],
+    "hint": "I burn wood and keep houses cozy."
+  },
+  "2025-12-09": {
+    "riddle": "I am a roof of lace spun from frost, forming patterns that vanish at a cost. I coat panes where heat can’t reach — what am I?",
+    "answer": ["window frost"],
+    "hint": "You find me in icy patterns on glass."
+  },
+  "2025-12-10": {
+    "riddle": "I gather voices in joyful tone, blasting music through a microphone. I echo memories, cheer, and songs — what am I?",
+    "answer": ["speaker"],
+    "hint": "Sound travels through me to reach the room."
+  },
+  "2025-12-11": {
+    "riddle": "I’m drawn in the sky, warm and low — the day’s last whisper before shadows grow. I paint the world red and gold — what am I?",
+    "answer": ["sunset"],
+    "hint": "I end the day in colorful display."
+  },
+  "2025-12-12": {
+    "riddle": "I wear stripes of silver and red, wrapped around cane-shaped thread. Sweet and twisted, peppermint bright — what am I?",
+    "answer": ["candy cane"],
+    "hint": "You hang me on trees and eat me too."
+  },
+  "2025-12-13": {
+    "riddle": "I spend my life waiting for one night, standing outside with sparkling light. Some climb me, some hang on me — what am I?",
+    "answer": ["Christmas tree"],
+    "hint": "I stand decorated during December."
+  },
+  "2025-12-14": {
+    "riddle": "I fall without hurting and land without sound. I blanket the earth in shimmering mounds. What am I?",
+    "answer": ["snow"],
+    "hint": "I cover the world in white."
+  },
+  "2025-12-15": {
+    "riddle": "I stretch across rooftops shiny and bright; though made of metal, I glow with light. I shape stars and circles where no one can reach — what am I?",
+    "answer": ["holiday lights", "string lights"],
+    "hint": "I decorate homes during winter evenings."
+  },
+  "2025-12-16": {
+    "riddle": "I guard your feet from winter’s bite, wrapping warm hugs through snowy nights. What am I?",
+    "answer": ["boots"],
+    "hint": "You wear me in the cold to stay warm."
+  },
+  "2025-12-17": {
+    "riddle": "I march into homes without knocking, tucked inside jackets and woven pockets. I make noses drip and voices sneeze — what am I?",
+    "answer": ["cold virus"],
+    "hint": "I make you sniffle in winter."
+  },
+  "2025-12-18": {
+    "riddle": "I paint windows with glitter tears, then vanish fast when warm air nears. What am I?",
+    "answer": ["frost"],
+    "hint": "I form icy designs on glass."
+  },
+  "2025-12-19": {
+    "riddle": "I hide in boxes, big and small, waiting for a time of cheer for all. I bring surprise in crinkled paper skin — what am I?",
+    "answer": ["present"],
+    "hint": "You unwrap me."
+  },
+  "2025-12-20": {
+    "riddle": "I twirl in air and sparkle bright, then fade to black beyond the night. What am I?",
+    "answer": ["firework"],
+    "hint": "I celebrate holidays with bursts of light."
+  },
+  "2025-12-21": {
+    "riddle": "I am the longest night and shortest day, marking sunlight’s slow return your way. What am I?",
+    "answer": ["winter solstice"],
+    "hint": "I begin winter’s deepest point."
+  },
+  "2025-12-22": {
+    "riddle": "I ring with cheer when pulled by string, spreading sound where children sing. What am I?",
     "answer": ["bell"],
-    "hint": "You hear me at schools and towers."
+    "hint": "I jingle around the holidays."
   },
-  "2025-11-19": {
-    "riddle": "I stretch from shore to shore but never rest; I’m endless and blue, yet full of guests. What am I?",
-    "answer": ["ocean"],
-    "hint": "I cover most of Earth’s surface."
+  "2025-12-23": {
+    "riddle": "I float through air but do not fly, greeting you with warmth where snowflakes lie. What am I?",
+    "answer": ["steam breath"],
+    "hint": "You see me when you exhale in cold weather."
   },
-  "2025-11-20": {
-    "riddle": "I’m small and round, full of warmth and sound; I guide travelers with my light. What am I?",
-    "answer": ["lantern"],
-    "hint": "I glow in your hand at night."
+  "2025-12-24": {
+    "riddle": "I wait for midnight each year, stuffed with sweets, toys, and cheer. Hung on walls or mantels high — what am I?",
+    "answer": ["stocking"],
+    "hint": "You fill me on Christmas Eve."
   },
-  "2025-11-21": {
-    "riddle": "I have pages but no words, worlds but no people, and players who explore my depths. What am I?",
-    "answer": ["video game"],
-    "hint": "I hold stories that you control."
+  "2025-12-25": {
+    "riddle": "I am joy wrapped in evergreen, candles, voices, gifts, and gleam. One day each year I show my face — what am I?",
+    "answer": ["Christmas"],
+    "hint": "December 25 knows me well."
   },
-  "2025-11-22": {
-    "riddle": "I rise with heat, fall with cold, and vanish when touched. What am I?",
-    "answer": ["steam"],
-    "hint": "I’m water’s ghost."
+  "2025-12-26": {
+    "riddle": "I follow holidays in quiet sweep, a tired sigh where leftovers sleep. What am I?",
+    "answer": ["day after Christmas"],
+    "hint": "I come once the big celebration ends."
   },
-  "2025-11-23": {
-    "riddle": "I’m cracked on purpose, filled with joy, and eaten warm or cold. What am I?",
-    "answer": ["eggshell"],
-    "hint": "I hide breakfast inside."
+  "2025-12-27": {
+    "riddle": "I flutter from arms and shoulders, soft yet bold; I fight the cold in wool or gold. What am I?",
+    "answer": ["scarf"],
+    "hint": "You wrap me around your neck."
   },
-  "2025-11-24": {
-    "riddle": "I gather families once a year, fill tables with warmth, and end in thanks. What am I?",
-    "answer": ["thanksgiving dinner"],
-    "hint": "I’m the feast of gratitude."
+  "2025-12-28": {
+    "riddle": "I am a house that never stays; made of sugar walls and candy displays. What am I?",
+    "answer": ["gingerbread house"],
+    "hint": "I’m edible and decorative."
   },
-  "2025-11-25": {
-    "riddle": "I’m soft yet strong, I cover you at night, and fold neatly by morning light. What am I?",
-    "answer": ["blanket"],
-    "hint": "I keep you warm when you sleep."
+  "2025-12-29": {
+    "riddle": "I count the final days, ringing bells as time decays. What am I?",
+    "answer": ["calendar"],
+    "hint": "You tear off my pages through the year."
   },
-  "2025-11-26": {
-    "riddle": "I’m rolled and twisted, baked and browned, covered in butter or cream. What am I?",
-    "answer": ["croissant"],
-    "hint": "I’m a breakfast treat."
+  "2025-12-30": {
+    "riddle": "I hold hopes of new days bright, filled with wishes for future light. What am I?",
+    "answer": ["new year anticipation", "new year"],
+    "hint": "People wait for me with excitement."
   },
-  "2025-11-27": {
-    "riddle": "I appear after dinner, sweet and round; I come in pies or by the pound. What am I?",
-    "answer": ["dessert"],
-    "hint": "I’m the final course of the meal."
-  },
-  "2025-11-28": {
-    "riddle": "I flash and shine but never burn; I decorate nights where people turn. What am I?",
-    "answer": ["candlelight"],
-    "hint": "I glow softly in celebration."
-  },
-  "2025-11-29": {
-    "riddle": "I come once a year bringing cheer; I dress trees and windows clear. What am I?",
-    "answer": ["holiday lights"],
-    "hint": "I twinkle through December nights."
-  },
-  "2025-11-30": {
-    "riddle": "I end one chapter and start the next; I close with reflection and open with hope. What am I?",
-    "answer": ["year"],
-    "hint": "I pass before time begins anew."
+  "2025-12-31": {
+    "riddle": "I mark an ending and a start, where seconds race and fireworks spark. People cheer when I arrive — what am I?",
+    "answer": ["new year’s eve"],
+    "hint": "I arrive at midnight with celebration."
   }
 }
