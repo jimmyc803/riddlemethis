@@ -1,61 +1,171 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <title>Contact Us</title>
-  <link rel="icon" href="Assets/riddlio web icon.png" type="image/png">
-  
-  <link rel="stylesheet" href="./css/contact.css">
-  <link rel="stylesheet" href="./css/sidebar.css">
-
-</head>
-<body>
-
-      <!-- Sidebar -->
-  <div id="sidebar" class="sidebar">
-    <button id="closeSidebar" class="close-btn">X</button>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="dailyRiddle.html">Daily Riddle</a></li>
-      <li><a href="">Riddle Quiz (Coming Soon)</a></li>
-      <li><a href="contactUs.html">Contact Us</a></li>
-    </ul>
-  </div>
-
-  <!-- Main Content -->
-  <div id="main-content">
-    <!-- Sidebar toggle button -->
-    <button id="openSidebar" class="open-btn">☰</button>
-
-
-  <div class="contact-container">
-    <h1>Contact Us</h1>
-    <p>Got questions, ideas, or feedback? We'd love to hear from you!</p>
-
-    <form action="https://formsubmit.co/official.riddlio@gmail.com" method="POST" id="contact-form">
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" required>
-
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="message">Message</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-      
-      <button type="submit">Send Message</button>
-
-    </form>
-
-    <div class="social-buttons-container">
-        <div class="social-buttons">
-          <a href="https://www.instagram.com/riddlio" target="_blank" class="social-button instagram">Instagram</a>
-          <a href="https://www.tiktok.com/@official_riddlio" target="_blank" class="social-button tiktok">TikTok</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Us — Riddlio</title>
+    <meta
+      name="description"
+      content="One riddle. Three guesses. A little aha, every day. Take a brain break with Riddlio."
+    />
+    <meta name="theme-color" content="#f8f7f2" />
+    <link rel="icon" href="Assets/riddlio%20web%20icon.png" />
+    <link rel="stylesheet" href="css/site.css" />
+    <script src="js/game-core.js" defer></script>
+    <script src="js/site.js" defer></script>
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to content</a>
+    <button
+      class="sidebar-toggle icon-button"
+      id="openSidebar"
+      aria-label="Open menu"
+      aria-controls="sidebar"
+      aria-expanded="false"
+    >
+      <span aria-hidden="true">☰</span>
+    </button>
+    <dialog id="sidebar" class="sidebar" aria-labelledby="sidebar-title">
+      <div class="sidebar-heading">
+        <h2 id="sidebar-title">Riddlio<span class="logo-period">.</span></h2>
+        <form method="dialog">
+          <button class="icon-button" aria-label="Close menu">×</button>
+        </form>
+      </div>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a><a href="dailyRiddle.html">Daily Riddle</a
+        ><a href="contactUs.html" aria-current="page">Contact Us</a>
+      </nav>
+      <button class="text-button sidebar-help" data-help>
+        How to play <span aria-hidden="true">↗</span>
+      </button>
+    </dialog>
+    <div class="corner-controls">
+      <button
+        class="icon-button"
+        id="theme-switch"
+        aria-label="Switch to dark theme"
+        aria-pressed="false"
+      >
+        <span aria-hidden="true" id="theme-icon">☾</span></button
+      ><button class="help-button" data-help aria-label="How to play">?</button>
+    </div>
+    <main id="main" class="wrap contact-main">
+      <section class="contact-card" aria-labelledby="contact-heading">
+        <h1 id="contact-heading" class="sr-only">Contact Us</h1>
+        <form
+          action="https://formsubmit.co/official.riddlio@gmail.com"
+          method="POST"
+          id="contact-form"
+        >
+          <div class="form-group">
+            <label for="name">Your name</label
+            ><input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Alex Morgan"
+              autocomplete="name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email address</label
+            ><input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="you@example.com"
+              autocomplete="email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Your message</label
+            ><textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="I was wondering…"
+              required
+            ></textarea>
+          </div>
+          <button class="button" type="submit">
+            Send message <span aria-hidden="true">↗</span>
+          </button>
+        </form>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <a class="logo" href="index.html" aria-label="Riddlio home"
+          ><span class="logo-mark" aria-hidden="true">r<span>•</span></span
+          >riddlio<span class="logo-period">.</span></a
+        >
+        <p>A little curiosity goes a long way.</p>
+        <div class="footer-links">
+          <a
+            href="https://www.instagram.com/riddlio"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Instagram ↗</a
+          ><a
+            href="https://www.tiktok.com/@official_riddlio"
+            target="_blank"
+            rel="noopener noreferrer"
+            >TikTok ↗</a
+          >
         </div>
-  </div>
-
-      <!-- JS for Sidebar -->
-      <script src="./js/sidebar.js"></script>
-</body>
+      </div>
+      <div class="wrap footer-bottom">
+        <span>© <span data-year>2026</span> Riddlio</span
+        ><span>Made for curious minds.</span>
+      </div>
+    </footer>
+    <dialog id="help-dialog" aria-labelledby="help-title">
+      <form method="dialog">
+        <button
+          class="dialog-close icon-button"
+          aria-label="Close instructions"
+        >
+          ×
+        </button>
+      </form>
+      <span class="eyebrow">A QUICK INTRODUCTION</span>
+      <h2 id="help-title">
+        A little head-scratching.<br />A lot of <em>aha.</em>
+      </h2>
+      <ol class="help-steps">
+        <li>
+          <strong>Read between the lines.</strong>
+          <p>
+            There’s one riddle each day. Take your time; there’s no clock to
+            beat.
+          </p>
+        </li>
+        <li>
+          <strong>You have three guesses.</strong>
+          <p>
+            Type an answer and press Enter or Check answer. Only a wrong answer
+            uses an attempt.
+          </p>
+        </li>
+        <li>
+          <strong>Need a little nudge?</strong>
+          <p>Reveal the hint whenever you like. It won’t cost you a guess.</p>
+        </li>
+        <li>
+          <strong>Make it a daily ritual.</strong>
+          <p>
+            Finish a riddle to build your play streak, whether you solve it or
+            use all three guesses. The next riddle arrives at midnight, your
+            local time.
+          </p>
+        </li>
+      </ol>
+      <p class="dialog-note">
+        Progress is saved in this browser when local storage is available.
+      </p>
+    </dialog>
+  </body>
 </html>
