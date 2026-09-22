@@ -1,113 +1,290 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KJXQEKR7KJ"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The daily riddle — Riddlio</title>
+    <meta
+      name="description"
+      content="One riddle. Three guesses. A little aha, every day. Take a brain break with Riddlio."
+    />
+    <meta name="theme-color" content="#f8f7f2" />
+    <link rel="icon" href="Assets/riddlio%20web%20icon.png" />
+    <link rel="stylesheet" href="css/site.css" />
+    <meta
+      name="google-site-verification"
+      content="iXfald3TMcCFxyaWXAhlnEt0xGEDQNhOzxOFy4c2dQs"
+    />
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-KJXQEKR7KJ"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'G-KJXQEKR7KJ');
+      gtag("config", "G-KJXQEKR7KJ");
     </script>
-
-    <meta name="google-site-verification" content="iXfald3TMcCFxyaWXAhlnEt0xGEDQNhOzxOFy4c2dQs" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Daily Riddle - Solve a new riddle every day!">
-    <meta name="author" content="Your Name">
-    
-    <title>Daily Riddle</title>
-    <link rel="icon" href="Assets/riddlio web icon.png" type="image/png">
-    
-    <!-- CSS files -->
-    <link rel="stylesheet" href="./css/riddleStyle.css">
-    <link rel="stylesheet" href="./css/sidebar.css">
-
-    <!-- JS files -->
-    <script type="text/javascript" src="./js/riddleScript.js" defer></script>
-</head>
-
-    <audio id="correctSound" src="assets/sounds/correct.mp3" preload="auto"></audio>
-    <audio id="wrongSound" src="assets/sounds/wrong.mp3" preload="auto"></audio>
-    
-<body>
-    <!-- Sidebar -->
-    <div id="sidebar" class="sidebar">
-        <button id="closeSidebar" class="close-btn">X</button>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="dailyRiddle.html">Daily Riddle</a></li>
-            <li><a href="">Riddle Quiz (Coming Soon)</a></li>
-            <li><a href="contactUs.html">Contact Us</a></li>
-        </ul>
+    <script src="js/game-core.js" defer></script>
+    <script src="js/site.js" defer></script>
+    <script src="js/riddleScript.js" defer></script>
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to content</a>
+    <button
+      class="sidebar-toggle icon-button"
+      id="openSidebar"
+      aria-label="Open menu"
+      aria-controls="sidebar"
+      aria-expanded="false"
+    >
+      <span aria-hidden="true">☰</span>
+    </button>
+    <dialog id="sidebar" class="sidebar" aria-labelledby="sidebar-title">
+      <div class="sidebar-heading">
+        <h2 id="sidebar-title">Riddlio<span class="logo-period">.</span></h2>
+        <form method="dialog">
+          <button class="icon-button" aria-label="Close menu">×</button>
+        </form>
+      </div>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a
+        ><a href="dailyRiddle.html" aria-current="page">Daily Riddle</a
+        ><a href="contactUs.html">Contact Us</a>
+      </nav>
+      <button class="text-button sidebar-help" data-help>
+        How to play <span aria-hidden="true">↗</span>
+      </button>
+    </dialog>
+    <div class="corner-controls">
+      <button
+        class="icon-button"
+        id="theme-switch"
+        aria-label="Switch to dark theme"
+        aria-pressed="false"
+      >
+        <span aria-hidden="true" id="theme-icon">☾</span></button
+      ><button class="help-button" data-help aria-label="How to play">?</button>
     </div>
-
-    <!-- Main Content -->
-    <div id="main-content">
-        <!-- Sidebar toggle button -->
-        <button id="openSidebar" class="open-btn">☰</button>
-
-        <div class="top-right-buttons">
-            
-            <!-- Streak counter -->
-            <div id="streak" class="streak-box">
-                🔥 Streak: <span id="streak-count">0</span> day(s)
-            </div>
-
-            <button id="hint-btn" title="Show Hint">
-                <!-- Light bulb icon -->
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
-                    <path d="M480-80q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80ZM320-200v-80h320v80H320Zm10-120q-69-41-109.5-110T180-580q0-125 87.5-212.5T480-880q125 0 212.5 87.5T780-580q0 81-40.5 150T630-320H330Zm24-80h252q45-32 69.5-79T700-580q0-92-64-156t-156-64q-92 0-156 64t-64 156q0 54 24.5 101t69.5 79Zm126 0Z"/>
-                </svg>
-            </button>
-            
-            <button id="theme-switch" title="Toggle Theme">
-                <!-- SVG icons for theme switch -->
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
-                    <path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/>
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
-                    <path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/>
-                </svg>
-            </button>
+    <main id="main" class="wrap game-main">
+      <div class="game-page-heading">
+        <div>
+          <p class="eyebrow">YOUR DAILY MOMENT OF AHA</p>
+          <h1>The daily <em>riddle.</em></h1>
         </div>
-
-        <div class="container">
-            <h1>Daily Riddle</h1>
-
-            <!-- Lives display -->
-            <div id="lives">
-                ❤️ ❤️ ❤️
+        <time class="date-label" data-today></time>
+      </div>
+      <div class="game-layout">
+        <section class="game-card" aria-labelledby="riddle-heading">
+          <div class="game-card-top">
+            <span class="pill" id="edition-label">TODAY’S CHALLENGE</span>
+            <div
+              class="attempts"
+              id="lives"
+              role="status"
+              aria-label="3 guesses remaining"
+            >
+              <span aria-hidden="true">♥ ♥ ♥</span
+              ><span id="attempt-label">3 guesses left</span>
             </div>
-
-            <div class="riddle-box">
-                <p id="riddle-text">Loading your riddle...</p>
-
-                <div id="hint" class="hint-box" style="display: none;">
-                    Hint: Loading hint...
-                </div>
-                
+          </div>
+          <div class="riddle-content">
+            <span class="riddle-spark" aria-hidden="true">✳</span>
+            <h2 id="riddle-heading" class="sr-only">Today’s riddle</h2>
+            <p id="riddle-text" aria-live="polite">
+              A little mystery is on its way…
+            </p>
+            <button
+              class="text-button hint-button"
+              id="hint-btn"
+              aria-expanded="false"
+              aria-controls="hint"
+              disabled
+            >
+              <span aria-hidden="true">☼</span> Need a hint?
+            </button>
+            <p class="hint-box" id="hint" hidden></p>
+          </div>
+          <form id="answer-form" class="answer-form">
+            <label for="answer-input">What’s your best guess?</label>
+            <div class="answer-row">
+              <input
+                type="text"
+                id="answer-input"
+                placeholder="I think it’s…"
+                autocomplete="off"
+                autocapitalize="none"
+                spellcheck="false"
+                maxlength="150"
+                disabled
+              /><button class="button" id="submit-btn" type="submit" disabled>
+                Check answer <span aria-hidden="true">↗</span>
+              </button>
             </div>
-            <input type="text" id="answer-input" placeholder="Type your answer..." />
-            <button id="submit-btn">Submit</button>
-
-            <!-- Modal -->
-            <div id="customModal" class="modal">
-                <div id="customModalContent" class="modal-content">
-                    <h2 id="modalTitle"></h2>
-                    <p id="modalMessage"></p>
-                    <button onclick="closeModal()">OK</button>
-                </div>
+            <p class="input-note">
+              Press Enter to submit. Take your time — there’s no timer.
+            </p>
+          </form>
+          <p id="result" class="feedback" role="status" hidden></p>
+          <section
+            id="completion"
+            class="completion"
+            aria-labelledby="completion-title"
+            hidden
+          >
+            <span
+              class="completion-symbol"
+              id="completion-symbol"
+              aria-hidden="true"
+              >✦</span
+            >
+            <h2 id="completion-title"></h2>
+            <p id="completion-message"></p>
+            <p id="answer-reveal"></p>
+            <div class="completion-actions">
+              <button class="button" id="share-btn">
+                Copy my result <span aria-hidden="true">↗</span></button
+              ><button class="text-button" data-help>How streaks work</button>
             </div>
-          
-            <p id="result"></p>
+            <p id="share-status" role="status"></p>
+          </section>
+          <div class="load-error" id="load-error" hidden>
+            <p id="load-error-text" role="alert"></p>
+            <button class="button" id="retry-btn">Try again ↻</button>
+          </div>
+          <div class="game-card-bottom">
+            <span aria-hidden="true">✧</span>
+            <p>A fresh perspective can change everything.</p>
+            <button class="sound-button" id="sound-toggle" aria-pressed="false">
+              Sound off
+            </button>
+          </div>
+        </section>
+        <aside class="game-aside">
+          <section class="streak-card">
+            <div class="aside-heading">
+              <span class="eyebrow">YOUR DAILY RITUAL</span
+              ><span aria-hidden="true">↗</span>
+            </div>
+            <div class="streak-number">
+              <span data-streak>0</span><span>day<br />play streak</span>
+            </div>
+            <p id="streak-message">
+              One small challenge. A habit worth keeping.
+            </p>
+            <div class="streak-rule">
+              Finish today’s riddle to keep it going.
+            </div>
+          </section>
+          <section class="note-card">
+            <span class="note-spark" aria-hidden="true">✳</span>
+            <h2>Stuck? That’s<br /><em>part of the fun.</em></h2>
+            <p>
+              Read it once. Read it twice. Sometimes the answer is hiding in
+              plain sight.
+            </p>
+            <button class="text-button" data-help>
+              A quick refresher <span aria-hidden="true">↗</span>
+            </button>
+          </section>
+          <p class="reset-note">
+            A new riddle arrives at midnight,<br />your local time.
+            <span id="collection-note"></span>
+          </p>
+          <p id="storage-note" class="storage-note" role="status" hidden>
+            Browser storage is unavailable. You can play, but your progress
+            won’t survive a refresh.
+          </p>
+        </aside>
+      </div>
+      <noscript
+        ><p class="notice">
+          Please enable JavaScript to load and play the daily riddle.
+        </p></noscript
+      ><audio
+        id="correctSound"
+        src="Assets/sounds/correct.mp3"
+        preload="none"
+      ></audio
+      ><audio
+        id="wrongSound"
+        src="Assets/sounds/wrong.mp3"
+        preload="none"
+      ></audio>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <a class="logo" href="index.html" aria-label="Riddlio home"
+          ><span class="logo-mark" aria-hidden="true">r<span>•</span></span
+          >riddlio<span class="logo-period">.</span></a
+        >
+        <p>A little curiosity goes a long way.</p>
+        <div class="footer-links">
+          <a
+            href="https://www.instagram.com/riddlio"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Instagram ↗</a
+          ><a
+            href="https://www.tiktok.com/@official_riddlio"
+            target="_blank"
+            rel="noopener noreferrer"
+            >TikTok ↗</a
+          >
         </div>
-    </div>
-
-    <!-- JS for Sidebar -->
-    <script src="./js/sidebar.js"></script>
-</body>
+      </div>
+      <div class="wrap footer-bottom">
+        <span>© <span data-year>2026</span> Riddlio</span
+        ><span>Made for curious minds.</span>
+      </div>
+    </footer>
+    <dialog id="help-dialog" aria-labelledby="help-title">
+      <form method="dialog">
+        <button
+          class="dialog-close icon-button"
+          aria-label="Close instructions"
+        >
+          ×
+        </button>
+      </form>
+      <span class="eyebrow">A QUICK INTRODUCTION</span>
+      <h2 id="help-title">
+        A little head-scratching.<br />A lot of <em>aha.</em>
+      </h2>
+      <ol class="help-steps">
+        <li>
+          <strong>Read between the lines.</strong>
+          <p>
+            There’s one riddle each day. Take your time; there’s no clock to
+            beat.
+          </p>
+        </li>
+        <li>
+          <strong>You have three guesses.</strong>
+          <p>
+            Type an answer and press Enter or Check answer. Only a wrong answer
+            uses an attempt.
+          </p>
+        </li>
+        <li>
+          <strong>Need a little nudge?</strong>
+          <p>Reveal the hint whenever you like. It won’t cost you a guess.</p>
+        </li>
+        <li>
+          <strong>Make it a daily ritual.</strong>
+          <p>
+            Finish a riddle to build your play streak, whether you solve it or
+            use all three guesses. The next riddle arrives at midnight, your
+            local time.
+          </p>
+        </li>
+      </ol>
+      <p class="dialog-note">
+        Progress is saved in this browser when local storage is available.
+      </p>
+    </dialog>
+  </body>
 </html>

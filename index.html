@@ -1,40 +1,127 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-
-  <link rel="apple-touch-icon" href="/riddlio-mobile-icon.jpeg">
-
-<!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KJXQEKR7KJ"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Your daily dose of aha — Riddlio</title>
+    <meta
+      name="description"
+      content="One riddle. Three guesses. A little aha, every day. Take a brain break with Riddlio."
+    />
+    <meta name="theme-color" content="#f8f7f2" />
+    <link rel="icon" href="Assets/riddlio%20web%20icon.png" />
+    <link rel="stylesheet" href="css/site.css" />
+    <meta
+      name="google-site-verification"
+      content="iXfald3TMcCFxyaWXAhlnEt0xGEDQNhOzxOFy4c2dQs"
+    />
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-KJXQEKR7KJ"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'G-KJXQEKR7KJ');
+      gtag("config", "G-KJXQEKR7KJ");
     </script>
-
-    <meta name="google-site-verification" content="iXfald3TMcCFxyaWXAhlnEt0xGEDQNhOzxOFy4c2dQs" />
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Riddlio</title>
-    <link rel="icon" href="Assets/riddlio web icon.png" type="image/png">
-
-    <link rel="stylesheet" href="./css/landingStyle.css">
-    <script src="./js/landingScript.js"></script>
-</head>
-<body>
-    <div class="container">
-      <h1 class="logo">Riddlio</h1>
-      <p class="instructions">A new riddle to solve<br>every single day.</p>
-      
-      <button class="play-button" onclick="slideAndRedirect('dailyRiddle.html')">Start Solving</button>
-  
-      <div class="footer">"The mind that opens to a new idea never returns to its original size.” - Oliver Wendell Holmes</div>
+    <script src="js/game-core.js" defer></script>
+    <script src="js/site.js" defer></script>
+  </head>
+  <body class="landing-page">
+    <a href="#main" class="skip-link">Skip to content</a>
+    <button
+      class="sidebar-toggle icon-button"
+      id="openSidebar"
+      aria-label="Open menu"
+      aria-controls="sidebar"
+      aria-expanded="false"
+    >
+      <span aria-hidden="true">☰</span>
+    </button>
+    <dialog id="sidebar" class="sidebar" aria-labelledby="sidebar-title">
+      <div class="sidebar-heading">
+        <h2 id="sidebar-title">Riddlio<span class="logo-period">.</span></h2>
+        <form method="dialog">
+          <button class="icon-button" aria-label="Close menu">×</button>
+        </form>
+      </div>
+      <nav aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a
+        ><a href="dailyRiddle.html">Daily Riddle</a
+        ><a href="contactUs.html">Contact Us</a>
+      </nav>
+      <button class="text-button sidebar-help" data-help>
+        How to play <span aria-hidden="true">↗</span>
+      </button>
+    </dialog>
+    <div class="corner-controls">
+      <button
+        class="icon-button"
+        id="theme-switch"
+        aria-label="Switch to dark theme"
+        aria-pressed="false"
+      >
+        <span aria-hidden="true" id="theme-icon">☾</span></button
+      ><button class="help-button" data-help aria-label="How to play">?</button>
     </div>
-  
-    <script src="./js/landingScript.js"></script>
+    <main id="main" class="landing-main">
+      <div class="landing-card">
+        <h1>Riddlio<span aria-hidden="true">.</span></h1>
+        <p>A new riddle to solve<br />every single day.</p>
+        <a class="button start-button" href="dailyRiddle.html"
+          >Start Solving <span aria-hidden="true">→</span></a
+        >
+      </div>
+    </main>
+
+    <dialog id="help-dialog" aria-labelledby="help-title">
+      <form method="dialog">
+        <button
+          class="dialog-close icon-button"
+          aria-label="Close instructions"
+        >
+          ×
+        </button>
+      </form>
+      <span class="eyebrow">A QUICK INTRODUCTION</span>
+      <h2 id="help-title">
+        A little head-scratching.<br />A lot of <em>aha.</em>
+      </h2>
+      <ol class="help-steps">
+        <li>
+          <strong>Read between the lines.</strong>
+          <p>
+            There’s one riddle each day. Take your time; there’s no clock to
+            beat.
+          </p>
+        </li>
+        <li>
+          <strong>You have three guesses.</strong>
+          <p>
+            Type an answer and press Enter or Check answer. Only a wrong answer
+            uses an attempt.
+          </p>
+        </li>
+        <li>
+          <strong>Need a little nudge?</strong>
+          <p>Reveal the hint whenever you like. It won’t cost you a guess.</p>
+        </li>
+        <li>
+          <strong>Make it a daily ritual.</strong>
+          <p>
+            Finish a riddle to build your play streak, whether you solve it or
+            use all three guesses. The next riddle arrives at midnight, your
+            local time.
+          </p>
+        </li>
+      </ol>
+      <p class="dialog-note">
+        Progress is saved in this browser when local storage is available.
+      </p>
+    </dialog>
   </body>
-  </html>
+</html>
